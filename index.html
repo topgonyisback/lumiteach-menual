@@ -3772,7 +3772,13 @@
     }
 
     function tTree(key, field, fallback) {
-      return normalizeTranslationTerms(activeTranslations().manualTree?.[key]?.[field] || fallback);
+      const localizedValue = activeTranslations().manualTree?.[key]?.[field];
+      if (localizedValue) {
+        const normalizedValue = normalizeTranslationTerms(localizedValue);
+        if (!(currentLanguage !== defaultLanguage && hasKoreanText(normalizedValue))) return normalizedValue;
+      }
+
+      return fallback;
     }
 
     function tArticleField(key, field, fallback) {
@@ -3798,23 +3804,7 @@
         }
       }
 
-      if (currentLanguage !== defaultLanguage && field === 'desc') {
-        const title = getLocalizedTitleCandidate(key, fallback) || tFixed('documentLabel');
-        return normalizeTranslationTerms(formatTranslationTemplate(tFixed('genericDesc'), { title }));
-      }
-
-      if (currentLanguage !== defaultLanguage && field === 'note') {
-        return normalizeTranslationTerms(tFixed('genericNote'));
-      }
-
-      const fallbackValue = normalizeTranslationTerms(fallback);
-      if (currentLanguage !== defaultLanguage && hasKoreanText(fallbackValue)) {
-        if (field === 'title') return tFixed('documentLabel');
-        if (field === 'category') return tFixed('categoryLabel');
-        return '';
-      }
-
-      return fallbackValue;
+      return fallback;
     }
 
     function tArticleArray(key, field, fallback) {
@@ -3825,18 +3815,28 @@
           return normalizedValue;
         }
       }
-      if (currentLanguage !== defaultLanguage && field === 'sections') {
-        return (activeTranslations().defaultSections || fallback).map((item) => normalizeTranslationTerms(item));
-      }
-      return Array.isArray(fallback) ? fallback.map((item) => normalizeTranslationTerms(item)) : fallback;
+
+      return fallback;
     }
 
     function tHubDescription(key, fallback) {
-      return normalizeTranslationTerms(activeTranslations().hubDescriptions?.[key] || fallback);
+      const localizedDescription = activeTranslations().hubDescriptions?.[key];
+      if (localizedDescription) {
+        const normalizedDescription = normalizeTranslationTerms(localizedDescription);
+        if (!(currentLanguage !== defaultLanguage && hasKoreanText(normalizedDescription))) return normalizedDescription;
+      }
+
+      return fallback;
     }
 
     function tArticleBody(key, index, fallback) {
-      return normalizeTranslationTerms(activeTranslations().articleBodies?.[key]?.[index] || fallback);
+      const localizedBody = activeTranslations().articleBodies?.[key]?.[index];
+      if (localizedBody) {
+        const normalizedBody = normalizeTranslationTerms(localizedBody);
+        if (!(currentLanguage !== defaultLanguage && hasKoreanText(normalizedBody))) return normalizedBody;
+      }
+
+      return fallback;
     }
 
     function localizeArticle(article) {
@@ -4042,13 +4042,9 @@
 
     function getSectionBody(article, section, index) {
       const localizedBody = activeTranslations().articleBodies?.[article.key]?.[index];
-      if (localizedBody) return normalizeTranslationTerms(localizedBody);
-
-      if (currentLanguage !== defaultLanguage) {
-        return normalizeTranslationTerms(formatTranslationTemplate(tFixed('genericBody'), {
-          title: article.title,
-          section
-        }));
+      if (localizedBody) {
+        const normalizedBody = normalizeTranslationTerms(localizedBody);
+        if (!(currentLanguage !== defaultLanguage && hasKoreanText(normalizedBody))) return normalizedBody;
       }
 
       if (articleBodies[article.key]) {
@@ -4091,7 +4087,6 @@
     function renderArticleCallout(article) {
       const callout = articleCallouts[article.key];
       if (!callout) return '';
-      if (currentLanguage !== defaultLanguage && (hasKoreanText(callout.title) || hasKoreanText(callout.body))) return '';
 
       return `
         <section class="callout">
@@ -4110,7 +4105,7 @@
       const normalizedIntro = normalizeTranslationTerms(intro);
 
       if (currentLanguage !== defaultLanguage && hasKoreanText(normalizedIntro)) {
-        return '';
+        return `<div class="article-intro section-copy">${renderRichText(articleIntros[article.key] || intro)}</div>`;
       }
 
       return `<div class="article-intro section-copy">${renderRichText(normalizedIntro)}</div>`;
@@ -4125,7 +4120,6 @@
     function renderSectionInfoCard(article, index) {
       const card = articleInfoCards[article.key]?.[index];
       if (!card) return '';
-      if (currentLanguage !== defaultLanguage && (hasKoreanText(card.title) || hasKoreanText(card.body))) return '';
 
       return `
         <div class="info-card">

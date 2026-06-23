@@ -1144,6 +1144,25 @@
       ] }
     ];
 
+
+    const removedTeachingKeys = new Set(["cat-teaching","group-teaching-mode","teaching-overview","teaching-interaction","teaching-presentation","teaching-battle"]);
+    const teachingCategoryIndex = manualTree.findIndex((category) => category.key === 'cat-teaching');
+    if (teachingCategoryIndex >= 0) manualTree.splice(teachingCategoryIndex, 1);
+
+    const exploreCategory = {
+      key: 'cat-explore',
+      title: '05. Explore 사용하기',
+      description: '공개 Lesson 탐색과 Creator Page 관리',
+      children: [
+        { key: 'explore-browse', title: '공개 Lesson 찾아보기', articles: [] },
+        { key: 'explore-creator-page', title: 'Creator Page 관리하기', articles: [] }
+      ]
+    };
+    if (!manualTree.some((category) => category.key === exploreCategory.key)) {
+      const reportsCategoryIndexForExplore = manualTree.findIndex((category) => category.key === 'cat-reports');
+      manualTree.splice(reportsCategoryIndexForExplore >= 0 ? reportsCategoryIndexForExplore : manualTree.length, 0, exploreCategory);
+    }
+
     const articleTemplates = {
       'cat-intro': ['01.', 'LumiTeach Help Center', 'LumiTeach 시작하기', '서비스의 목적, 사용자 역할, 기본 용어를 먼저 정리해 LumiTeach 전체 흐름을 이해합니다.', '처음에는 기능을 하나씩 외우기보다 Lesson, Activity, Assignment가 어떻게 이어지는지 보는 것이 좋습니다.', ['서비스 이해하기', '기본 개념 익히기', '다음 단계로 이동하기']],
       'cat-start': ['02.', 'LumiTeach Help Center', '설정하기', 'LumiTeach 계정의 프로필, 언어, 커리큘럼, AI Credit 정보를 확인하고 관리하는 방법을 안내합니다.', 'Setting 변경 사항은 계정과 화면 표시 방식에 영향을 줄 수 있으므로 저장 전 적용 범위를 확인하세요.', ['Setting 진입하기', 'Profile 설정하기', 'Language와 Curriculum 설정하기']],
@@ -1230,6 +1249,46 @@
     };
 
     // BEGIN GENERATED LUMITEACH PAGES
+
+    Object.assign(articleTemplates, {
+      "cat-explore": [
+            "05.",
+            "LumiTeach Help Center",
+            "Explore 사용하기",
+            "Explore에서 공개 Lesson을 찾아보고, Creator Page에서 내 Lesson을 공개하고 관리하는 방법을 안내합니다.",
+            "화면에 표시되는 검색, 필터, 정렬, Publish 흐름을 기준으로 필요한 작업만 진행합니다.",
+            [
+                  "개요",
+                  "실행 방법",
+                  "주의 사항"
+            ]
+      ],
+      "explore-browse": [
+            "05-1.",
+            "Explore 사용하기",
+            "공개 Lesson 찾아보기",
+            "Explore에서 공개된 Lesson을 검색, 필터, 정렬하고 Lesson preview에서 내용을 확인하는 방법입니다.",
+            "화면에 표시되는 **Search**, **Subject**, **Grade**, **Latest**, **Use Lesson** 항목을 기준으로 진행합니다.",
+            [
+                  "개요",
+                  "실행 방법",
+                  "주의 사항"
+            ]
+      ],
+      "explore-creator-page": [
+            "05-2.",
+            "Explore 사용하기",
+            "Creator Page 관리하기",
+            "Creator Page에서 내 Lesson을 선택해 공개하고, 공개된 Lesson을 관리하는 방법입니다.",
+            "화면에 표시되는 **+ Publish Lesson**, **Next**, **Publish**, **Edit**, **Delete** 버튼을 기준으로 진행합니다.",
+            [
+                  "개요",
+                  "실행 방법",
+                  "주의 사항"
+            ]
+      ]
+});
+
     const generatedEditLessonBaseArticles = [{ key: "edit-lesson-background-image", title: "11. 배경 이미지 추가하여 변경하기" }, { key: "edit-lesson-activity-common-setting", title: "12. Activity Common Setting" }];
     const generatedSelfStudyGroup = { key: 'group-edit-lesson-self-study', title: 'Self Study 모드 활용하기', articles: [{ key: "edit-lesson-self-study-individual", title: "1. Individual" }, { key: "edit-lesson-self-study-challenge", title: "2. Challenge" }, { key: "edit-lesson-self-study-flash-card", title: "3. Flash Card" }] };
     const generatedEditLessonGroups = [
@@ -2157,6 +2216,25 @@
       if (articleTemplates[key]) articleTemplates[key][0] = number;
     });
     // END TOOL KIT CONTENT PATCH
+
+    const stripLeadingCategoryNumber = (title) => String(title || '').replace(/^\s*\d+\.\s*/, '');
+    const categoryNumberMap = new Map();
+    function syncVisibleCategoryNumbers() {
+      manualTree.forEach((category, index) => {
+        const number = String(index + 1).padStart(2, '0') + '.';
+        categoryNumberMap.set(category.key, number);
+        category.title = number + ' ' + stripLeadingCategoryNumber(category.title);
+        if (articleTemplates[category.key]) articleTemplates[category.key][0] = number;
+      });
+      const exploreNumber = categoryNumberMap.get('cat-explore');
+      if (exploreNumber) {
+        const visibleExploreNumber = exploreNumber.replace('.', '');
+        if (articleTemplates['explore-browse']) articleTemplates['explore-browse'][0] = visibleExploreNumber + '-1.';
+        if (articleTemplates['explore-creator-page']) articleTemplates['explore-creator-page'][0] = visibleExploreNumber + '-2.';
+      }
+    }
+    syncVisibleCategoryNumbers();
+
 
     const articleOrder = manualTree.flatMap((category) => [
       category.key,
@@ -3150,6 +3228,30 @@
           ]
     });
     // END GENERATED LUMITEACH BODIES
+
+    Object.assign(articleBodies, {
+      "cat-explore": [
+            "Explore는 공개된 Lesson을 찾아보는 화면과 내 Lesson을 공개하는 Creator Page 흐름으로 구성됩니다.",
+            "### Step 1. 공개 Lesson을 찾습니다\n\n**Explore** 탭에서 공개 Lesson 목록을 확인합니다. 화면에는 검색창, **Subject** 필터, **Grade** 필터, 정렬 드롭다운, Lesson 카드 목록이 표시됩니다.\n\n- **공개 Lesson 찾아보기**: 검색어와 필터로 공개 Lesson을 찾는 방법을 확인합니다.\n- **Creator Page 관리하기**: 내 Lesson을 공개하고 공개된 Lesson을 관리하는 방법을 확인합니다.",
+            "> ⚠️ 주의\n> Explore에 공개되는 Lesson은 다른 교사가 볼 수 있는 자료입니다. 공개 전에 화면에 표시되는 **Title**, **Grade**, **Subject**, 저작권 확인 문구를 확인합니다."
+      ],
+      "explore-browse": [
+            "Explore에서는 공개된 Lesson을 검색하고, 필터와 정렬 조건으로 목록을 좁힌 뒤 Lesson preview에서 내용을 확인합니다.",
+            "[[image:explore-browse/01.png|Explore 기본 화면]]\n\n### Step 1. Explore 화면을 확인합니다\n\n상단 메뉴에서 **Explore**가 선택된 상태입니다. 화면 상단에는 문구 **A secure space where teachers can share classroom resources. Start sharing your materials today!**가 표시됩니다.\n\n화면에는 다음 항목이 보입니다.\n\n- **Search**: 공개 Lesson을 검색하는 입력창입니다.\n- **MY creator Page**: 내 Creator Page로 이동하는 버튼입니다.\n- **Subject**: 과목 필터입니다. **All**, **Arts**, **ELA**, **Foreign Language**, **Literature**, **Math**, **Music**, **P.E.**, **Science**, **Social Studies**, **Spanish** 항목이 보입니다.\n- **Grade**: 학년 필터입니다. **All**, **Grade 1** 항목이 보입니다.\n- **Latest**: 목록 정렬 드롭다운입니다.\n- **45 results found**: 현재 표시되는 검색 결과 수입니다.\n\n> ⚠️ 주의\n> 화면에 보이는 필터 항목을 기준으로만 조건을 선택합니다. 이미지에 보이지 않는 필터 항목은 이 문서에서 설명하지 않습니다.",
+            "[[image:explore-browse/02.png|검색어로 공개 Lesson을 찾은 화면]]\n\n### Step 2. 검색어로 Lesson을 찾습니다\n\n**Search** 입력창에 검색어를 입력하면 공개 Lesson 목록이 줄어듭니다. 예시 화면에서는 **demand**가 입력되어 있고, 결과 수가 **3 results found**로 표시됩니다.\n\n검색 결과 카드에는 Lesson 썸네일, 제목, 학년·과목 정보, 작성자 정보가 함께 표시됩니다.\n\n- 예시 검색어: **demand**\n- 예시 결과 수: **3 results found**",
+            "[[image:explore-browse/03.png|정렬 옵션을 연 화면]]\n\n### Step 3. 정렬 기준을 선택합니다\n\n목록 우측의 정렬 드롭다운을 열면 정렬 옵션이 표시됩니다.\n\n- **Latest**: 최신순으로 표시합니다.\n- **Most viewed**: 조회 수 기준으로 표시합니다.\n- **Most saved**: 저장 수 기준으로 표시합니다.\n\n정렬 옵션을 선택하면 공개 Lesson 목록의 표시 순서가 변경됩니다.",
+            "[[image:explore-browse/04.png|Lesson preview 화면]]\n\n### Step 4. Lesson preview를 확인합니다\n\nLesson 카드를 선택하면 **Lesson preview** 팝업이 열립니다. 팝업에는 Lesson 썸네일, Lesson 제목, 작성자, 설명, 슬라이드 미리보기 영역이 표시됩니다.\n\n하단에는 **Report**, **Like**가 있고, 우측 하단에는 **Use Lesson** 버튼이 표시됩니다.\n\n- **Report**: 신고 사유를 선택하는 팝업을 엽니다.\n- **Like**: Lesson에 좋아요를 표시합니다.\n- **Use Lesson**: 해당 Lesson을 사용합니다.\n\n> ⚠️ 주의\n> **Use Lesson**을 선택하기 전에 Lesson preview에 표시된 제목, 설명, 미리보기 화면을 확인합니다."
+      ],
+      "explore-creator-page": [
+            "Creator Page에서는 My Storage에 있는 Lesson을 선택해 Explore에 공개하고, 공개된 Lesson을 수정하거나 삭제할 수 있습니다.",
+            "[[image:explore-creator-page/01.png|Creator Page 기본 화면]]\n\n### Step 1. Creator Page를 확인합니다\n\n**MY creator Page**로 이동하면 Creator Page가 열립니다. 화면에는 프로필 영역과 **Published Lessons** 목록이 표시됩니다.\n\n좌측 프로필 영역에는 다음 항목이 보입니다.\n\n- **Total Lessons**\n- **Total Remix**\n- **Total Like**\n- **+ Publish Lesson**\n- **Edit**\n- 공개 페이지 URL과 복사 아이콘\n\n**Published Lessons** 영역이 비어 있으면 **Share your first lesson** 문구와 **Publish Lesson** 버튼이 표시됩니다.",
+            "[[image:explore-creator-page/02.png|My Storage에서 공개할 Lesson을 고르는 화면]]\n\n### Step 2. 공개할 Lesson을 선택합니다\n\n**+ Publish Lesson**을 선택하면 **+ Publish Lesson** 팝업이 열립니다. 팝업 상단에는 **My Storage**가 표시되고, 좌측에는 저장소 트리와 **Favorites** 항목이 보입니다.\n\n상단에는 **Search** 입력창이 있고, 목록 영역에는 **All**, **Lessons** 탭이 표시됩니다.\n\n[[image:explore-creator-page/03.png|Lesson 선택 후 Next 버튼이 활성화된 화면]]\n\n공개할 Lesson을 선택하면 Lesson 카드에 선택 표시가 생기고 **Next** 버튼이 활성화됩니다.\n\n- **All**: 전체 항목을 확인합니다.\n- **Lessons**: Lesson 항목만 확인합니다.\n- **Next**: 선택한 Lesson의 공개 정보 입력 단계로 이동합니다.",
+            "[[image:explore-creator-page/04.png|Required information 입력 화면]]\n\n### Step 3. Required information을 입력합니다\n\n다음 화면에는 **Required information** 영역이 표시됩니다. 화면에 보이는 필수 항목은 다음과 같습니다.\n\n- **Title**\n- **Grade**\n- **Subject**\n\n필수 항목이 비어 있으면 **Publish** 버튼이 비활성화되어 있습니다.",
+            "[[image:explore-creator-page/05.png|Optional 정보와 태그를 입력한 화면]]\n\n### Step 4. Optional 정보를 입력하고 Publish합니다\n\n**Optional** 영역에는 **Thumbnail**, **Lesson Description**, **Tags** 항목이 표시됩니다. 화면 하단에는 저작권 확인 체크박스가 있습니다.\n\n화면에 보이는 저작권 확인 문구는 **I confirm that this content does not infringe any copyright and that I accept full responsibility for any related legal issues.** 입니다.\n\n체크박스를 선택하면 **Publish** 버튼을 사용할 수 있습니다.\n\n- **Thumbnail**: 공개 목록에 표시할 썸네일을 설정합니다.\n- **Lesson Description**: Lesson 설명을 입력합니다.\n- **Tags**: 태그를 추가합니다.\n- **Publish**: Lesson을 공개합니다.\n\n> ⚠️ 주의\n> 저작권 확인 체크박스는 화면에 표시되는 문구를 확인한 뒤 선택합니다.",
+            "[[image:explore-creator-page/06.png|공개 완료 후 Published Lessons에 표시된 Lesson]]\n\n### Step 5. 공개된 Lesson을 확인합니다\n\n공개가 완료되면 **Published Lessons** 목록에 Lesson 카드가 표시됩니다. 카드에는 썸네일, Lesson 제목, 학년·과목 정보, 작성자 정보가 보입니다.\n\n목록 우측에는 정렬 드롭다운 **Latest**가 표시됩니다.",
+            "[[image:explore-creator-page/07.png|공개 Lesson 카드의 Edit/Delete 메뉴]]\n\n### Step 6. 공개된 Lesson을 관리합니다\n\n공개된 Lesson 카드의 메뉴를 열면 **Edit**, **Delete** 항목이 표시됩니다.\n\n- **Edit**: 공개 Lesson 정보를 수정합니다.\n- **Delete**: Explore에서 Lesson 공개를 해제합니다.\n\n[[image:explore-creator-page/08.png|공개 취소 확인 팝업]]\n\n**Delete**를 선택하면 확인 팝업이 표시됩니다. 팝업 문구는 **This lesson will be unpublished from the Explore menu. However, copies already duplicated by other teachers will not be affected.** 입니다.\n\n- **Cancel**: 삭제를 취소합니다.\n- **Delete**: Explore 메뉴에서 공개를 해제합니다.\n\n> ⚠️ 주의\n> **Delete**는 Explore 공개를 해제하는 동작입니다. 팝업에 표시된 문구처럼 이미 다른 교사가 복제한 사본에는 영향을 주지 않습니다."
+      ]
+});
 
 
     const categories = manualTree.map((category) => ({
@@ -10796,7 +10898,13 @@
                 "size": "34px"
           }
     });
+
+    Object.assign(hubVisuals, {
+      'explore-browse': { icon: '⌕', bg: 'linear-gradient(135deg, #eaf1ff, #f6f9ff)', color: '#204cff', size: '42px' },
+      'explore-creator-page': { icon: 'CP', bg: 'linear-gradient(135deg, #e8f4ff, #dff7ef)', color: '#0f7f78', size: '34px' }
+    });
     Object.assign(hubCovers, {
+      'cat-explore': { icon: 'EX', bg: 'linear-gradient(135deg, #eaf1ff, #f6f9ff)', color: '#204cff', size: '50px' },
       'cat-toolkit': { icon: 'TK', bg: 'linear-gradient(135deg, #eaf1ff, #f6f9ff)', color: '#204cff', size: '50px' },
       'group-toolkit-normal': { icon: '⭐', bg: 'linear-gradient(135deg, #eaf1ff, #fff7df)', color: '#204cff', size: '44px' },
       'group-toolkit-timer': { icon: '⏱', bg: 'linear-gradient(135deg, #e6f0ff, #f6f9ff)', color: '#2563e9', size: '44px' },
@@ -10805,13 +10913,6 @@
       'group-toolkit-math-tools': { icon: '📐', bg: 'linear-gradient(135deg, #f7f7f6, #eaf1ff)', color: '#233a78', size: '44px' }
     });
 
-    ['en', 'pt', 'es', 'ja', 'vi'].forEach((language) => {
-      const tree = translations[language]?.manualTree;
-      if (!tree) return;
-      if (tree['cat-reports']?.title) tree['cat-reports'].title = tree['cat-reports'].title.replace(/^08./, '09.');
-      if (tree['cat-storage']?.title) tree['cat-storage'].title = tree['cat-storage'].title.replace(/^09./, '10.');
-      if (tree['cat-faq']?.title) tree['cat-faq'].title = tree['cat-faq'].title.replace(/^10./, '11.');
-    });
     // END TOOL KIT VISUAL PATCH
 
     let currentArticleKey = 'intro-overview';
@@ -10989,16 +11090,25 @@
       return field === 'title' && key.startsWith('toolkit-') && !localizedToolkitTitleKeys.has(key);
     }
 
+    function applyVisibleCategoryNumber(key, title) {
+      const categoryNumber = categoryNumberMap.get(key);
+      if (!categoryNumber) return title;
+      return categoryNumber + ' ' + stripLeadingCategoryNumber(title);
+    }
+
     function tTree(key, field, fallback) {
       if (shouldUseCanonicalToolkitTitle(key, field)) return fallback;
 
+      const fallbackValue = field === 'title' ? applyVisibleCategoryNumber(key, fallback) : fallback;
       const localizedValue = activeTranslations().manualTree?.[key]?.[field];
       if (localizedValue) {
         const normalizedValue = normalizeTranslationTerms(localizedValue);
-        if (!(currentLanguage !== defaultLanguage && hasKoreanText(normalizedValue))) return normalizedValue;
+        if (!(currentLanguage !== defaultLanguage && hasKoreanText(normalizedValue))) {
+          return field === 'title' ? applyVisibleCategoryNumber(key, normalizedValue) : normalizedValue;
+        }
       }
 
-      return fallback;
+      return fallbackValue;
     }
 
     function tArticleField(key, field, fallback) {

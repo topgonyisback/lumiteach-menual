@@ -73,7 +73,7 @@
       "ja": 71,
       "vi": 71
     },
-    "updatedAt": "2026-06-22",
+    "updatedAt": "2026-06-23",
     "fullComplete": 65,
     "incomplete": 46
   },
@@ -11265,22 +11265,22 @@
           "qualityFlags": []
         }
       },
-      "coreCompleteLanguages": [],
-      "fullCompleteLanguages": [],
-      "coreMissingLanguages": [
+      "coreCompleteLanguages": [
         "en",
         "pt",
         "es",
         "ja",
         "vi"
       ],
-      "fullMissingLanguages": [
+      "fullCompleteLanguages": [
         "en",
         "pt",
         "es",
         "ja",
         "vi"
       ],
+      "coreMissingLanguages": [],
+      "fullMissingLanguages": [],
       "priority": 4
     },
     {
@@ -11436,22 +11436,22 @@
           "qualityFlags": []
         }
       },
-      "coreCompleteLanguages": [],
-      "fullCompleteLanguages": [],
-      "coreMissingLanguages": [
+      "coreCompleteLanguages": [
         "en",
         "pt",
         "es",
         "ja",
         "vi"
       ],
-      "fullMissingLanguages": [
+      "fullCompleteLanguages": [
         "en",
         "pt",
         "es",
         "ja",
         "vi"
       ],
+      "coreMissingLanguages": [],
+      "fullMissingLanguages": [],
       "priority": 4
     },
     {
@@ -11580,22 +11580,22 @@
           "qualityFlags": []
         }
       },
-      "coreCompleteLanguages": [],
-      "fullCompleteLanguages": [],
-      "coreMissingLanguages": [
+      "coreCompleteLanguages": [
         "en",
         "pt",
         "es",
         "ja",
         "vi"
       ],
-      "fullMissingLanguages": [
+      "fullCompleteLanguages": [
         "en",
         "pt",
         "es",
         "ja",
         "vi"
       ],
+      "coreMissingLanguages": [],
+      "fullMissingLanguages": [],
       "priority": 4
     },
     {
@@ -11909,7 +11909,96 @@
       ],
       "coreMissingLanguages": [],
       "fullMissingLanguages": [],
-      "priority": 4
+      "priority": 4,
+      "status": "complete",
+      "updatedAt": "2026-06-23",
+      "langs": {
+        "en": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        },
+        "pt": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        },
+        "es": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        },
+        "ja": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        },
+        "vi": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        }
+      }
     },
     {
       "key": "toolkit-quick-quiz",
@@ -12075,7 +12164,101 @@
       ],
       "coreMissingLanguages": [],
       "fullMissingLanguages": [],
-      "priority": 4
+      "priority": 4,
+      "status": "complete",
+      "updatedAt": "2026-06-23",
+      "langs": {
+        "en": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        },
+        "pt": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        },
+        "es": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        },
+        "ja": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        },
+        "vi": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        }
+      }
     },
     {
       "key": "toolkit-quick-poll",
@@ -12255,7 +12438,111 @@
       ],
       "coreMissingLanguages": [],
       "fullMissingLanguages": [],
-      "priority": 4
+      "priority": 4,
+      "status": "complete",
+      "updatedAt": "2026-06-23",
+      "langs": {
+        "en": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        },
+        "pt": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        },
+        "es": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        },
+        "ja": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        },
+        "vi": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        }
+      }
     },
     {
       "key": "group-toolkit-timer",
@@ -12522,7 +12809,91 @@
       ],
       "coreMissingLanguages": [],
       "fullMissingLanguages": [],
-      "priority": 4
+      "priority": 4,
+      "status": "complete",
+      "updatedAt": "2026-06-23",
+      "langs": {
+        "en": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        },
+        "pt": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        },
+        "es": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        },
+        "ja": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        },
+        "vi": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        }
+      }
     },
     {
       "key": "toolkit-hourglass",
@@ -12659,7 +13030,91 @@
       ],
       "coreMissingLanguages": [],
       "fullMissingLanguages": [],
-      "priority": 4
+      "priority": 4,
+      "status": "complete",
+      "updatedAt": "2026-06-23",
+      "langs": {
+        "en": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        },
+        "pt": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        },
+        "es": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        },
+        "ja": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        },
+        "vi": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        }
+      }
     },
     {
       "key": "toolkit-pie-timer",
@@ -12813,7 +13268,96 @@
       ],
       "coreMissingLanguages": [],
       "fullMissingLanguages": [],
-      "priority": 4
+      "priority": 4,
+      "status": "complete",
+      "updatedAt": "2026-06-23",
+      "langs": {
+        "en": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        },
+        "pt": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        },
+        "es": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        },
+        "ja": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        },
+        "vi": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        }
+      }
     },
     {
       "key": "group-toolkit-competition",
@@ -13087,7 +13631,96 @@
       ],
       "coreMissingLanguages": [],
       "fullMissingLanguages": [],
-      "priority": 4
+      "priority": 4,
+      "status": "complete",
+      "updatedAt": "2026-06-23",
+      "langs": {
+        "en": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        },
+        "pt": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        },
+        "es": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        },
+        "ja": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        },
+        "vi": {
+          "title": true,
+          "desc": true,
+          "note": true,
+          "sections": true,
+          "intro": true,
+          "coreComplete": true,
+          "fullComplete": true,
+          "bodyBlocks": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "missingFields": [],
+          "qualityFlags": []
+        }
+      }
     },
     {
       "key": "group-toolkit-draw",
@@ -13751,94 +14384,8 @@
           "caption": "Group Maker 다시 섞은 결과 화면"
         }
       ],
-      "pathText": "08. Tool Kit 사용하기 > Draw > 17. Group Maker",
-      "translationStatus": {
-        "en": {
-          "title": true,
-          "desc": true,
-          "note": true,
-          "sections": true,
-          "intro": true,
-          "bodies": [
-            true,
-            true,
-            true,
-            true
-          ],
-          "coreComplete": true,
-          "fullComplete": true,
-          "missingFields": [],
-          "qualityFlags": []
-        },
-        "pt": {
-          "title": true,
-          "desc": true,
-          "note": true,
-          "sections": true,
-          "intro": true,
-          "bodies": [
-            true,
-            true,
-            true,
-            true
-          ],
-          "coreComplete": true,
-          "fullComplete": true,
-          "missingFields": [],
-          "qualityFlags": []
-        },
-        "es": {
-          "title": true,
-          "desc": true,
-          "note": true,
-          "sections": true,
-          "intro": true,
-          "bodies": [
-            true,
-            true,
-            true,
-            true
-          ],
-          "coreComplete": true,
-          "fullComplete": true,
-          "missingFields": [],
-          "qualityFlags": []
-        },
-        "ja": {
-          "title": true,
-          "desc": true,
-          "note": true,
-          "sections": true,
-          "intro": true,
-          "bodies": [
-            true,
-            true,
-            true,
-            true
-          ],
-          "coreComplete": true,
-          "fullComplete": true,
-          "missingFields": [],
-          "qualityFlags": []
-        },
-        "vi": {
-          "title": true,
-          "desc": true,
-          "note": true,
-          "sections": true,
-          "intro": true,
-          "bodies": [
-            true,
-            true,
-            true,
-            true
-          ],
-          "coreComplete": true,
-          "fullComplete": true,
-          "missingFields": [],
-          "qualityFlags": []
-        }
-      },
+      "pathText": "toolkit-group-maker/01.png\ntoolkit-group-maker/04.png\ntoolkit-group-maker/05.png\ntoolkit-group-maker/06.png\ntoolkit-group-maker/07.png\ntoolkit-group-maker/09.png",
+      "translationStatus": "full",
       "coreCompleteLanguages": [
         "en",
         "pt",
@@ -13964,22 +14511,22 @@
           "qualityFlags": []
         }
       },
-      "coreCompleteLanguages": [],
-      "fullCompleteLanguages": [],
-      "coreMissingLanguages": [
+      "coreCompleteLanguages": [
         "en",
         "pt",
         "es",
         "ja",
         "vi"
       ],
-      "fullMissingLanguages": [
+      "fullCompleteLanguages": [
         "en",
         "pt",
         "es",
         "ja",
         "vi"
       ],
+      "coreMissingLanguages": [],
+      "fullMissingLanguages": [],
       "priority": 4
     },
     {
@@ -14011,100 +14558,24 @@
           "caption": "Ruler 기본 실행 화면"
         }
       ],
-      "pathText": "08. Tool Kit 사용하기 > Math Tools > 18. Ruler",
-      "translationStatus": {
-        "en": {
-          "title": true,
-          "desc": true,
-          "note": true,
-          "sections": true,
-          "intro": true,
-          "bodies": [
-            true,
-            true
-          ],
-          "coreComplete": true,
-          "fullComplete": true,
-          "missingFields": [],
-          "qualityFlags": []
-        },
-        "pt": {
-          "title": true,
-          "desc": true,
-          "note": true,
-          "sections": true,
-          "intro": true,
-          "bodies": [
-            true,
-            true
-          ],
-          "coreComplete": true,
-          "fullComplete": true,
-          "missingFields": [],
-          "qualityFlags": []
-        },
-        "es": {
-          "title": true,
-          "desc": true,
-          "note": true,
-          "sections": true,
-          "intro": true,
-          "bodies": [
-            true,
-            true
-          ],
-          "coreComplete": true,
-          "fullComplete": true,
-          "missingFields": [],
-          "qualityFlags": []
-        },
-        "ja": {
-          "title": true,
-          "desc": true,
-          "note": true,
-          "sections": true,
-          "intro": true,
-          "bodies": [
-            true,
-            true
-          ],
-          "coreComplete": true,
-          "fullComplete": true,
-          "missingFields": [],
-          "qualityFlags": []
-        },
-        "vi": {
-          "title": true,
-          "desc": true,
-          "note": true,
-          "sections": true,
-          "intro": true,
-          "bodies": [
-            true,
-            true
-          ],
-          "coreComplete": true,
-          "fullComplete": true,
-          "missingFields": [],
-          "qualityFlags": []
-        }
-      },
-      "coreCompleteLanguages": [],
-      "fullCompleteLanguages": [],
-      "coreMissingLanguages": [
+      "pathText": "toolkit-ruler/01.png",
+      "translationStatus": "full",
+      "coreCompleteLanguages": [
         "en",
         "pt",
         "es",
         "ja",
         "vi"
       ],
-      "fullMissingLanguages": [
+      "fullCompleteLanguages": [
         "en",
         "pt",
         "es",
         "ja",
         "vi"
       ],
+      "coreMissingLanguages": [],
+      "fullMissingLanguages": [],
       "priority": 4
     },
     {
@@ -14141,100 +14612,24 @@
           "caption": "Triangle 회전 조작 화면"
         }
       ],
-      "pathText": "08. Tool Kit 사용하기 > Math Tools > 19. Triangle",
-      "translationStatus": {
-        "en": {
-          "title": true,
-          "desc": true,
-          "note": true,
-          "sections": true,
-          "intro": true,
-          "bodies": [
-            true,
-            true
-          ],
-          "coreComplete": true,
-          "fullComplete": true,
-          "missingFields": [],
-          "qualityFlags": []
-        },
-        "pt": {
-          "title": true,
-          "desc": true,
-          "note": true,
-          "sections": true,
-          "intro": true,
-          "bodies": [
-            true,
-            true
-          ],
-          "coreComplete": true,
-          "fullComplete": true,
-          "missingFields": [],
-          "qualityFlags": []
-        },
-        "es": {
-          "title": true,
-          "desc": true,
-          "note": true,
-          "sections": true,
-          "intro": true,
-          "bodies": [
-            true,
-            true
-          ],
-          "coreComplete": true,
-          "fullComplete": true,
-          "missingFields": [],
-          "qualityFlags": []
-        },
-        "ja": {
-          "title": true,
-          "desc": true,
-          "note": true,
-          "sections": true,
-          "intro": true,
-          "bodies": [
-            true,
-            true
-          ],
-          "coreComplete": true,
-          "fullComplete": true,
-          "missingFields": [],
-          "qualityFlags": []
-        },
-        "vi": {
-          "title": true,
-          "desc": true,
-          "note": true,
-          "sections": true,
-          "intro": true,
-          "bodies": [
-            true,
-            true
-          ],
-          "coreComplete": true,
-          "fullComplete": true,
-          "missingFields": [],
-          "qualityFlags": []
-        }
-      },
-      "coreCompleteLanguages": [],
-      "fullCompleteLanguages": [],
-      "coreMissingLanguages": [
+      "pathText": "toolkit-triangle/01.png\ntoolkit-triangle/02.png",
+      "translationStatus": "full",
+      "coreCompleteLanguages": [
         "en",
         "pt",
         "es",
         "ja",
         "vi"
       ],
-      "fullMissingLanguages": [
+      "fullCompleteLanguages": [
         "en",
         "pt",
         "es",
         "ja",
         "vi"
       ],
+      "coreMissingLanguages": [],
+      "fullMissingLanguages": [],
       "priority": 4
     },
     {
@@ -14266,100 +14661,24 @@
           "caption": "Protractor 기본 실행 화면"
         }
       ],
-      "pathText": "08. Tool Kit 사용하기 > Math Tools > 20. Protractor",
-      "translationStatus": {
-        "en": {
-          "title": true,
-          "desc": true,
-          "note": true,
-          "sections": true,
-          "intro": true,
-          "bodies": [
-            true,
-            true
-          ],
-          "coreComplete": true,
-          "fullComplete": true,
-          "missingFields": [],
-          "qualityFlags": []
-        },
-        "pt": {
-          "title": true,
-          "desc": true,
-          "note": true,
-          "sections": true,
-          "intro": true,
-          "bodies": [
-            true,
-            true
-          ],
-          "coreComplete": true,
-          "fullComplete": true,
-          "missingFields": [],
-          "qualityFlags": []
-        },
-        "es": {
-          "title": true,
-          "desc": true,
-          "note": true,
-          "sections": true,
-          "intro": true,
-          "bodies": [
-            true,
-            true
-          ],
-          "coreComplete": true,
-          "fullComplete": true,
-          "missingFields": [],
-          "qualityFlags": []
-        },
-        "ja": {
-          "title": true,
-          "desc": true,
-          "note": true,
-          "sections": true,
-          "intro": true,
-          "bodies": [
-            true,
-            true
-          ],
-          "coreComplete": true,
-          "fullComplete": true,
-          "missingFields": [],
-          "qualityFlags": []
-        },
-        "vi": {
-          "title": true,
-          "desc": true,
-          "note": true,
-          "sections": true,
-          "intro": true,
-          "bodies": [
-            true,
-            true
-          ],
-          "coreComplete": true,
-          "fullComplete": true,
-          "missingFields": [],
-          "qualityFlags": []
-        }
-      },
-      "coreCompleteLanguages": [],
-      "fullCompleteLanguages": [],
-      "coreMissingLanguages": [
+      "pathText": "toolkit-protractor/02.png",
+      "translationStatus": "full",
+      "coreCompleteLanguages": [
         "en",
         "pt",
         "es",
         "ja",
         "vi"
       ],
-      "fullMissingLanguages": [
+      "fullCompleteLanguages": [
         "en",
         "pt",
         "es",
         "ja",
         "vi"
       ],
+      "coreMissingLanguages": [],
+      "fullMissingLanguages": [],
       "priority": 4
     },
     {

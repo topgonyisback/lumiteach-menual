@@ -9,38 +9,38 @@
     },
     "languages": {
       "en": {
-        "coreComplete": 76,
-        "fullComplete": 65,
-        "coreMissing": 35,
-        "fullMissing": 46,
+        "coreComplete": 79,
+        "fullComplete": 68,
+        "coreMissing": 32,
+        "fullMissing": 43,
         "qualityFlags": 0
       },
       "pt": {
-        "coreComplete": 71,
-        "fullComplete": 65,
-        "coreMissing": 40,
-        "fullMissing": 46,
+        "coreComplete": 74,
+        "fullComplete": 68,
+        "coreMissing": 37,
+        "fullMissing": 43,
         "qualityFlags": 0
       },
       "es": {
-        "coreComplete": 71,
-        "fullComplete": 65,
-        "coreMissing": 40,
-        "fullMissing": 46,
+        "coreComplete": 74,
+        "fullComplete": 68,
+        "coreMissing": 37,
+        "fullMissing": 43,
         "qualityFlags": 0
       },
       "ja": {
-        "coreComplete": 71,
-        "fullComplete": 65,
-        "coreMissing": 40,
-        "fullMissing": 46,
+        "coreComplete": 74,
+        "fullComplete": 68,
+        "coreMissing": 37,
+        "fullMissing": 43,
         "qualityFlags": 0
       },
       "vi": {
-        "coreComplete": 71,
-        "fullComplete": 65,
-        "coreMissing": 40,
-        "fullMissing": 46,
+        "coreComplete": 74,
+        "fullComplete": 68,
+        "coreMissing": 37,
+        "fullMissing": 43,
         "qualityFlags": 0
       }
     },
@@ -60,22 +60,22 @@
     ],
     "totalRows": 111,
     "fullCompleteByLanguage": {
-      "en": 65,
-      "pt": 65,
-      "es": 65,
-      "ja": 65,
-      "vi": 65
+      "en": 68,
+      "pt": 68,
+      "es": 68,
+      "ja": 68,
+      "vi": 68
     },
     "coreCompleteByLanguage": {
-      "en": 76,
-      "pt": 71,
-      "es": 71,
-      "ja": 71,
-      "vi": 71
+      "en": 79,
+      "pt": 74,
+      "es": 74,
+      "ja": 74,
+      "vi": 74
     },
     "updatedAt": "2026-06-23",
-    "fullComplete": 65,
-    "incomplete": 46
+    "fullComplete": 68,
+    "incomplete": 43
   },
   "rows": [
     {
@@ -8290,139 +8290,23 @@
         }
       ],
       "pathText": "05. Assignment 내보내기 > Self Study 모드 활용하기 > 1. Individual",
-      "translationStatus": {
-        "en": {
-          "title": true,
-          "desc": false,
-          "note": false,
-          "sections": false,
-          "intro": true,
-          "bodies": [
-            false,
-            false,
-            false
-          ],
-          "coreComplete": false,
-          "fullComplete": false,
-          "missingFields": [
-            "desc",
-            "note",
-            "sections",
-            "body[0]",
-            "body[1]",
-            "body[2]"
-          ],
-          "qualityFlags": []
-        },
-        "pt": {
-          "title": true,
-          "desc": false,
-          "note": false,
-          "sections": false,
-          "intro": true,
-          "bodies": [
-            false,
-            false,
-            false
-          ],
-          "coreComplete": false,
-          "fullComplete": false,
-          "missingFields": [
-            "desc",
-            "note",
-            "sections",
-            "body[0]",
-            "body[1]",
-            "body[2]"
-          ],
-          "qualityFlags": []
-        },
-        "es": {
-          "title": true,
-          "desc": false,
-          "note": false,
-          "sections": false,
-          "intro": true,
-          "bodies": [
-            false,
-            false,
-            false
-          ],
-          "coreComplete": false,
-          "fullComplete": false,
-          "missingFields": [
-            "desc",
-            "note",
-            "sections",
-            "body[0]",
-            "body[1]",
-            "body[2]"
-          ],
-          "qualityFlags": []
-        },
-        "ja": {
-          "title": true,
-          "desc": false,
-          "note": false,
-          "sections": false,
-          "intro": true,
-          "bodies": [
-            false,
-            false,
-            false
-          ],
-          "coreComplete": false,
-          "fullComplete": false,
-          "missingFields": [
-            "desc",
-            "note",
-            "sections",
-            "body[0]",
-            "body[1]",
-            "body[2]"
-          ],
-          "qualityFlags": []
-        },
-        "vi": {
-          "title": true,
-          "desc": false,
-          "note": false,
-          "sections": false,
-          "intro": true,
-          "bodies": [
-            false,
-            false,
-            false
-          ],
-          "coreComplete": false,
-          "fullComplete": false,
-          "missingFields": [
-            "desc",
-            "note",
-            "sections",
-            "body[0]",
-            "body[1]",
-            "body[2]"
-          ],
-          "qualityFlags": []
-        }
-      },
-      "coreCompleteLanguages": [],
-      "fullCompleteLanguages": [],
-      "coreMissingLanguages": [
+      "translationStatus": "full",
+      "coreCompleteLanguages": [
         "en",
         "pt",
         "es",
         "ja",
         "vi"
       ],
-      "fullMissingLanguages": [
+      "fullCompleteLanguages": [
         "en",
         "pt",
         "es",
         "ja",
         "vi"
       ],
+      "coreMissingLanguages": [],
+      "fullMissingLanguages": [],
       "priority": 6
     },
     {
@@ -8482,139 +8366,23 @@
         }
       ],
       "pathText": "05. Assignment 내보내기 > Self Study 모드 활용하기 > 2. Challenge",
-      "translationStatus": {
-        "en": {
-          "title": true,
-          "desc": false,
-          "note": false,
-          "sections": false,
-          "intro": true,
-          "bodies": [
-            false,
-            false,
-            false
-          ],
-          "coreComplete": false,
-          "fullComplete": false,
-          "missingFields": [
-            "desc",
-            "note",
-            "sections",
-            "body[0]",
-            "body[1]",
-            "body[2]"
-          ],
-          "qualityFlags": []
-        },
-        "pt": {
-          "title": true,
-          "desc": false,
-          "note": false,
-          "sections": false,
-          "intro": true,
-          "bodies": [
-            false,
-            false,
-            false
-          ],
-          "coreComplete": false,
-          "fullComplete": false,
-          "missingFields": [
-            "desc",
-            "note",
-            "sections",
-            "body[0]",
-            "body[1]",
-            "body[2]"
-          ],
-          "qualityFlags": []
-        },
-        "es": {
-          "title": true,
-          "desc": false,
-          "note": false,
-          "sections": false,
-          "intro": true,
-          "bodies": [
-            false,
-            false,
-            false
-          ],
-          "coreComplete": false,
-          "fullComplete": false,
-          "missingFields": [
-            "desc",
-            "note",
-            "sections",
-            "body[0]",
-            "body[1]",
-            "body[2]"
-          ],
-          "qualityFlags": []
-        },
-        "ja": {
-          "title": true,
-          "desc": false,
-          "note": false,
-          "sections": false,
-          "intro": true,
-          "bodies": [
-            false,
-            false,
-            false
-          ],
-          "coreComplete": false,
-          "fullComplete": false,
-          "missingFields": [
-            "desc",
-            "note",
-            "sections",
-            "body[0]",
-            "body[1]",
-            "body[2]"
-          ],
-          "qualityFlags": []
-        },
-        "vi": {
-          "title": true,
-          "desc": false,
-          "note": false,
-          "sections": false,
-          "intro": true,
-          "bodies": [
-            false,
-            false,
-            false
-          ],
-          "coreComplete": false,
-          "fullComplete": false,
-          "missingFields": [
-            "desc",
-            "note",
-            "sections",
-            "body[0]",
-            "body[1]",
-            "body[2]"
-          ],
-          "qualityFlags": []
-        }
-      },
-      "coreCompleteLanguages": [],
-      "fullCompleteLanguages": [],
-      "coreMissingLanguages": [
+      "translationStatus": "full",
+      "coreCompleteLanguages": [
         "en",
         "pt",
         "es",
         "ja",
         "vi"
       ],
-      "fullMissingLanguages": [
+      "fullCompleteLanguages": [
         "en",
         "pt",
         "es",
         "ja",
         "vi"
       ],
+      "coreMissingLanguages": [],
+      "fullMissingLanguages": [],
       "priority": 6
     },
     {
@@ -8669,139 +8437,23 @@
         }
       ],
       "pathText": "05. Assignment 내보내기 > Self Study 모드 활용하기 > 3. Flash Card",
-      "translationStatus": {
-        "en": {
-          "title": true,
-          "desc": false,
-          "note": false,
-          "sections": false,
-          "intro": true,
-          "bodies": [
-            false,
-            false,
-            false
-          ],
-          "coreComplete": false,
-          "fullComplete": false,
-          "missingFields": [
-            "desc",
-            "note",
-            "sections",
-            "body[0]",
-            "body[1]",
-            "body[2]"
-          ],
-          "qualityFlags": []
-        },
-        "pt": {
-          "title": true,
-          "desc": false,
-          "note": false,
-          "sections": false,
-          "intro": true,
-          "bodies": [
-            false,
-            false,
-            false
-          ],
-          "coreComplete": false,
-          "fullComplete": false,
-          "missingFields": [
-            "desc",
-            "note",
-            "sections",
-            "body[0]",
-            "body[1]",
-            "body[2]"
-          ],
-          "qualityFlags": []
-        },
-        "es": {
-          "title": true,
-          "desc": false,
-          "note": false,
-          "sections": false,
-          "intro": true,
-          "bodies": [
-            false,
-            false,
-            false
-          ],
-          "coreComplete": false,
-          "fullComplete": false,
-          "missingFields": [
-            "desc",
-            "note",
-            "sections",
-            "body[0]",
-            "body[1]",
-            "body[2]"
-          ],
-          "qualityFlags": []
-        },
-        "ja": {
-          "title": true,
-          "desc": false,
-          "note": false,
-          "sections": false,
-          "intro": true,
-          "bodies": [
-            false,
-            false,
-            false
-          ],
-          "coreComplete": false,
-          "fullComplete": false,
-          "missingFields": [
-            "desc",
-            "note",
-            "sections",
-            "body[0]",
-            "body[1]",
-            "body[2]"
-          ],
-          "qualityFlags": []
-        },
-        "vi": {
-          "title": true,
-          "desc": false,
-          "note": false,
-          "sections": false,
-          "intro": true,
-          "bodies": [
-            false,
-            false,
-            false
-          ],
-          "coreComplete": false,
-          "fullComplete": false,
-          "missingFields": [
-            "desc",
-            "note",
-            "sections",
-            "body[0]",
-            "body[1]",
-            "body[2]"
-          ],
-          "qualityFlags": []
-        }
-      },
-      "coreCompleteLanguages": [],
-      "fullCompleteLanguages": [],
-      "coreMissingLanguages": [
+      "translationStatus": "full",
+      "coreCompleteLanguages": [
         "en",
         "pt",
         "es",
         "ja",
         "vi"
       ],
-      "fullMissingLanguages": [
+      "fullCompleteLanguages": [
         "en",
         "pt",
         "es",
         "ja",
         "vi"
       ],
+      "coreMissingLanguages": [],
+      "fullMissingLanguages": [],
       "priority": 6
     },
     {

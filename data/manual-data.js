@@ -10,7 +10,7 @@ const manualTree = [
     { key: 'group-edit-lesson', title: 'Edit Lesson 사용하기', articles: [{ key: 'edit-lesson-create', title: '1. 신규 Lesson 생성하기' }, { key: 'edit-lesson-rename', title: '2. Lesson 명 변경하기' }, { key: 'edit-lesson-add-activity', title: '3. Activity 추가하기' }, { key: 'edit-lesson-load-storage', title: '4. My Storage로 다른 Lesson 불러오기' }, { key: 'edit-lesson-ai-make', title: '5. AI Make로 Activity 추가하기' }, { key: 'edit-lesson-interaction', title: '6. Interaction 모드로 수업하기' }, { key: 'edit-lesson-presentation', title: '7. Presentation 모드로 수업하기' }, { key: 'edit-lesson-undo-redo', title: '8. Redo / Undo 사용하기' }, { key: 'edit-lesson-preview', title: '9. Preview 확인하기' }, { key: 'edit-lesson-background-color', title: '10. 배경 색 변경하기' }] }
   ] },
   { key: 'cat-assignment', title: '05. Assignment 내보내기', description: 'Self Study 모드와 Assessment 활용', children: [
-    { key: 'group-assessment-run', title: 'Assessment 활용하기', articles: [{ key: 'assessment-create', title: 'Assessment 생성하기' }, { key: 'assessment-questions', title: '평가 문항 추가하기' }, { key: 'assessment-distribute', title: '학생에게 평가 배포하기' }, { key: 'assessment-results', title: '평가 결과 확인하기' }] }
+    { key: 'group-assessment-run', title: 'Assessment 활용하기', articles: [] }
   ] },
   { key: 'setting-curriculum', title: '05. Curriculum', description: '교육과정별 Lesson과 Assessment 탐색', children: [] },
   { key: 'cat-teaching', title: '07. 실시간 수업 진행하기', description: 'Teaching Mode로 참여형 수업 운영', children: [
@@ -71,7 +71,7 @@ const articleTemplates = {
   'group-activities-ai': ['04-B.', 'Activity 추가하기', 'AI로 Activity 만들기', 'AI를 활용해 Activity 초안을 생성하고 수업 목적에 맞게 수정하는 방법을 안내합니다.', 'AI 생성 결과는 초안으로 보고, 교사가 내용과 난이도를 검토한 뒤 사용하는 것이 안전합니다.', ['프롬프트 준비하기', 'AI로 생성하기', '결과 수정하기']],
   'group-assignment-mode': ['05-A.', 'Assignment 내보내기', '과제 방식 선택하기', 'Lesson을 학생에게 과제로 제공할 때 사용할 Assignment 방식을 선택합니다.', 'Individual, Challenge, Flash Card는 목적이 다르므로 학습 목표와 Activity 유형을 함께 보고 선택하세요.', ['모드 차이 이해하기', 'Individual 선택하기', 'Challenge와 Flash Card 비교하기']],
   'group-assignment-policy': ['05-B.', 'Assignment 내보내기', '제출 정책 설정하기', '마감일과 자동 제출 조건을 설정해 과제 운영 기준을 정합니다.', '과제를 배포하기 전에 제출 가능 기간과 자동 제출 정책을 학생에게 명확히 안내하세요.', ['마감일 정하기', '자동 제출 설정하기', '제출 상태 확인하기']],
-  'group-assessment-run': ['05-B.', 'Assignment 내보내기', 'Assessment 활용하기', 'Assessment를 만들고 문항을 추가한 뒤 학생에게 배포하고 결과를 확인합니다.', '평가 목적, 대상 학생, 응시 가능 시간, 문항별 배점을 먼저 정리하면 운영이 안정적입니다.', ['Assessment 생성하기', '문항 추가하기', '결과 확인하기']],
+  'group-assessment-run': ['05-B.', 'Assignment 내보내기', 'Assessment 활용하기', 'Assessment는 Curriculum에서 제공되는 평가지를 학생에게 배정하고, 학생이 자신의 기기에서 정해진 기한 안에 풀어 제출하는 과제형(비동기) 평가 기능입니다.', '이 매뉴얼은 ① 평가지 찾기 → ② 배정(Assign) → ③ 공유 → ④ 학생 응시 → ⑤ 결과 · 리뷰 순서로 설명합니다.', ['평가지 찾기 (Curriculum → Assessment)', '평가지 배정하기 (Assign)', '학생에게 공유하기 (Share Assessment)', '학생 화면 — 응시', '결과 확인 & 리뷰']],
   'group-teaching-mode': ['07-A.', '실시간 수업 진행하기', '수업 모드 사용하기', 'Teaching Mode를 사용해 Lesson을 실시간 수업으로 운영합니다.', '수업 방식에 따라 Interaction, Presentation, Battle Mode를 선택하면 학생 참여 흐름을 다르게 만들 수 있습니다.', ['Teaching Mode 시작하기', '수업 방식 선택하기', '참여 결과 확인하기']],
   'group-reports-results': ['08-A.', '결과 확인하고 리포트 보기', '학습 결과 확인하기', '제출 이력, 학생 답변, 리더보드를 확인하며 학습 결과를 살펴봅니다.', '결과 화면에서는 필터와 제출 상태를 먼저 확인해야 원하는 학생 데이터를 빠르게 찾을 수 있습니다.', ['제출 이력 보기', '학생 답변 확인하기', '리더보드 확인하기']],
   'intro-overview': ['01-1.', 'LumiTeach 시작하기 / 서비스 이해하기', 'LumiTeach가 무엇인지 알아보기', 'LumiTeach는 교사가 AI 기반으로 수업 콘텐츠를 만들고, 학생에게 과제·평가·실시간 수업을 제공할 수 있는 교육 서비스입니다.', '처음 시작하는 교사와 운영자가 서비스의 큰 구조를 이해할 수 있도록 안내합니다.', ['서비스 목적 이해하기', '기본 구조 살펴보기', '사용 흐름 파악하기']],
@@ -107,10 +107,10 @@ const articleTemplates = {
   'assignment-flashcard': ['05-1-4.', 'Assignment 내보내기 / 과제 방식 선택하기', 'Flash Card 과제 내기', 'Quiz Activity 기반으로 학생이 알아요/몰라요 형태로 복습하는 모드입니다.', '학생의 인지 여부를 빠르게 확인하는 복습 활동에 적합합니다.', ['사용 조건 확인하기', '학생 응답 이해하기', '리포트 확인하기']],
   'assignment-deadline': ['05-2-1.', 'Assignment 내보내기 / 제출 정책 설정하기', '마감일 설정하기', '과제 제출 마감일을 설정하고 학생에게 안내합니다.', '마감일은 학생 제출 가능 여부와 자동 제출 정책에 영향을 줄 수 있습니다.', ['마감일 설정하기', '마감일 수정하기', '학생에게 안내하기']],
   'assignment-auto-submit': ['05-2-2.', 'Assignment 내보내기 / 제출 정책 설정하기', '자동 제출 설정하기', '학생이 제출하지 않은 과제를 정해진 조건에 따라 자동 제출 처리합니다.', '자동 제출 정책은 수업 운영 기준에 맞춰 사전에 확인하는 것이 좋습니다.', ['자동 제출 조건 확인하기', '제출 상태 확인하기', '예외 상황 처리하기']],
-  'assessment-create': ['05-2-1.', 'Assignment 내보내기 / Assessment 활용하기', 'Assessment 생성하기', '학생의 이해도를 확인하기 위한 평가를 생성합니다.', '평가 목적, 대상 학생, 배포 일정을 먼저 정리하면 운영이 쉬워집니다.', ['평가 생성하기', '기본 정보 입력하기', '저장하기']],
-  'assessment-questions': ['05-2-2.', 'Assignment 내보내기 / Assessment 활용하기', '평가 문항 추가하기', 'Assessment에 객관식, 주관식 등 평가 문항을 추가합니다.', '문항별 배점과 정답 기준을 함께 설정합니다.', ['문항 유형 선택하기', '정답 설정하기', '배점 입력하기']],
-  'assessment-distribute': ['05-2-3.', 'Assignment 내보내기 / Assessment 활용하기', '학생에게 평가 배포하기', '생성한 Assessment를 학생에게 배포합니다.', '배포 전 공개 범위와 응시 가능 시간을 확인하세요.', ['대상 선택하기', '배포 설정하기', '공개하기']],
-  'assessment-results': ['05-2-4.', 'Assignment 내보내기 / Assessment 활용하기', '평가 결과 확인하기', '학생 제출 결과와 점수를 확인합니다.', '정답률과 문항별 응답을 함께 보면 보충 수업 포인트를 찾을 수 있습니다.', ['점수 확인하기', '문항 분석하기', '리포트 활용하기']],
+  'assessment-create': ['05-2-1.', 'Assignment 내보내기 / Assessment 활용하기', '평가지 찾기', 'Curriculum 화면에서 Assessment 탭을 열고 교육과정 트리와 필터로 배정할 평가지 카드를 찾습니다.', 'Assessment 카드는 제목, 문항 수, 문제 유형, 과목 정보를 함께 보여줍니다.', ['Curriculum으로 이동하기', 'Assessment 탭 선택하기', '평가지 카드 확인하기']],
+  'assessment-questions': ['05-2-2.', 'Assignment 내보내기 / Assessment 활용하기', 'Assessment 배정 설정하기', 'Assessment 카드에서 Assign 창을 열고 제목, Curriculum Details, Due Date, Shuffle Questions, Assigned to를 설정합니다.', '학생에게 배정하기 전 모바일/데스크톱 미리보기와 배포 범위를 확인하세요.', ['미리보기 확인하기', '제목과 Due Date 설정하기', '배포 범위 선택하기']],
+  'assessment-distribute': ['05-2-3.', 'Assignment 내보내기 / Assessment 활용하기', 'Assessment 공유하고 응시하기', 'Share Assessment 창에서 URL, Copy Link, QR Code, Access Code를 학생에게 공유하고 학생 응시 화면을 확인합니다.', '학생은 Nickname을 입력하고 Start를 눌러 각 문항에 답한 뒤 Submit으로 제출합니다.', ['Share Assessment 확인하기', '학생 입장 화면 확인하기', '문제 풀고 제출하기']],
+  'assessment-results': ['05-2-4.', 'Assignment 내보내기 / Assessment 활용하기', '결과 확인하고 리뷰하기', '제출 완료 후 Correct, Wrong, Not Submitted 수와 문항별 결과를 확인하고 상세 리뷰로 이동합니다.', 'Review Mode에서는 학생이 선택한 답과 The correct answer is 영역의 정답을 함께 확인합니다.', ['제출 완료 화면 확인하기', 'Results 그리드 확인하기', 'Review Mode 확인하기']],
   'teaching-overview': ['07-1-1.', '실시간 수업 진행하기 / 수업 모드 사용하기', 'Teaching Mode 시작하기', '교사가 Lesson을 실시간 수업으로 운영하는 모드입니다.', '수업 목적에 따라 Interaction, Presentation, Battle Mode를 선택합니다.', ['수업 시작하기', '모드 선택하기', '학생 참여 확인하기']],
   'teaching-interaction': ['07-1-2.', '실시간 수업 진행하기 / 수업 모드 사용하기', 'Interaction으로 참여 유도하기', '교사와 학생이 실시간으로 활동을 주고받는 수업 모드입니다.', '질문, 응답, 공유가 필요한 수업에 적합합니다.', ['실시간 참여 유도하기', '응답 수집하기', '응답 공유하기']],
   'teaching-presentation': ['07-1-3.', '실시간 수업 진행하기 / 수업 모드 사용하기', 'Presentation으로 수업하기', 'Lesson을 발표 자료처럼 보여주는 수업 모드입니다.', '교사가 흐름을 제어하며 설명 중심 수업을 진행할 수 있습니다.', ['슬라이드 진행하기', '화면 제어하기', '수업 종료하기']],
@@ -736,6 +736,36 @@ if (!manualTree.some((category) => category.key === toolkitCategory.key)) {
   manualTree.splice(reportsCategoryIndex >= 0 ? reportsCategoryIndex : manualTree.length, 0, toolkitCategory);
 }
 
+
+// BEGIN CLASS CATEGORY PATCH
+const classCategory = {
+  key: 'cat-class',
+  title: 'Class 사용하기',
+  description: 'Class별 수업·과제 리포트와 학생 명단 관리',
+  children: [
+    { key: 'class-teaching-report', title: 'Teaching Report 확인하기', articles: [] },
+    { key: 'class-assignment-report', title: 'Assignment Report 확인하기', articles: [] },
+    { key: 'class-management', title: 'Class Management 사용하기', articles: [] }
+  ]
+};
+const existingClassCategoryIndex = manualTree.findIndex((category) => category.key === classCategory.key);
+if (existingClassCategoryIndex >= 0) manualTree.splice(existingClassCategoryIndex, 1);
+const oldReportsCategoryIndex = manualTree.findIndex((category) => category.key === 'cat-reports');
+if (oldReportsCategoryIndex >= 0) {
+  manualTree.splice(oldReportsCategoryIndex, 1, classCategory);
+} else {
+  const storageCategoryIndexForClass = manualTree.findIndex((category) => category.key === 'cat-storage');
+  manualTree.splice(storageCategoryIndexForClass >= 0 ? storageCategoryIndexForClass : manualTree.length, 0, classCategory);
+}
+
+Object.assign(articleTemplates, {
+  'cat-class': ['07.', 'LumiTeach Help Center', 'Class 사용하기', 'Class 메뉴에서 실시간 수업과 과제 결과를 확인하고, 수업에 사용할 학생 명단을 관리하는 방법을 안내합니다.', 'Class는 학생 참여 결과를 보는 리포트 영역과 실제 수업·과제 대상이 되는 학급 관리 영역을 함께 다룹니다.', ['Teaching Report 확인하기', 'Assignment Report 확인하기', 'Class Management 사용하기']],
+  'class-teaching-report': ['07-1.', 'Class 사용하기', 'Teaching Report 확인하기', 'Teaching Report에서 실시간 수업 참여율, 정답률, 완료률과 학생별 활동 현황을 종합적으로 확인합니다.', '수업 목록, 요약 지표, 학생 분포 차트, 학생별 표와 상세 화면을 순서대로 확인합니다.', ['진입 및 필터', '수업 목록', '요약 지표', '학생 분포 차트', 'Student Activity Performance', '학생 상세 화면']],
+  'class-assignment-report': ['07-2.', 'Class 사용하기', 'Assignment Report 확인하기', 'Assignment Report에서 과제로 배포한 과제/평가의 학생별 참여와 결과를 확인합니다.', '과제 목록, 정답률 분포, 학생별 표, Share Assignment, 학생 상세 화면을 순서대로 확인합니다.', ['진입 및 필터', '과제 목록', '정답률 분포', 'Student Activity Performance', '과제 공유', '학생 상세 화면']],
+  'class-management': ['07-3.', 'Class 사용하기', 'Class Management 사용하기', 'Class Management에서 학급을 만들고 학생별 개인 로그인 정보와 QR을 발급·관리합니다.', 'Class 단위 과제 배포와 리포트 추적을 위해 학급, 학생 목록, Student Code, Personal QR Code를 관리합니다.', ['진입 및 필터', '학급 만들기', '학급 카드 & 관리', '학생 목록', '학생 등록', '개인 QR 코드']]
+});
+// END CLASS CATEGORY PATCH
+
 const renumberedCategoryTitles = {
   'cat-reports': '09. 결과 확인하고 리포트 보기',
   'cat-storage': '10. 내 자료 정리하기'
@@ -1154,6 +1184,30 @@ if (storageNumber) {
 }
 
 
+
+// BEGIN CLASS NUMBER PATCH
+const classNumber = categoryNumberMap.get('cat-class')?.replace('.', '');
+if (classNumber) {
+  ['class-teaching-report', 'class-assignment-report', 'class-management'].forEach((key, index) => {
+    if (articleTemplates[key]) articleTemplates[key][0] = classNumber + '-' + String(index + 1) + '.';
+  });
+}
+// END CLASS NUMBER PATCH
+
+// BEGIN ASSIGNMENT NUMBER PATCH
+const assignmentNumber = categoryNumberMap.get('cat-assignment')?.replace('.', '');
+if (assignmentNumber) {
+  if (articleTemplates['group-edit-lesson-self-study']) articleTemplates['group-edit-lesson-self-study'][0] = assignmentNumber + '-A.';
+  if (articleTemplates['group-assessment-run']) articleTemplates['group-assessment-run'][0] = assignmentNumber + '-B.';
+  ['edit-lesson-self-study-individual', 'edit-lesson-self-study-challenge', 'edit-lesson-self-study-flash-card'].forEach((key, index) => {
+    if (articleTemplates[key]) articleTemplates[key][0] = assignmentNumber + '-1-' + String(index + 1) + '.';
+  });
+  ['assessment-create', 'assessment-questions', 'assessment-distribute', 'assessment-results'].forEach((key, index) => {
+    if (articleTemplates[key]) articleTemplates[key][0] = assignmentNumber + '-2-' + String(index + 1) + '.';
+  });
+}
+// END ASSIGNMENT NUMBER PATCH
+
 const articleOrder = manualTree.flatMap((category) => [
   category.key,
   ...category.children.flatMap((group) => [group.key, ...group.articles.map((article) => article.key)])
@@ -1444,7 +1498,7 @@ Object.assign(articleBodies, {
       ],
       "toolkit-card-draw": [
             "[[image:toolkit-card-draw/01.png|Card Draw 화면 1]]\n\n[[image:toolkit-card-draw/02.png|Card Draw 화면 2]]\n\n수업 화면 하단의 도구 모음(Tool Kit)에서 Card Draw 아이콘을 클릭합니다.",
-            "[[image:toolkit-card-draw/03.png|Card Draw 화면 3]]\n\n[[image:toolkit-card-draw/04.png|Card Draw 화면 4]]\n\n상단에서 뽑을 개수와 전체 개수를 설정합니다.\n\n- Pick [N] of [M] : 전체 카드 수(M) 중에서 뽑을 카드 수(N)를 − / + 버튼으로 설정합니다. 최대 50개까지 설정할 수 있습니다(\"You can set up to 50 choices\").\n\n- 각 카드에 항목(option)을 직접 입력하거나, Load Student List 로 학생 명단을 불러올 수 있습니다.\n\n- 설정을 마치면 Set 버튼을 클릭해 카드를 구성합니다.",
+            "[[image:toolkit-card-draw/04.png|Card Draw 화면 3]]\n\n[[image:toolkit-card-draw/04.png|Card Draw 화면 4]]\n\n상단에서 뽑을 개수와 전체 개수를 설정합니다.\n\n- Pick [N] of [M] : 전체 카드 수(M) 중에서 뽑을 카드 수(N)를 − / + 버튼으로 설정합니다. 최대 50개까지 설정할 수 있습니다(\"You can set up to 50 choices\").\n\n- 각 카드에 항목(option)을 직접 입력하거나, Load Student List 로 학생 명단을 불러올 수 있습니다.\n\n- 설정을 마치면 Set 버튼을 클릭해 카드를 구성합니다.",
             "[[image:toolkit-card-draw/05.png|Card Draw 화면 5]]\n\n[[image:toolkit-card-draw/06.png|Card Draw 화면 6]]\n\n뒤집힌 카드들이 펼쳐집니다. Draw 버튼을 클릭하면 설정한 개수만큼 카드가 무작위로 뽑혀 펼쳐집니다.",
             "[[image:toolkit-card-draw/07.png|Card Draw 화면 7]]\n\n[[image:toolkit-card-draw/08.png|Card Draw 화면 8]]\n\n뽑힌 카드의 항목(예: Mason, 또는 Emma·Lily·Mason)이 공개됩니다.\n\n- Redraw : 같은 구성으로 다시 뽑습니다.\n\n- Reset : 처음부터 다시 설정합니다."
       ],
@@ -1664,7 +1718,7 @@ Object.assign(articleBodies, {
 Object.assign(articleBodies, {
       "toolkit-card-draw": [
                 "수업 화면 하단의 도구 모음에서 **Card Draw** 아이콘을 클릭하면 카드 뽑기 설정 화면이 열립니다. Card Draw는 후보 이름이나 항목을 카드로 만든 뒤, 무작위로 한 장 또는 여러 장을 뽑는 도구입니다.\n\n발표자 선정, 순서 정하기, 모둠 대표 뽑기처럼 가볍게 무작위 선택이 필요한 상황에 사용할 수 있습니다.",
-                "[[image:toolkit-card-draw/03.png|Card Draw 후보 목록 설정 화면]]\n\n상단의 **Pick [N] of [M]** 영역에서 전체 카드 수(M) 중 몇 장(N)을 뽑을지 설정합니다. **− / +** 버튼으로 뽑을 카드 수와 전체 카드 수를 조정할 수 있으며, 후보는 최대 **50개**까지 설정할 수 있습니다.\n\n각 입력칸에는 카드에 표시될 이름이나 항목을 직접 작성합니다. 저장된 학생 명단이 있다면 **Load Student List**로 불러올 수 있고, 설정이 끝나면 **Set**을 클릭해 카드 뽑기 화면으로 이동합니다.",
+                "[[image:toolkit-card-draw/04.png|Card Draw 후보 목록 설정 화면]]\n\n상단의 **Pick [N] of [M]** 영역에서 전체 카드 수(M) 중 몇 장(N)을 뽑을지 설정합니다. **− / +** 버튼으로 뽑을 카드 수와 전체 카드 수를 조정할 수 있으며, 후보는 최대 **50개**까지 설정할 수 있습니다.\n\n각 입력칸에는 카드에 표시될 이름이나 항목을 직접 작성합니다. 저장된 학생 명단이 있다면 **Load Student List**로 불러올 수 있고, 설정이 끝나면 **Set**을 클릭해 카드 뽑기 화면으로 이동합니다.",
                 "[[image:toolkit-card-draw/05.png|Card Draw 카드 뽑기 대기 화면]]\n\n**Set**을 클릭하면 입력한 후보 수만큼 카드가 뒤집힌 상태로 펼쳐집니다. 상단에는 현재 설정된 조건이 **Pick 3 of 10**처럼 표시됩니다.\n\n이 화면에서 **Draw**를 클릭하면 설정한 개수만큼 카드가 무작위로 선택됩니다. 카드가 섞이거나 움직이는 중간 화면은 결과 확인에 필수적인 정보가 아니므로, 매뉴얼에서는 뽑기 전 대기 화면과 결과 화면을 중심으로 확인합니다.",
                 "[[image:toolkit-card-draw/08.png|Card Draw 결과 확인 화면]]\n\n뽑기가 완료되면 선택된 카드가 앞면으로 공개되고, 카드 안에 후보 이름이 표시됩니다. 여러 장을 뽑도록 설정한 경우에는 선택된 카드가 나란히 표시됩니다.\n\n- **Redraw** : 같은 후보 구성으로 다시 뽑습니다.\n\n- **Reset** : 현재 설정을 초기화하고 처음 설정 화면으로 돌아갑니다.\n\n같은 후보 목록으로 한 번 더 뽑아야 하면 Redraw를 사용하고, 후보 수나 이름을 바꿔야 할 때는 Reset으로 다시 설정합니다."
       ]
@@ -1801,8 +1855,8 @@ Object.assign(articleBodies, {
     '수업 진행 중에도 My Storage에서 다른 Lesson을 불러올 수 있습니다. 수업 흐름에 따라 즉석에서 콘텐츠를 추가할 때 유용합니다.\n\n- Teaching 화면 상단의 **Load** 버튼을 클릭합니다.\n- **Load** 팝업이 열립니다. 좌측 패널에 My Storage의 폴더 구조가 표시됩니다.\n\n[[image:edit-lesson-load-storage/04.png|Teaching 화면의 Load 팝업]]\n\n- **My Storage**: 전체 폴더 목록 (세번째 폴더, 첫번째 폴더, 네번째 폴더 등)\n- **Favorites**: 즐겨찾기로 등록한 폴더와 Lesson 목록\n- 우측 패널에서 **All** 탭(폴더 + Lesson 전체)과 **Lessons** 탭(Lesson만 필터) 중 원하는 보기를 선택합니다.\n- 상단 **Search** 창을 활용하면 특정 Lesson을 빠르게 검색할 수 있습니다.\n- 원하는 폴더나 Lesson을 선택한 뒤 우측 하단의 **Import** 버튼을 클릭하면 현재 수업에 불러옵니다.\n\n[[image:edit-lesson-load-storage/05.png|Teaching 중 Lesson 선택 후 Import]]'
   ],
   'edit-lesson-ai-make': [
-    '### Step 1. AI Make 시작하기\n\nEdit Lesson 화면에서 **✦ AI Make** 버튼을 클릭합니다. Activity가 없는 빈 화면에서는 중앙의 **✦ AI Make** 버튼을, Activity가 이미 있는 경우에는 좌측 상단의 **✦ AI Make** 버튼을 클릭합니다.\n\n[[image:edit-lesson-ai-make/01.png|Edit Lesson 화면의 AI Make 버튼]]\n\n### Step 2. 파일 업로드\n\n**Make with AI** 팝업이 열리면 **From File** 탭이 기본으로 선택됩니다. 업로드 영역을 클릭하거나 **Upload file** 버튼을 눌러 파일을 선택합니다.\n\n[[image:edit-lesson-ai-make/02.png|Make with AI 팝업의 From File 탭]]\n\n- 지원 형식: **pdf, doc, docx, ppt, pptx**\n- 파일 제한: 1개, 최대 50MB\n\n파일을 선택하면 "Checking file type..." 메시지와 함께 로딩이 시작됩니다.\n\n[[image:edit-lesson-ai-make/03.png|파일 업로드 후 Checking file type 상태]]\n\n### Step 3. 페이지 선택\n\n파일 분석이 완료되면 문서의 페이지 미리보기가 표시됩니다. AI가 참고할 페이지를 선택합니다.\n\n[[image:edit-lesson-ai-make/04.png|파일 분석 후 페이지 미리보기]]\n\n- 한 번에 최대 **30페이지**까지 선택할 수 있습니다.\n- 페이지 선택 후 **Import N Pages** 버튼을 클릭합니다.\n\n[[image:edit-lesson-ai-make/05.png|AI가 참고할 페이지 선택 후 Import]]\n\n### Step 4. Required information 설정\n\n**Activity Composition**에서 생성할 Activity 유형을 선택합니다.\n\n[[image:edit-lesson-ai-make/06.png|Activity Composition 선택]]\n\n- **Full Lesson**: 업로드한 자료를 바탕으로 수업 흐름 전체를 구성합니다.\n- **Quiz**: 학생 이해도를 평가하는 퀴즈 Activity를 생성합니다.\n- **Discussion**: 다양한 의견을 이끌어내는 토론 기반 Activity를 생성합니다.\n\n**Number of activities to Generate**에서 생성할 Activity 수를 설정합니다. Full Lesson 기준 **5~20개** 범위에서 조정할 수 있습니다.\n\n[[image:edit-lesson-ai-make/07.png|Number of activities to Generate 설정]]\n\n### Step 5. Optional 설정 (선택)\n\n**Optional** 섹션에서 추가 설정을 할 수 있습니다.\n\n[[image:edit-lesson-ai-make/08.png|Optional 설정 영역]]\n\n- **Preference**: Grade(학년), Subject(과목), Language(언어) 설정\n- **Difficulty**: Auto(자동) / Basic / Intermediate / Advanced 설정\n- **Topic**: 생성 방향을 안내할 주제를 200자 이내로 입력 (선택사항)\n\n설정 완료 후 **Generate** 버튼을 클릭합니다.\n\n[[image:edit-lesson-ai-make/09.png|Generate 버튼 실행]]\n\n### Step 6. 생성 완료\n\n"**AI is Generating...**" 화면과 함께 AI가 Activity를 생성합니다. 생성이 완료되면 Edit Lesson에 Activity가 자동으로 추가됩니다.\n\n[[image:edit-lesson-ai-make/10.png|AI is Generating 화면]]\n\n생성 중 **Cancel Generating** 버튼을 클릭하면 취소 확인 팝업이 표시됩니다.\n\n[[image:edit-lesson-ai-make/11.png|Cancel Generating 버튼]]\n\n> **"Used AI credits are non-refundable. Are you sure you want to cancel?"**\n> - **Keep**: 생성을 계속 진행합니다.\n> - **Cancel**: 생성을 중단합니다.\n\n[[image:edit-lesson-ai-make/12.png|AI 생성 취소 확인 팝업]]\n\n⚠️ **취소해도 AI 크레딧은 환불되지 않습니다.** 취소 시점까지 진행된 만큼의 크레딧은 이미 소비된 것으로 처리됩니다. 생성을 시작했다면 가급적 완료까지 진행하는 것을 권장합니다.\n\n[[image:edit-lesson-ai-make/13.png|AI 생성 완료 후 Activity 추가]]\n\n생성된 Activity가 마음에 들지 않더라도 언제든지 직접 수정할 수 있습니다. (Service Tip: "Not satisfied with the AI-generated options? You can click to edit them anytime!")\n\n[[image:edit-lesson-ai-make/14.png|AI 생성 결과 수정 안내]]',
-    '**Make with AI** 팝업에서 **Google Drive** 탭을 선택합니다. **Select a file** 창이 열리면 My Drive에서 원하는 파일을 선택합니다.\n\n[[image:edit-lesson-ai-make/15.png|Google Drive 탭에서 파일 선택]]\n\n- Google Drive는 추가 형식도 지원합니다: **pdf, doc, docx, ppt, pptx, odt, rtf, odp, txt**\n- 파일 선택 후 변환 진행률("Converting file N%...")이 표시되며, 완료되면 페이지 미리보기 화면으로 이동합니다.\n\n[[image:edit-lesson-ai-make/16.png|Google Drive 파일 변환 진행률]]\n\n이후 **Step 4~6**은 로컬 파일 방식과 동일합니다.\n\n> ⚠️ AI Make 기능은 **AI 크레딧이 차감**됩니다. 생성 전 하단의 "AI credits will be deducted." 안내를 확인하세요.'
+    '### Step 1. AI Make 시작하기\n\nEdit Lesson 화면에서 **✦ AI Make** 버튼을 클릭합니다. Activity가 없는 빈 화면에서는 중앙의 **✦ AI Make** 버튼을, Activity가 이미 있는 경우에는 좌측 상단의 **✦ AI Make** 버튼을 클릭합니다.\n\n[[image:edit-lesson-ai-make/01.png|Edit Lesson 화면의 AI Make 버튼]]\n\n### Step 2. 파일 업로드\n\n**Make with AI** 팝업이 열리면 **From File** 탭이 기본으로 선택됩니다. 업로드 영역을 클릭하거나 **Upload file** 버튼을 눌러 파일을 선택합니다.\n\n[[image:edit-lesson-ai-make/02.png|Make with AI 팝업의 From File 탭]]\n\n- 지원 형식: **pdf, doc, docx, ppt, pptx**\n- 파일 제한: 1개, 최대 50MB\n\n파일을 선택하면 "Checking file type..." 메시지와 함께 로딩이 시작됩니다.\n\n[[image:edit-lesson-ai-make/04.png|파일 업로드 후 Checking file type 상태]]\n\n### Step 3. 페이지 선택\n\n파일 분석이 완료되면 문서의 페이지 미리보기가 표시됩니다. AI가 참고할 페이지를 선택합니다.\n\n[[image:edit-lesson-ai-make/05.png|파일 분석 후 페이지 미리보기]]\n\n- 한 번에 최대 **30페이지**까지 선택할 수 있습니다.\n- 페이지 선택 후 **Import N Pages** 버튼을 클릭합니다.\n\n[[image:edit-lesson-ai-make/05.png|AI가 참고할 페이지 선택 후 Import]]\n\n### Step 4. Required information 설정\n\n**Activity Composition**에서 생성할 Activity 유형을 선택합니다.\n\n[[image:edit-lesson-ai-make/06.png|Activity Composition 선택]]\n\n- **Full Lesson**: 업로드한 자료를 바탕으로 수업 흐름 전체를 구성합니다.\n- **Quiz**: 학생 이해도를 평가하는 퀴즈 Activity를 생성합니다.\n- **Discussion**: 다양한 의견을 이끌어내는 토론 기반 Activity를 생성합니다.\n\n**Number of activities to Generate**에서 생성할 Activity 수를 설정합니다. Full Lesson 기준 **5~20개** 범위에서 조정할 수 있습니다.\n\n[[image:edit-lesson-ai-make/13.png|Number of activities to Generate 설정]]\n\n### Step 5. Optional 설정 (선택)\n\n**Optional** 섹션에서 추가 설정을 할 수 있습니다.\n\n[[image:edit-lesson-ai-make/07.png|Optional 설정 영역]]\n\n- **Preference**: Grade(학년), Subject(과목), Language(언어) 설정\n- **Difficulty**: Auto(자동) / Basic / Intermediate / Advanced 설정\n- **Topic**: 생성 방향을 안내할 주제를 200자 이내로 입력 (선택사항)\n\n설정 완료 후 **Generate** 버튼을 클릭합니다.\n\n[[image:edit-lesson-ai-make/14.png|Generate 버튼 실행]]\n\n### Step 6. 생성 완료\n\n"**AI is Generating...**" 화면과 함께 AI가 Activity를 생성합니다. 생성이 완료되면 Edit Lesson에 Activity가 자동으로 추가됩니다.\n\n[[image:edit-lesson-ai-make/08.png|AI is Generating 화면]]\n\n생성 중 **Cancel Generating** 버튼을 클릭하면 취소 확인 팝업이 표시됩니다.\n\n[[image:edit-lesson-ai-make/08.png|Cancel Generating 버튼]]\n\n> **"Used AI credits are non-refundable. Are you sure you want to cancel?"**\n> - **Keep**: 생성을 계속 진행합니다.\n> - **Cancel**: 생성을 중단합니다.\n\n[[image:edit-lesson-ai-make/16.png|AI 생성 취소 확인 팝업]]\n\n⚠️ **취소해도 AI 크레딧은 환불되지 않습니다.** 취소 시점까지 진행된 만큼의 크레딧은 이미 소비된 것으로 처리됩니다. 생성을 시작했다면 가급적 완료까지 진행하는 것을 권장합니다.\n\n[[image:edit-lesson-ai-make/09.png|AI 생성 완료 후 Activity 추가]]\n\n생성된 Activity가 마음에 들지 않더라도 언제든지 직접 수정할 수 있습니다. (Service Tip: "Not satisfied with the AI-generated options? You can click to edit them anytime!")\n\n[[image:edit-lesson-ai-make/09.png|AI 생성 결과 수정 안내]]',
+    '**Make with AI** 팝업에서 **Google Drive** 탭을 선택합니다. **Select a file** 창이 열리면 My Drive에서 원하는 파일을 선택합니다.\n\n[[image:edit-lesson-ai-make/10.png|Google Drive 탭에서 파일 선택]]\n\n- Google Drive는 추가 형식도 지원합니다: **pdf, doc, docx, ppt, pptx, odt, rtf, odp, txt**\n- 파일 선택 후 변환 진행률("Converting file N%...")이 표시되며, 완료되면 페이지 미리보기 화면으로 이동합니다.\n\n[[image:edit-lesson-ai-make/11.png|Google Drive 파일 변환 진행률]]\n\n이후 **Step 4~6**은 로컬 파일 방식과 동일합니다.\n\n> ⚠️ AI Make 기능은 **AI 크레딧이 차감**됩니다. 생성 전 하단의 "AI credits will be deducted." 안내를 확인하세요.'
   ],
   'edit-lesson-interaction': [
     'Edit Lesson 화면 우측 상단의 **Start Teaching** 버튼 옆 **∨** 버튼을 클릭하면 수업 모드 드롭다운이 나타납니다. **Interaction**을 선택합니다.\n\n[[image:edit-lesson-interaction/01.png|Start Teaching 드롭다운의 Interaction 선택]]\n\n- **Interaction**: 학생 응답 수신에 유리한 온라인 수업 모드입니다.\n- **Presentation**: 인터넷 연결 없이도 수업할 수 있는 오프라인 모드입니다.\n- **Battle Mode**: 온라인 환경에서만 실행 가능한 배틀 형식의 수업 모드입니다.',
@@ -2168,6 +2222,87 @@ Object.assign(articleBodies, {
 });
 
 
+
+// BEGIN CLASS BODY PATCH
+Object.assign(articleBodies, {
+  "cat-class": [
+    "**Class**는 수업·과제 결과를 한눈에 파악하고 학급과 학생을 관리하는 공간입니다. 상단 메뉴 **Class**에는 세 개의 탭이 있으며, 각각 다음 역할을 합니다.\n\n- **Teaching Report**: 실시간 수업(**Teaching**)의 참여·정답률·활동 현황을 종합적으로 보여줍니다.\n- **Assignment Report**: 과제로 낸 과제/평가의 학생별 참여와 결과를 확인합니다.\n- **Class Management**: 학급을 만들고 학생별 개인 로그인 정보(**Student Code**·QR)를 발급·관리합니다.",
+    "각 탭의 자세한 사용법은 아래 하위 페이지에서 확인합니다. 수업 결과를 확인하려면 **Teaching Report**, 과제 결과를 확인하려면 **Assignment Report**, 학급과 학생 명단을 관리하려면 **Class Management**를 사용하세요."
+  ],
+  "class-teaching-report": [
+    "**Teaching Report**는 실시간으로 진행한 수업(**Teaching**)의 참여도·정답률·완료률과 학생별 활동 현황을 종합적으로 보여주는 리포트입니다(\"Provides a comprehensive view of lesson participation, accuracy rate, and student activity overview\").\n\n[[image:class-teaching-report/01.png|Teaching Report 기본 화면]]",
+    "상단 메뉴 **Class → Teaching Report** 탭에서 확인합니다. 상단 필터로 원하는 수업을 찾을 수 있습니다.\n\n- **Type**: 수업 유형으로 필터링합니다.\n- **Date**: 날짜로 필터링합니다.\n- **검색창**(\"Enter a search term\"): 수업명으로 검색합니다.",
+    "화면 왼쪽에는 진행한 수업 세션이 카드로 나열됩니다. 각 카드는 진행 모드(예: **Interaction**), 수업명(예: Planet Earth Quiz), 일시, 세션 유형(예: Guest Session, Service group)을 보여줍니다. 카드 우측 **⋮** 메뉴에서 **Delete**로 삭제할 수 있습니다.\n\n선택한 수업의 핵심 지표는 상단에 표시됩니다.\n\n- **Participation**: 참여 학생 수(예: 10)\n- **Avg. Accuracy Rate**: 평균 정답률(퀴즈가 없으면 \"No Quiz\"로 표시)\n- **Avg. Completion Rate**: 평균 완료률(예: 90%, \"0.9/1 Activities\")",
+    "[[image:class-teaching-report/04.png|학생 분포 차트]]\n\n정답률(**Accuracy Rate**)과 완료률(**Completion Rate**)을 두 축으로 한 분포 차트로 학생들의 상태를 한눈에 파악합니다. 차트는 네 사분면으로 나뉘며, 전체가 양호하면 \"All students are on track!\"가 표시됩니다.\n\n- **Good**: Accuracy Rate ≥ 50% 그리고 Completion Rate ≥ 50% (초록 — Good Student)\n- **At Risk**: 두 지표 중 하나가 50% 미만 (노랑 — At Risk Student)\n- **Need Attention**: 두 지표 모두 50% 미만 (빨강 — Need Attention Student)\n\n사분면 라벨은 **Low Accuracy, High Completion / Good / Need Attention / High Accuracy, Low Completion**으로 표시됩니다.",
+    "[[image:class-teaching-report/02.png|Student Activity Performance 표]]\n\n학생별 참여 현황은 **Student Activity Performance** 표로 정리됩니다.\n\n- 컬럼: **Name**, **Total Activity**(총 활동 수), **Participation**(참여 여부 — Joined), **Accuracy Rate**, **Completion Rate**\n- 우측 돋보기(🔍)로 학생 상세를 보고, **⋮** 메뉴로 삭제할 수 있습니다.\n\n[[image:class-teaching-report/06.png|Join Time 정렬 옵션]]\n\n정렬 드롭다운으로 **Join Time**(입장 시간) / **Nickname** 정렬을 전환합니다.",
+    "[[image:class-teaching-report/07.png|학생 상세 화면]]\n\n학생을 선택하면 개별 상세 화면이 열립니다. 상단에 해당 학생의 **Accuracy Rate**, **Completion Rate**, **Join Time**이 표시됩니다.\n\n아래 표에는 문항별로 **No**, **Activity Type**(예: General/Image, Board/Whiteboard, Board/Brainstorming, Discussion/Vote, Quiz/Multiple Choice 등), **Submitted Answer**(제출 답), **Result**(정·오답 또는 Skipped), **Q&A**가 표시됩니다. 참여하지 않은 활동은 **Skipped**로 표시됩니다."
+  ],
+  "class-assignment-report": [
+    "**Assignment Report**는 과제로 배포한 과제/평가에 대해 학생별 참여와 결과를 확인하는 리포트입니다(\"View student participation and results for each assignment.\"). 실시간 수업이 아닌, 기한을 정해 내준 비동기 과제의 결과를 다룹니다.\n\n[[image:class-assignment-report/03.png|Assignment Report 기본 화면]]",
+    "상단 메뉴 **Class → Assignment Report** 탭에서 확인합니다. 상단 필터로 과제를 찾을 수 있습니다.\n\n- **Sort**: 정렬 기준을 선택합니다(예: Latest).\n- **Status**: 과제 상태를 선택합니다(예: All).\n- **Type**: 과제 유형을 선택합니다(예: All).\n- **Date**: 날짜 조건을 선택합니다(예: All).\n- 검색창으로 과제를 검색합니다.",
+    "화면 왼쪽에는 배포한 과제 카드가 나열됩니다. 각 카드는 유형 배지(예: **Individual**, **Assessment**), 과제명, 상태(예: ongoing), 배포일과 마감일, 세션 유형(예: Guest Session), 참여 학생 수(예: 5 Students)를 보여줍니다.",
+    "[[image:class-assignment-report/05.png|과제별 정답률 분포]]\n\n선택한 과제의 결과는 오른쪽에 표시됩니다.\n\n- **Average Accuracy**: 평균 정답률(예: 73%, \"26 Quiz\")과 점수 분포 차트를 보여줍니다. 평균선(예: \"avg 73%\")과 함께 학생 분포가 표시됩니다.\n- 범례: **On Track (≥50%)**, **At-risk (<50%)**, Class avg, avg ±10%, Score Distribution\n- **Submission Rate**: 제출한 학생 수\n\n> ⚠️ **Open-Ended**(서술형) 문항은 정답률 산정에서 제외됩니다(\"Open-Ended questions are excluded from accuracy scoring.\").\n\n> 점수 분포(**Score Distribution**)는 **5명 이상**이 제출했을 때 제공됩니다.",
+    "[[image:class-assignment-report/06.png|학생 목록 정렬 옵션]]\n\n**Student Activity Performance** 표에서는 학생별 과제 수행 현황을 확인합니다.\n\n- 컬럼: **Name**, **Total Activity**, **Participation**(Participated), **Accuracy Rate**, **Completion Rate**\n- 우측 돋보기(🔍)로 학생 상세를 보고, **⋮** 메뉴로 삭제합니다.\n- 정렬 드롭다운: **Nickname** / **Submission Time**",
+    "[[image:class-assignment-report/01.png|Share Assignment 창]]\n\n과제를 학생에게 공유할 때는 **Share Assignment** 창을 사용합니다. 과제명과 **Due Date**, 응시 **URL**(예: `https://dev.lumiteach.ai/student?code=5566`), **Copy Link**, **QR Code**, **Access Code**(예: 5566)를 제공합니다.",
+    "[[image:class-assignment-report/09.png|학생별 제출 상세 기록]]\n\n학생을 선택하면 개별 응답 내역이 나타납니다. 상단에 **Accuracy Rate**(예: 73% 19/26), **Completion Rate**(예: 81% 38/43), **Submitted Time**이 표시됩니다.\n\n표 컬럼은 **No**, **Activity Type**(General · Discussion · Quiz(Multiple Choice/True or False/Short Answer/Fill in the Blank/Matching/Sorting/Open-Ended) 등), **Submitted Answer**, **Result**(Correct/Wrong/-), **Status**(Submitted / Not Submitted / -)로 구성됩니다.\n\n**Open-Ended**(서술형) 문항은 자동 채점 대상이 아니므로, Result에서 **Correct / Wrong**를 수동으로 지정할 수 있습니다."
+  ],
+  "class-management": [
+    "**Class Management**는 학급(**Class**)을 만들고, 학생별 개인 로그인 정보(**Student Code**·QR)를 발급·관리하는 곳입니다(\"Manage classes and assign individual login credentials to students.\"). 학급을 만들어 학생을 등록해 두면, 과제를 클래스 단위로 배포하고 리포트로 추적할 수 있습니다.\n\n[[image:class-management/01.png|Class Management 기본 화면]]",
+    "상단 메뉴 **Class → Class Management** 탭에서 확인합니다. 상단 필터로 학급을 찾을 수 있습니다.\n\n- **Year**: 연도(All / 2025 / 2026 / 2027 / 2028)\n- **Grade**: 학년(All / Common / Grade 1–12)\n- **School**: 학교명으로 검색\n\n아직 만든 학급이 없으면 \"No Class Created Yet.\" 안내와 함께 **New Class** 버튼이 표시됩니다.",
+    "[[image:class-management/04.png|Create Class 필수 정보 입력]]\n\n**New Class**를 누르면 **Create Class** 창이 열립니다.\n\n### Required information (필수)\n\n- **Class Code**: 자동 생성됩니다(\"Auto-generated\").\n- **Year**: 연도를 선택합니다(예: 2026).\n- **Grade**: 학년을 선택합니다(Common, Grade 1–12).\n- **Class Name**: 학급 이름을 입력합니다(최대 30자).\n\n[[image:class-management/05.png|Create Class 선택 정보 입력]]\n\n### Optional (선택)\n\n- **School**: 학교명을 입력합니다(최대 50자).\n\n[[image:class-management/06.png|Class 생성 가능 상태]]\n\n필수 항목을 채우면 **Create** 버튼이 활성화되어 학급이 생성됩니다.",
+    "[[image:class-management/07.png|학급 카드와 학생 목록]]\n\n생성된 학급은 왼쪽에 카드로 표시되며, 연도(예: 2026), 학급명(예: Lumi Class), 학교(예: Lumiteach Elementary School), 학년·학생 수(예: Grade 5 (10 Student)), 학급 코드(예: 5ZCWNB)를 보여줍니다.\n\n- 카드 우측 **⋮** 메뉴: **Edit Class Info**(학급 정보 수정) / **Delete**(삭제)\n- 왼쪽 상단 정렬 드롭다운: **Recently Created** / **Recently Used**\n\n[[image:class-management/24.png|Class 카드 더보기 메뉴]]\n\n[[image:class-management/25.png|Class 정렬 옵션]]",
+    "[[image:class-management/10.png|학생 목록 화면]]\n\n오른쪽에는 선택한 학급의 학생 목록이 표시됩니다.\n\n- 정렬 드롭다운(**Nickname** / **Number**)과 검색창(\"Search by nickname or number\")으로 원하는 학생을 찾습니다.\n- 우측 아이콘으로 인쇄·다운로드·삭제를 할 수 있습니다.\n- 아직 학생이 없으면 \"No students registered yet. Please add students.\"가 표시됩니다.\n- 각 학생 행에는 **Student Code**가 점(••••)으로 가려져 있으며, 눈(👁) 아이콘을 누르면 코드(예: 7662)가 드러납니다. QR 아이콘으로 개인 QR을 보고, 휴지통 아이콘으로 삭제합니다.",
+    "[[image:class-management/08.png|Bulk Add 학생 추가 방식 선택]]\n\n**Manage Students** 버튼을 누르면 학생 목록 편집 모드(**Student List Edit mode**)로 전환됩니다.\n\n- **Add Student**: 행을 하나씩 추가해 **Name**과 **Student Code**를 입력합니다. Student Code는 비워두면 자동 생성되며(\"e.g. 1234 (Auto)\"), 직접 입력할 수도 있습니다.\n- **Bulk Add**: 여러 명을 한 번에 추가합니다.\n  - **Import from Past Lesson**: 이전 수업에서 학생을 불러옵니다.\n  - **Upload Excel/CSV**: 엑셀/CSV 파일로 업로드합니다.\n  - **Download Excel Template**: 업로드용 엑셀 템플릿을 다운로드합니다.\n\n입력을 마치면 **Save**로 저장하고, **Manage Students End**로 편집을 종료합니다. 저장 후 각 학생에게 고유 Student Code(예: Ethan 7662)가 부여됩니다.",
+    "[[image:class-management/13.png|Personal QR Code 팝업]]\n\n학생 행의 QR 아이콘을 누르면 **Personal QR Code** 창이 열립니다. QR 코드와 함께 다음 정보가 표시됩니다.\n\n- **Grade**(학년 정보)\n- **Class**(예: Grade 5, Lumi Class)\n- **Class Code**(예: 5ZCWNB)\n- **Student No.**(예: 1)\n- **Student Code**(예: 7662)\n- **Name**(예: Ethan)\n- **Student Home**(예: `https://dev.lumiteach.ai/student`)\n\n**Print**로 인쇄해 학생에게 나눠줄 수 있습니다. 학생은 이 QR 또는 Student Code로 접속해 수업·과제에 참여합니다.",
+    "[[image:class-management/26.png|Year 필터]]\n\n[[image:class-management/27.png|Grade 필터]]\n\nYear와 Grade 필터를 사용하면 특정 학년도와 학년의 Class만 좁혀서 볼 수 있습니다."
+  ]
+});
+// END CLASS BODY PATCH
+
+// BEGIN ASSESSMENT ZIP BODY PATCH
+Object.assign(articleBodies, {
+  "group-assessment-run": [
+    "Assessment는 **Curriculum**에서 제공되는 평가지를 학생에게 배정하고, 학생이 자신의 기기에서 정해진 기한 안에 풀어 제출하는 **과제형(비동기) 평가** 기능입니다. 수업 중 실시간으로 진행하는 Quiz Activity와 달리, 교사가 평가지를 배정하면 학생이 링크·QR·Access Code로 접속해 응시하고, 제출 후 자동 채점과 리뷰까지 이어집니다.\n\n이 문서는 **① 평가지 찾기 → ② 배정(Assign) → ③ 공유 → ④ 학생 응시 → ⑤ 결과·리뷰** 순서로 설명합니다.",
+    "[[image:assessment/01.png|Curriculum의 Assessment 탭]]\n\n상단 메뉴에서 **Curriculum**으로 이동한 뒤, 커리큘럼(예: **NGSS – Next Generation Science Standards**) 화면에서 **Assessment** 탭을 선택합니다. 상단에는 **Lesson / Assessment** 두 개의 탭이 있습니다.\n\n왼쪽 **Curriculum Tree**에서 학교급(**Elementary School / Middle School**)과 학년(**Grade K – Grade 5** 등), 영역(**PS · LS · ESS · ETS** 등)을 선택해 평가지 목록을 걸러봅니다. 상단 드롭다운으로 학년(예: grade All)을 변경할 수 있습니다.\n\n[[image:assessment/02.png|Assessment 카드 목록]]\n\n**Assessment** 탭에는 성취기준(예: \"Forces and Interactions: Pushes and Pulls\")별로 평가지 카드가 나열됩니다. 각 카드는 제목, 문항 수(예: \"13 item(s)\"), 문제 유형(**Multiple Choice**, **Short Answer**, **True or False**, **fill in the blank** 등), 과목(예: Science)을 보여줍니다. **Change Curriculum** 버튼으로 다른 커리큘럼으로 전환할 수 있습니다.",
+    "[[image:assessment/03.png|Assessment Assign 창]]\n\n평가지 카드를 클릭하면 배정 창이 열립니다. 왼쪽에서는 문제 미리보기, 오른쪽에서는 배정 설정을 합니다.\n\n왼쪽 미리보기 영역에서는 모바일 / 데스크톱 보기를 전환하며 학생에게 어떻게 보일지 확인합니다. **‹ / ›** 버튼으로 문항을 넘겨볼 수 있습니다.\n\n[[image:assessment/04.png|Assessment 미리보기 데스크톱 보기]]\n\n오른쪽 설정 영역에서는 제목, 교육과정 정보, 제출 기한, 문제 섞기, 배포 범위를 설정합니다.",
+    "[[image:assessment/07.png|Assessment 제목 수정]]\n\n제목 옆 연필 아이콘을 누르면 제목을 편집할 수 있으며, **Cancel / Save**로 취소하거나 저장합니다.\n\n[[image:assessment/06.png|Curriculum Details 펼침]]\n\n**Curriculum Details**를 펼치면 이 평가지가 연결된 교육과정 정보를 확인할 수 있습니다. **School Level**(예: Elementary School), **Grade**(예: Grade K), **Domain**(예: PS), **Cluster**(예: Forces and Interactions: Pushes and Pulls), **Standard**(예: K-PS2-1, K-PS2-2 등)을 포함합니다.\n\n**Due Date**에서는 제출 기한을 날짜와 시간(예: 06/26/2026, 11:00 PM)으로 지정합니다. **Shuffle Questions**를 켜면 학생마다 문제 순서가 무작위로 제공됩니다(\"Each student will receive the questions in a different random order.\").",
+    "[[image:assessment/05.png|Assigned to 옵션]]\n\n**Assigned to**에서 배포 범위를 선택합니다.\n\n- **Public Link (Guest Access)**: 링크를 가진 누구나 접근할 수 있는 공개 배포입니다.\n- **Class Only (Private Access)**: 클래스 명단의 학생에게만 배포되며, 개인 QR 코드 또는 고유 Access Code로 접속합니다(\"Distributed only to students on the class list...\").\n\n설정을 마치면 오른쪽 아래 **Assign** 버튼을 눌러 배정을 완료합니다.",
+    "[[image:assessment/08.png|Share Assessment 창]]\n\n배정이 완료되면 **Share Assessment** 창이 열리며, 아래 방법으로 학생에게 전달합니다.\n\n- 평가지 제목과 **Due Date**가 표시됩니다.\n- **URL**: 응시 링크(예: `https://dev.lumiteach.ai/student?code=6326`)가 제공됩니다. **Copy Link**로 복사합니다.\n- **QR Code**: QR 코드로 공유할 수 있습니다.\n- **Access Code**: 학생이 입력해 입장하는 코드(예: 6326)입니다.",
+    "[[image:assessment/09.png|학생 Assessment 입장 화면]]\n\n학생이 링크·코드로 접속하면 **Nickname**(예: Lumi), **Assessment** 제목과 문항 수(예: 13 item(s)), 첫 문제 미리보기, 제출 기한(예: \"Until 2026.06.26. 11:00 PM\")이 표시됩니다. **Start** 버튼을 눌러 응시를 시작합니다.\n\n[[image:assessment/10.png|객관식 문항 화면]]\n\n문제 풀이 화면에서는 왼쪽에 문제 번호와 문제가, 오른쪽에 답변 입력 영역이 나타납니다. 하단의 **N/13** 표시와 **‹ / ›**로 문항을 이동합니다.\n\n- 객관식(**Multiple Choice**): \"Choose your answer\"에서 보기를 선택합니다.\n- 단답형(**Short Answer**): \"Write your Answer\" 입력칸에 직접 답을 작성합니다.\n\n[[image:assessment/12.png|단답형 문항 화면]]\n\n문제를 풀고 **Submit**으로 제출합니다. **True or False**, **fill in the blank** 등 다양한 유형이 포함될 수 있습니다.",
+    "[[image:assessment/15.png|Assessment 제출 완료 화면]]\n\n모든 문항을 제출하면 \"Your submission has been completed.\" 안내와 함께 결과가 요약됩니다. 상단에 **Correct**(정답) / **Wrong**(오답) / **Not Submitted**(미제출) 개수가 표시되고, **Results** 그리드에 문항 번호(1–13)별로 ✓(정답) / ✕(오답) 표시가 나타납니다.\n\n**View Detailed Review**로 상세 리뷰를 보거나, **Go to Home**으로 홈으로 이동합니다.",
+    "[[image:assessment/13.png|Review Mode 오답 화면]]\n\n**View Detailed Review**를 누르면 문항별 리뷰 화면(**Review Mode**)으로 이동합니다. 각 문항 상단에 문제 번호와 **Correct / Wrong** 배지가 표시되고, 학생이 선택한 답이 강조됩니다. 오른쪽 결과 카드에 \"The correct answer is\"와 함께 정답이 표시됩니다.\n\n[[image:assessment/14.png|Review Mode 정답 화면]]\n\n오답이면 주황색 **Wrong**, 정답이면 초록색 **Correct!**로 표시됩니다. 하단의 **‹ N/13 ›**로 문항을 이동하거나 **Back to Results**로 결과 요약 화면으로 돌아갑니다."
+  ],
+  "assessment-create": [
+    "[[image:assessment/01.png|Curriculum의 Assessment 탭]]\n\n상단 메뉴에서 **Curriculum**으로 이동한 뒤 **Assessment** 탭을 선택합니다. 왼쪽 **Curriculum Tree**에서 학교급, 학년, 영역을 선택하면 조건에 맞는 Assessment 카드가 표시됩니다.",
+    "[[image:assessment/02.png|Assessment 카드 목록]]\n\nAssessment 카드는 제목, 문항 수, 문제 유형, 과목 정보를 함께 보여줍니다. 배정하려는 평가지 카드를 클릭하면 Assign 창이 열립니다."
+  ],
+  "assessment-questions": [
+    "[[image:assessment/03.png|Assessment Assign 창]]\n\nAssessment 카드를 클릭하면 배정 창이 열립니다. 왼쪽에서는 모바일/데스크톱 미리보기를 확인하고, 오른쪽에서는 제목, Due Date, Shuffle Questions, Assigned to를 설정합니다.",
+    "[[image:assessment/06.png|Curriculum Details 펼침]]\n\n**Curriculum Details**를 펼쳐 School Level, Grade, Domain, Cluster, Standard 정보를 확인합니다.\n\n[[image:assessment/05.png|Assigned to 옵션]]\n\n**Public Link (Guest Access)** 또는 **Class Only (Private Access)** 중 배포 범위를 선택한 뒤 **Assign**을 클릭합니다."
+  ],
+  "assessment-distribute": [
+    "[[image:assessment/08.png|Share Assessment 창]]\n\n배정이 완료되면 **Share Assessment** 창이 열립니다. 학생에게 URL, Copy Link, QR Code, Access Code를 공유합니다.",
+    "[[image:assessment/09.png|학생 Assessment 입장 화면]]\n\n학생은 링크 또는 Access Code로 접속한 뒤 Nickname을 입력하고 **Start**를 눌러 응시를 시작합니다.\n\n[[image:assessment/10.png|객관식 문항 화면]]\n\n객관식 문항은 보기 중 답을 선택하고, 단답형 문항은 입력칸에 직접 답을 작성한 뒤 **Submit**으로 제출합니다."
+  ],
+  "assessment-results": [
+    "[[image:assessment/15.png|Assessment 제출 완료 화면]]\n\n제출이 완료되면 Correct, Wrong, Not Submitted 개수와 문항별 결과 그리드가 표시됩니다. **View Detailed Review**를 눌러 상세 리뷰로 이동합니다.",
+    "[[image:assessment/13.png|Review Mode 오답 화면]]\n\nReview Mode에서는 학생이 선택한 답과 정답을 문항별로 확인합니다. 오답이면 **Wrong**, 정답이면 **Correct!**로 표시됩니다.\n\n[[image:assessment/14.png|Review Mode 정답 화면]]\n\n하단의 **‹ N/13 ›**로 문항을 이동하거나 **Back to Results**로 결과 요약 화면으로 돌아갑니다."
+  ]
+});
+// END ASSESSMENT ZIP BODY PATCH
+
+// BEGIN ASSESSMENT SOURCE BODY CORRECTION
+Object.assign(articleBodies, {
+  "group-assessment-run": [
+    "[[image:assessment/01.png|Curriculum의 Assessment 탭]]\n\n상단 메뉴에서 **Curriculum**으로 이동한 뒤, 커리큘럼(예: **NGSS – Next Generation Science Standards**) 화면에서 **Assessment** 탭을 선택합니다. 상단에는 **Lesson / Assessment** 두 개의 탭이 있습니다.\n\n왼쪽 **Curriculum Tree**에서 학교급(**Elementary School / Middle School**)과 학년(**Grade K – Grade 5** 등), 영역(**PS · LS · ESS · ETS** 등)을 선택해 평가지 목록을 걸러봅니다. 상단 드롭다운으로 학년(예: grade All)을 변경할 수 있습니다.\n\n[[image:assessment/02.png|Assessment 카드 목록]]\n\n**Assessment** 탭에는 성취기준(예: \"Forces and Interactions: Pushes and Pulls\")별로 평가지 카드가 나열됩니다. 각 카드는 제목, 문항 수(예: \"13 item(s)\"), 문제 유형(**Multiple Choice**, **Short Answer**, **True or False**, **fill in the blank** 등), 과목(예: Science)을 보여줍니다.\n\n**Change Curriculum** 버튼으로 다른 커리큘럼으로 전환할 수 있습니다.",
+    "[[image:assessment/03.png|Assessment 배정 창]]\n\n평가지 카드를 클릭하면 배정 창이 열립니다. 왼쪽에서는 문제 미리보기, 오른쪽에서는 배정 설정을 합니다.\n\n왼쪽 미리보기 영역에서 모바일 / 데스크톱 보기를 전환하며 학생에게 어떻게 보일지 확인합니다. **‹ / ›** 버튼으로 문항을 넘겨볼 수 있습니다.\n\n[[image:assessment/04.png|문제 미리보기 화면]]\n\n오른쪽 설정 영역에서는 제목, 교육과정 정보, 제출 기한, 문제 섞기, 배포 범위를 설정합니다.\n\n[[image:assessment/07.png|제목 수정 상태]]\n\n제목 옆 연필 아이콘을 누르면 제목을 편집할 수 있으며, **Cancel / Save**로 취소하거나 저장합니다.\n\n[[image:assessment/06.png|Curriculum Details 펼침]]\n\n**Curriculum Details**를 펼쳐 이 평가지가 연결된 교육과정 정보를 확인합니다. **School Level**(예: Elementary School), **Grade**(예: Grade K), **Domain**(예: PS), **Cluster**(예: Forces and Interactions: Pushes and Pulls), **Standard**(예: K-PS2-1, K-PS2-2 등)을 포함합니다.\n\n**Due Date**에서는 제출 기한을 날짜와 시간(예: 06/26/2026, 11:00 PM)으로 지정합니다. **Shuffle Questions**를 켜면 학생마다 문제 순서가 무작위로 제공됩니다(\"Each student will receive the questions in a different random order.\").\n\n[[image:assessment/05.png|Assigned to 옵션]]\n\n**Assigned to**에서 배포 범위를 선택합니다.\n\n- **Public Link (Guest Access)**: 링크를 가진 누구나 접근할 수 있는 공개 배포입니다.\n- **Class Only (Private Access)**: 클래스 명단의 학생에게만 배포되며, 개인 QR 코드 또는 고유 Access Code로 접속합니다(\"Distributed only to students on the class list...\").\n\n설정을 마치면 오른쪽 아래 **Assign** 버튼을 눌러 배정을 완료합니다.",
+    "[[image:assessment/08.png|Share Assessment 창]]\n\n배정이 완료되면 **Share Assessment** 창이 열리며, 아래 방법으로 학생에게 전달합니다.\n\n- 평가지 제목과 **Due Date**가 표시됩니다.\n- **URL**: 응시 링크(예: `https://dev.lumiteach.ai/student?code=6326`)가 제공됩니다. **Copy Link**로 복사합니다.\n- **QR Code**: QR 코드로 공유할 수 있습니다.\n- **Access Code**: 학생이 입력해 입장하는 코드(예: 6326)입니다.",
+    "[[image:assessment/09.png|학생 입장 화면]]\n\n학생이 링크·코드로 접속하면 **Nickname**(예: Lumi), **Assessment** 제목과 문항 수(예: 13 item(s)), 첫 문제 미리보기, 그리고 제출 기한(예: \"Until 2026.06.26. 11:00 PM\")이 표시됩니다. **Start** 버튼을 눌러 응시를 시작합니다.\n\n[[image:assessment/10.png|객관식 문항 화면]]\n\n문제 풀이 화면에서는 왼쪽에 문제 번호와 문제가, 오른쪽에 답변 입력 영역이 나타납니다. 하단의 **N/13** 표시와 **‹ / ›**로 문항을 이동합니다.\n\n- 객관식(**Multiple Choice**): \"Choose your answer\"에서 보기를 선택합니다. 예: \"Steam is an example of a___\" → gas / food / solid / liquid\n- 단답형(**Short Answer**): \"Write your Answer\" 입력칸에 직접 답을 작성합니다. 예: \"Rain falls from___.\" → Cloud\n\n[[image:assessment/12.png|단답형 문항 화면]]\n\n문제를 풀고 **Submit**으로 제출합니다. **True or False**, **fill in the blank** 등 다양한 유형이 포함될 수 있습니다.",
+    "[[image:assessment/15.png|제출 완료 화면]]\n\n모든 문항을 제출하면 \"Your submission has been completed.\" 안내와 함께 결과가 요약됩니다.\n\n상단에 **Correct**(정답) / **Wrong**(오답) / **Not Submitted**(미제출) 개수가 표시됩니다. **Results** 그리드에 문항 번호(1–13)별로 ✓(정답) / ✕(오답) 표시가 나타납니다.\n\n**View Detailed Review**로 상세 리뷰를 보거나, **Go to Home**으로 홈으로 이동합니다.\n\n[[image:assessment/13.png|Review Mode 오답 화면]]\n\n**View Detailed Review**를 누르면 문항별 리뷰 화면(**Review Mode**)으로 이동합니다. 각 문항 상단에 문제 번호와 **Correct / Wrong** 배지가 표시되고, 학생이 선택한 답이 강조됩니다. 오른쪽 결과 카드에 \"The correct answer is\"와 함께 정답이 표시됩니다.\n\n[[image:assessment/14.png|Review Mode 정답 화면]]\n\n오답이면 주황색 **Wrong**, 정답이면 초록색 **Correct!**로 표시됩니다. 하단의 **‹ N/13 ›**로 문항을 이동하거나 **Back to Results**로 결과 요약 화면으로 돌아갑니다."
+  ]
+});
+// END ASSESSMENT SOURCE BODY CORRECTION
+
 const categories = manualTree.map((category) => ({
   title: category.title,
   description: category.description,
@@ -2463,3 +2598,37 @@ Object.assign(hubCovers, {
 });
 
 // END TOOL KIT VISUAL PATCH
+
+
+// BEGIN CLASS VISUAL PATCH
+Object.assign(hubDescriptions, {
+  'cat-class': 'Class별 수업·과제 리포트와 학생 명단 관리 흐름을 확인합니다.',
+  'class-teaching-report': '실시간 수업 참여율, 정확도, 완료율과 학생별 Activity 기록을 확인합니다.',
+  'class-assignment-report': '과제 제출률, 평균 정확도, 학생별 제출 상세 결과를 확인합니다.',
+  'class-management': 'Class를 생성하고 학생 명단, QR Code, Class 정보 수정과 필터를 관리합니다.'
+});
+
+Object.assign(hubVisuals, {
+  'cat-class': { icon: 'CL', bg: 'linear-gradient(135deg, #eaf1ff, #f6f9ff)', color: '#204cff', size: '34px' },
+  'class-teaching-report': { icon: 'TR', bg: 'linear-gradient(135deg, #eaf1ff, #e9fff6)', color: '#0f7f78', size: '34px' },
+  'class-assignment-report': { icon: 'AR', bg: 'linear-gradient(135deg, #e6f0ff, #f6f9ff)', color: '#204cff', size: '34px' },
+  'class-management': { icon: 'CM', bg: 'linear-gradient(135deg, #f7f7f6, #eaf1ff)', color: '#233a78', size: '34px' }
+});
+
+Object.assign(hubCovers, {
+  'cat-class': { icon: 'CL', bg: 'linear-gradient(135deg, #eaf1ff, #f6f9ff)', color: '#204cff', size: '54px' },
+  'class-teaching-report': { icon: 'TR', bg: 'linear-gradient(135deg, #eaf1ff, #e9fff6)', color: '#0f7f78', size: '54px' },
+  'class-assignment-report': { icon: 'AR', bg: 'linear-gradient(135deg, #e6f0ff, #f6f9ff)', color: '#204cff', size: '54px' },
+  'class-management': { icon: 'CM', bg: 'linear-gradient(135deg, #f7f7f6, #eaf1ff)', color: '#233a78', size: '54px' }
+});
+// END CLASS VISUAL PATCH
+
+// BEGIN ASSESSMENT ZIP VISUAL PATCH
+Object.assign(hubDescriptions, {
+  'group-assessment-run': 'Curriculum에서 제공되는 Assessment를 찾아 Assign하고, Share Assessment와 학생 응시, 결과 리뷰까지 확인합니다.',
+  'assessment-create': 'Curriculum의 Assessment 탭과 Curriculum Tree에서 배정할 평가지 카드를 찾습니다.',
+  'assessment-questions': 'Assign 창에서 미리보기, Curriculum Details, Due Date, Shuffle Questions, Assigned to를 설정합니다.',
+  'assessment-distribute': 'Share Assessment 창에서 URL, QR Code, Access Code를 공유하고 학생 응시 화면을 확인합니다.',
+  'assessment-results': '제출 완료 화면과 Review Mode에서 Correct/Wrong 결과와 정답 리뷰를 확인합니다.'
+});
+// END ASSESSMENT ZIP VISUAL PATCH

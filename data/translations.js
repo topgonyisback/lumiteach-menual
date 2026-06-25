@@ -5652,8 +5652,8 @@ Object.assign(translations.en.articleBodies, {
       "When setup is complete, the Interaction class screen opens.\n\n[[image:edit-lesson-interaction/04.png|Interaction class screen]]\n\n- **Upper left — Access Code**: The code students enter when they access LumiTeach. Share this code with students so they can join the class.\n- **Upper right — Instructor View**: Opens the instructor view, where teachers can check slide previews, timers, and student questions at a glance.\n- **Upper right — End Lesson**: Ends the class.\n- **Bottom slide navigation (< 1/5 >)**: Moves to the previous or next slide.\n- **Bottom right — number of students**: Shows the number of students currently participating in the class in real time."
     ],
     'edit-lesson-ai-make': [
-      "### Step 1. Start AI Make\n\nOn the Edit Lesson screen, click **✦ AI Make**. If the screen is empty and has no Activity yet, click the **✦ AI Make** button in the center. If Activities already exist, click **✦ AI Make** in the upper-left corner.\n\n[[image:edit-lesson-ai-make/01.png|AI Make button on the Edit Lesson screen]]\n\n### Step 2. Upload a file\n\nWhen the **Make with AI** popup opens, the **From File** tab is selected by default. Click the upload area or click **Upload file** to choose a file.\n\n[[image:edit-lesson-ai-make/02.png|From File tab in the Make with AI popup]]\n\n- Supported file format: **pdf, doc, docx, ppt, pptx**\n- File limit: 1 file, up to 50 MB\n\nAfter you select a file, loading starts with the \"Checking file type...\" message.\n\n[[image:edit-lesson-ai-make/03.png|Checking file type state after uploading a file]]\n\n### Step 3. Select pages\n\nWhen file analysis is complete, page previews of the document appear. Select the pages that AI should use as reference.\n\n[[image:edit-lesson-ai-make/04.png|Page previews after file analysis]]\n\n- You can select up to **30 pages** at a time.\n- After selecting pages, click **Import N Pages**.\n\n[[image:edit-lesson-ai-make/05.png|Import after selecting pages for AI reference]]\n\n### Step 4. Set Required information\n\nIn **Activity Composition**, choose the Activity type to generate.\n\n[[image:edit-lesson-ai-make/06.png|Select Activity Composition]]\n\n- **Full Lesson**: Builds the full class flow based on the uploaded material.\n- **Quiz**: Creates a Quiz Activity for checking student understanding.\n- **Discussion**: Creates a discussion-based Activity that encourages different opinions.\n\nIn **Number of activities to Generate**, set how many Activities to create. For Full Lesson, you can adjust the number within the **5 to 20** range.\n\n[[image:edit-lesson-ai-make/07.png|Set Number of activities to Generate]]\n\n### Step 5. Set Optional options\n\nYou can configure additional options in the **Optional** section.\n\n[[image:edit-lesson-ai-make/08.png|Optional settings area]]\n\n- **Preference**: Set Grade, Subject, and Language.\n- **Difficulty**: Choose Auto, Basic, Intermediate, or Advanced.\n- **Topic**: Enter an optional topic within 200 characters to guide the generation direction.\n\nAfter completing the settings, click **Generate**.\n\n[[image:edit-lesson-ai-make/09.png|Run the Generate button]]\n\n### Step 6. Complete generation\n\nThe \"**AI is Generating...**\" screen appears while AI creates the Activities. When generation is complete, the Activities are automatically added to Edit Lesson.\n\n[[image:edit-lesson-ai-make/10.png|AI is Generating screen]]\n\nIf you click **Cancel Generating** during generation, a cancellation confirmation popup appears.\n\n[[image:edit-lesson-ai-make/11.png|Cancel Generating button]]\n\n> **\"Used AI credits are non-refundable. Are you sure you want to cancel?\"**\n> - **Keep**: Continue generation.\n> - **Cancel**: Stop generation.\n\n[[image:edit-lesson-ai-make/12.png|AI generation cancellation confirmation popup]]\n\n⚠️ **AI credits are not refunded even if you cancel.** Credits used up to the cancellation point are treated as already consumed. Once generation has started, it is generally recommended to let it finish.\n\n[[image:edit-lesson-ai-make/13.png|Activities added after AI generation is complete]]\n\nEven if you are not satisfied with the generated Activities, you can edit them directly at any time. (Service Tip: \"Not satisfied with the AI-generated options? You can click to edit them anytime!\")\n\n[[image:edit-lesson-ai-make/14.png|Guide to editing AI-generated results]]",
-      "In the **Make with AI** popup, select the **Google Drive** tab. When the **Select a file** window opens, choose the file you want from My Drive.\n\n[[image:edit-lesson-ai-make/15.png|Select a file from the Google Drive tab]]\n\n- Google Drive also supports additional formats: **pdf, doc, docx, ppt, pptx, odt, rtf, odp, txt**\n- After you select a file, the conversion progress appears as \"Converting file N%...\". When conversion is complete, you move to the page preview screen.\n\n[[image:edit-lesson-ai-make/16.png|Google Drive file conversion progress]]\n\nAfter that, **Steps 4 to 6** are the same as the local file method.\n\n> ⚠️ AI Make **deducts AI credits**. Before generating, check the \"AI credits will be deducted.\" notice at the bottom."
+      "### Step 1. Start AI Make\n\nOn the Edit Lesson screen, click **✦ AI Make**. If the screen is empty and has no Activity yet, click the **✦ AI Make** button in the center. If Activities already exist, click **✦ AI Make** in the upper-left corner.\n\n[[image:edit-lesson-ai-make/01.png|AI Make button on the Edit Lesson screen]]\n\n### Step 2. Upload a file\n\nWhen the **Make with AI** popup opens, the **From File** tab is selected by default. Click the upload area or click **Upload file** to choose a file.\n\n[[image:edit-lesson-ai-make/02.png|From File tab in the Make with AI popup]]\n\n- Supported file format: **pdf, doc, docx, ppt, pptx**\n- File limit: 1 file, up to 50 MB\n\nAfter you select a file, loading starts with the \"Checking file type...\" message.\n\n[[image:edit-lesson-ai-make/04.png|Checking file type state after uploading a file]]\n\n### Step 3. Select pages\n\nWhen file analysis is complete, page previews of the document appear. Select the pages that AI should use as reference.\n\n[[image:edit-lesson-ai-make/05.png|Page previews after file analysis]]\n\n- You can select up to **30 pages** at a time.\n- After selecting pages, click **Import N Pages**.\n\n[[image:edit-lesson-ai-make/05.png|Import after selecting pages for AI reference]]\n\n### Step 4. Set Required information\n\nIn **Activity Composition**, choose the Activity type to generate.\n\n[[image:edit-lesson-ai-make/06.png|Select Activity Composition]]\n\n- **Full Lesson**: Builds the full class flow based on the uploaded material.\n- **Quiz**: Creates a Quiz Activity for checking student understanding.\n- **Discussion**: Creates a discussion-based Activity that encourages different opinions.\n\nIn **Number of activities to Generate**, set how many Activities to create. For Full Lesson, you can adjust the number within the **5 to 20** range.\n\n[[image:edit-lesson-ai-make/13.png|Set Number of activities to Generate]]\n\n### Step 5. Set Optional options\n\nYou can configure additional options in the **Optional** section.\n\n[[image:edit-lesson-ai-make/07.png|Optional settings area]]\n\n- **Preference**: Set Grade, Subject, and Language.\n- **Difficulty**: Choose Auto, Basic, Intermediate, or Advanced.\n- **Topic**: Enter an optional topic within 200 characters to guide the generation direction.\n\nAfter completing the settings, click **Generate**.\n\n[[image:edit-lesson-ai-make/14.png|Run the Generate button]]\n\n### Step 6. Complete generation\n\nThe \"**AI is Generating...**\" screen appears while AI creates the Activities. When generation is complete, the Activities are automatically added to Edit Lesson.\n\n[[image:edit-lesson-ai-make/08.png|AI is Generating screen]]\n\nIf you click **Cancel Generating** during generation, a cancellation confirmation popup appears.\n\n[[image:edit-lesson-ai-make/08.png|Cancel Generating button]]\n\n> **\"Used AI credits are non-refundable. Are you sure you want to cancel?\"**\n> - **Keep**: Continue generation.\n> - **Cancel**: Stop generation.\n\n[[image:edit-lesson-ai-make/16.png|AI generation cancellation confirmation popup]]\n\n⚠️ **AI credits are not refunded even if you cancel.** Credits used up to the cancellation point are treated as already consumed. Once generation has started, it is generally recommended to let it finish.\n\n[[image:edit-lesson-ai-make/09.png|Activities added after AI generation is complete]]\n\nEven if you are not satisfied with the generated Activities, you can edit them directly at any time. (Service Tip: \"Not satisfied with the AI-generated options? You can click to edit them anytime!\")\n\n[[image:edit-lesson-ai-make/09.png|Guide to editing AI-generated results]]",
+      "In the **Make with AI** popup, select the **Google Drive** tab. When the **Select a file** window opens, choose the file you want from My Drive.\n\n[[image:edit-lesson-ai-make/10.png|Select a file from the Google Drive tab]]\n\n- Google Drive also supports additional formats: **pdf, doc, docx, ppt, pptx, odt, rtf, odp, txt**\n- After you select a file, the conversion progress appears as \"Converting file N%...\". When conversion is complete, you move to the page preview screen.\n\n[[image:edit-lesson-ai-make/11.png|Google Drive file conversion progress]]\n\nAfter that, **Steps 4 to 6** are the same as the local file method.\n\n> ⚠️ AI Make **deducts AI credits**. Before generating, check the \"AI credits will be deducted.\" notice at the bottom."
     ],
   'edit-lesson-load-storage': [
     "While working on the Edit Lesson screen, you can bring in content from My Storage directly.\n\n[[image:edit-lesson-load-storage/01.png|Move to the My Storage tab from Edit Lesson]]\n\n- Enter the Edit Lesson screen.\n- Click the **+ Manual** button in the upper-left corner or in the center of the screen.\n- When the **Create Manually** popup opens, click the **My Storage** tab at the top.\n- The folders and Lessons saved in My Storage are displayed. Select the Lesson you want.\n- Select the Activity Slide to import from the Lesson.\n- To import all Activities, click the **Select All Activity** checkbox.\n- Click **Import** to add the selected Activity to the current Lesson.\n\n[[image:edit-lesson-load-storage/02.png|Select a Lesson from My Storage]]\n\n[[image:edit-lesson-load-storage/03.png|Import the selected Activity with Import]]",
@@ -5871,8 +5871,8 @@ Object.assign(translations.pt.articleBodies, {
       "Quando a configuração for concluída, a tela da aula em Interaction será aberta.\n\n[[image:edit-lesson-interaction/04.png|Tela da aula em Interaction]]\n\n- **Canto superior esquerdo — Access Code**: código que os estudantes inserem ao acessar o LumiTeach. Compartilhe esse código para que eles participem da aula.\n- **Canto superior direito — Instructor View**: abre a visualização do instrutor, onde o professor pode acompanhar prévias de slides, timers e perguntas dos estudantes.\n- **Canto superior direito — End Lesson**: encerra a aula.\n- **Navegação de slides inferior (< 1/5 >)**: move para o slide anterior ou seguinte.\n- **Canto inferior direito — número de estudantes**: mostra em tempo real quantos estudantes estão participando da aula."
     ],
     'edit-lesson-ai-make': [
-      "### Etapa 1. Iniciar o Criar com IA\n\nNa tela Editar lição, clique em **✦ Criar com IA**. Se a tela estiver vazia, sem nenhuma Atividade, clique no botão **✦ Criar com IA** no centro. Se já houver Atividades, clique em **✦ Criar com IA** no canto superior esquerdo.\n\n[[image:edit-lesson-ai-make/01.png|Botão Criar com IA na tela Editar lição]]\n\n### Etapa 2. Enviar um arquivo\n\nQuando o popup **Make with AI** abrir, a aba **De arquivo** fica selecionada por padrão. Clique na área de upload ou no botão **Faça o upload do arquivo** para escolher um arquivo.\n\n[[image:edit-lesson-ai-make/02.png|Aba De arquivo no popup Make with AI]]\n\n- Formato de arquivo suportado: **pdf, doc, docx, ppt, pptx**\n- Limite do arquivo: 1 arquivo, até 50 MB\n\nDepois de selecionar o arquivo, o carregamento começa com a mensagem \"Verificando formato do arquivo...\".\n\n[[image:edit-lesson-ai-make/03.png|Estado Verificando formato do arquivo após o upload]]\n\n### Etapa 3. Selecionar páginas\n\nQuando a análise do arquivo terminar, as prévias das páginas do documento serão exibidas. Selecione as páginas que a IA deve usar como referência.\n\n[[image:edit-lesson-ai-make/04.png|Prévia das páginas após a análise do arquivo]]\n\n- É possível selecionar até **30 páginas** de uma vez.\n- Depois de selecionar as páginas, clique em **Importar N páginas**.\n\n[[image:edit-lesson-ai-make/05.png|Importar após selecionar as páginas de referência para a IA]]\n\n### Etapa 4. Configurar Required information\n\nEm **Activity Composition**, selecione o tipo de Atividade que será gerado.\n\n[[image:edit-lesson-ai-make/06.png|Seleção de Activity Composition]]\n\n- **Full Lesson**: organiza todo o fluxo da aula com base no material enviado.\n- **Quiz**: gera uma Atividade de Quiz para avaliar a compreensão dos alunos.\n- **Discussion**: gera uma Atividade baseada em discussão para estimular opiniões variadas.\n\nEm **Number of activities to Generate**, defina quantas Atividades serão criadas. Para Full Lesson, é possível ajustar dentro do intervalo de **5 a 20**.\n\n[[image:edit-lesson-ai-make/07.png|Configuração de Number of activities to Generate]]\n\n### Etapa 5. Configurar opções Optional\n\nVocê pode fazer configurações adicionais na seção **Optional**.\n\n[[image:edit-lesson-ai-make/08.png|Área de configurações Optional]]\n\n- **Preference**: defina Grade, Subject e Language.\n- **Difficulty**: escolha Auto, Basic, Intermediate ou Advanced.\n- **Topic**: insira um tema opcional de até 200 caracteres para orientar a geração.\n\nDepois de concluir as configurações, clique em **Gerar**.\n\n[[image:edit-lesson-ai-make/09.png|Executar o botão Gerar]]\n\n### Etapa 6. Concluir a geração\n\nA tela \"**LUMI AI está gerando**\" aparece enquanto a IA cria as Atividades. Quando a geração termina, as Atividades são adicionadas automaticamente ao Editar lição.\n\n[[image:edit-lesson-ai-make/10.png|Tela LUMI AI está gerando]]\n\nSe você clicar em **Cancel Generating** durante a geração, um popup de confirmação de cancelamento será exibido.\n\n[[image:edit-lesson-ai-make/11.png|Botão Cancel Generating]]\n\n> **\"Used AI credits are non-refundable. Are you sure you want to cancel?\"**\n> - **Keep**: continua a geração.\n> - **Cancel**: interrompe a geração.\n\n[[image:edit-lesson-ai-make/12.png|Popup de confirmação de cancelamento da geração por IA]]\n\n⚠️ **Os créditos de IA não são reembolsados mesmo se você cancelar.** Os créditos usados até o momento do cancelamento são considerados consumidos. Depois de iniciar a geração, recomenda-se, sempre que possível, aguardar a conclusão.\n\n[[image:edit-lesson-ai-make/13.png|Atividades adicionadas após concluir a geração por IA]]\n\nMesmo que as Atividades geradas não fiquem como você deseja, é possível editá-las diretamente a qualquer momento. (Service Tip: \"Not satisfied with the AI-generated options? You can click to edit them anytime!\")\n\n[[image:edit-lesson-ai-make/14.png|Orientação para editar resultados gerados por IA]]",
-      "No popup **Make with AI**, selecione a aba **Google Drive**. Quando a janela **Select a file** abrir, escolha o arquivo desejado em My Drive.\n\n[[image:edit-lesson-ai-make/15.png|Selecionar arquivo na aba Google Drive]]\n\n- O Google Drive também oferece suporte a formatos adicionais: **pdf, doc, docx, ppt, pptx, odt, rtf, odp, txt**\n- Depois de selecionar o arquivo, o progresso de conversão aparece como \"Converting file N%...\". Ao terminar, você será levado para a tela de prévia das páginas.\n\n[[image:edit-lesson-ai-make/16.png|Progresso de conversão do arquivo do Google Drive]]\n\nDepois disso, as **Etapas 4 a 6** são iguais ao método com arquivo local.\n\n> ⚠️ O Criar com IA **consome créditos de IA**. Antes de gerar, confira o aviso \"AI credits will be deducted.\" na parte inferior."
+      "### Etapa 1. Iniciar o Criar com IA\n\nNa tela Editar lição, clique em **✦ Criar com IA**. Se a tela estiver vazia, sem nenhuma Atividade, clique no botão **✦ Criar com IA** no centro. Se já houver Atividades, clique em **✦ Criar com IA** no canto superior esquerdo.\n\n[[image:edit-lesson-ai-make/01.png|Botão Criar com IA na tela Editar lição]]\n\n### Etapa 2. Enviar um arquivo\n\nQuando o popup **Make with AI** abrir, a aba **De arquivo** fica selecionada por padrão. Clique na área de upload ou no botão **Faça o upload do arquivo** para escolher um arquivo.\n\n[[image:edit-lesson-ai-make/02.png|Aba De arquivo no popup Make with AI]]\n\n- Formato de arquivo suportado: **pdf, doc, docx, ppt, pptx**\n- Limite do arquivo: 1 arquivo, até 50 MB\n\nDepois de selecionar o arquivo, o carregamento começa com a mensagem \"Verificando formato do arquivo...\".\n\n[[image:edit-lesson-ai-make/04.png|Estado Verificando formato do arquivo após o upload]]\n\n### Etapa 3. Selecionar páginas\n\nQuando a análise do arquivo terminar, as prévias das páginas do documento serão exibidas. Selecione as páginas que a IA deve usar como referência.\n\n[[image:edit-lesson-ai-make/05.png|Prévia das páginas após a análise do arquivo]]\n\n- É possível selecionar até **30 páginas** de uma vez.\n- Depois de selecionar as páginas, clique em **Importar N páginas**.\n\n[[image:edit-lesson-ai-make/05.png|Importar após selecionar as páginas de referência para a IA]]\n\n### Etapa 4. Configurar Required information\n\nEm **Activity Composition**, selecione o tipo de Atividade que será gerado.\n\n[[image:edit-lesson-ai-make/06.png|Seleção de Activity Composition]]\n\n- **Full Lesson**: organiza todo o fluxo da aula com base no material enviado.\n- **Quiz**: gera uma Atividade de Quiz para avaliar a compreensão dos alunos.\n- **Discussion**: gera uma Atividade baseada em discussão para estimular opiniões variadas.\n\nEm **Number of activities to Generate**, defina quantas Atividades serão criadas. Para Full Lesson, é possível ajustar dentro do intervalo de **5 a 20**.\n\n[[image:edit-lesson-ai-make/13.png|Configuração de Number of activities to Generate]]\n\n### Etapa 5. Configurar opções Optional\n\nVocê pode fazer configurações adicionais na seção **Optional**.\n\n[[image:edit-lesson-ai-make/07.png|Área de configurações Optional]]\n\n- **Preference**: defina Grade, Subject e Language.\n- **Difficulty**: escolha Auto, Basic, Intermediate ou Advanced.\n- **Topic**: insira um tema opcional de até 200 caracteres para orientar a geração.\n\nDepois de concluir as configurações, clique em **Gerar**.\n\n[[image:edit-lesson-ai-make/14.png|Executar o botão Gerar]]\n\n### Etapa 6. Concluir a geração\n\nA tela \"**LUMI AI está gerando**\" aparece enquanto a IA cria as Atividades. Quando a geração termina, as Atividades são adicionadas automaticamente ao Editar lição.\n\n[[image:edit-lesson-ai-make/08.png|Tela LUMI AI está gerando]]\n\nSe você clicar em **Cancel Generating** durante a geração, um popup de confirmação de cancelamento será exibido.\n\n[[image:edit-lesson-ai-make/08.png|Botão Cancel Generating]]\n\n> **\"Used AI credits are non-refundable. Are you sure you want to cancel?\"**\n> - **Keep**: continua a geração.\n> - **Cancel**: interrompe a geração.\n\n[[image:edit-lesson-ai-make/16.png|Popup de confirmação de cancelamento da geração por IA]]\n\n⚠️ **Os créditos de IA não são reembolsados mesmo se você cancelar.** Os créditos usados até o momento do cancelamento são considerados consumidos. Depois de iniciar a geração, recomenda-se, sempre que possível, aguardar a conclusão.\n\n[[image:edit-lesson-ai-make/09.png|Atividades adicionadas após concluir a geração por IA]]\n\nMesmo que as Atividades geradas não fiquem como você deseja, é possível editá-las diretamente a qualquer momento. (Service Tip: \"Not satisfied with the AI-generated options? You can click to edit them anytime!\")\n\n[[image:edit-lesson-ai-make/09.png|Orientação para editar resultados gerados por IA]]",
+      "No popup **Make with AI**, selecione a aba **Google Drive**. Quando a janela **Select a file** abrir, escolha o arquivo desejado em My Drive.\n\n[[image:edit-lesson-ai-make/10.png|Selecionar arquivo na aba Google Drive]]\n\n- O Google Drive também oferece suporte a formatos adicionais: **pdf, doc, docx, ppt, pptx, odt, rtf, odp, txt**\n- Depois de selecionar o arquivo, o progresso de conversão aparece como \"Converting file N%...\". Ao terminar, você será levado para a tela de prévia das páginas.\n\n[[image:edit-lesson-ai-make/11.png|Progresso de conversão do arquivo do Google Drive]]\n\nDepois disso, as **Etapas 4 a 6** são iguais ao método com arquivo local.\n\n> ⚠️ O Criar com IA **consome créditos de IA**. Antes de gerar, confira o aviso \"AI credits will be deducted.\" na parte inferior."
     ],
   'edit-lesson-load-storage': [
     "Enquanto trabalha na tela Editar lição, você pode trazer diretamente conteúdos de Meus arquivos.\n\n[[image:edit-lesson-load-storage/01.png|Acessar a aba Meus arquivos pelo Editar lição]]\n\n- Entre na tela Editar lição.\n- Clique no botão **+ Manual** no canto superior esquerdo ou no centro da tela.\n- Quando o popup **Criar manualmente** abrir, clique na aba **Meus arquivos** na parte superior.\n- As pastas e Lições salvas em Meus arquivos são exibidas. Selecione a Lição desejada.\n- Selecione o Activity Slide que deseja importar da Lição.\n- Para importar todas as Atividades, clique na caixa **Selecionar todas as atividades**.\n- Clique em **Importar** para adicionar a Atividade selecionada à Lição atual.\n\n[[image:edit-lesson-load-storage/02.png|Selecionar uma Lição em Meus arquivos]]\n\n[[image:edit-lesson-load-storage/03.png|Importar a Atividade selecionada com Importar]]",
@@ -6095,8 +6095,8 @@ Object.assign(translations.es.articleBodies, {
       "Cuando se complete la configuración, se abrirá la pantalla de clase en Interaction.\n\n[[image:edit-lesson-interaction/04.png|Pantalla de clase en Interaction]]\n\n- **Parte superior izquierda — Access Code**: código que los estudiantes ingresan al acceder a LumiTeach. Comparte este código para que puedan unirse a la clase.\n- **Parte superior derecha — Instructor View**: abre la vista del instructor, donde el docente puede revisar vistas previas de diapositivas, temporizadores y preguntas de estudiantes de un vistazo.\n- **Parte superior derecha — End Lesson**: finaliza la clase.\n- **Navegación inferior de diapositivas (< 1/5 >)**: permite pasar a la diapositiva anterior o siguiente.\n- **Parte inferior derecha — número de estudiantes**: muestra en tiempo real cuántos estudiantes participan en la clase."
     ],
     'edit-lesson-ai-make': [
-      "### Paso 1. Iniciar Crear IA\n\nEn la pantalla Edit Lesson, haz clic en **✦ Crear IA**. Si la pantalla está vacía y aún no hay ninguna actividad, haz clic en el botón **✦ Crear IA** del centro. Si ya hay actividades, haz clic en **✦ Crear IA** en la esquina superior izquierda.\n\n[[image:edit-lesson-ai-make/01.png|Botón Crear IA en la pantalla Edit Lesson]]\n\n### Paso 2. Subir un archivo\n\nCuando se abra el popup **Make with AI**, la pestaña **Desde archivo** estará seleccionada de forma predeterminada. Haz clic en el área de carga o en **Subir archivo** para elegir un archivo.\n\n[[image:edit-lesson-ai-make/02.png|Pestaña Desde archivo en el popup Make with AI]]\n\n- Formato de archivo compatible: **pdf, doc, docx, ppt, pptx**\n- Límite de archivo: 1 archivo, hasta 50 MB\n\nDespués de seleccionar el archivo, la carga comienza con el mensaje \"Verificando formato del archivo...\".\n\n[[image:edit-lesson-ai-make/03.png|Estado Verificando formato del archivo después de subir un archivo]]\n\n### Paso 3. Seleccionar páginas\n\nCuando finaliza el análisis del archivo, se muestran las vistas previas de las páginas del documento. Selecciona las páginas que la IA debe usar como referencia.\n\n[[image:edit-lesson-ai-make/04.png|Vistas previas de páginas después del análisis del archivo]]\n\n- Puedes seleccionar hasta **30 páginas** a la vez.\n- Después de seleccionar las páginas, haz clic en **Importar N páginas**.\n\n[[image:edit-lesson-ai-make/05.png|Importar después de seleccionar páginas de referencia para la IA]]\n\n### Paso 4. Configurar Required information\n\nEn **Activity Composition**, selecciona el tipo de actividad que quieres generar.\n\n[[image:edit-lesson-ai-make/06.png|Selección de Activity Composition]]\n\n- **Full Lesson**: crea todo el flujo de la clase a partir del material subido.\n- **Quiz**: genera una actividad de quiz para evaluar la comprensión de los estudiantes.\n- **Discussion**: genera una actividad basada en discusión para promover opiniones diversas.\n\nEn **Number of activities to Generate**, define cuántas actividades se crearán. Para Full Lesson, puedes ajustar el número dentro del rango de **5 a 20**.\n\n[[image:edit-lesson-ai-make/07.png|Configuración de Number of activities to Generate]]\n\n### Paso 5. Configurar opciones Optional\n\nPuedes configurar opciones adicionales en la sección **Optional**.\n\n[[image:edit-lesson-ai-make/08.png|Área de configuración Optional]]\n\n- **Preference**: define Grade, Subject y Language.\n- **Difficulty**: elige Auto, Basic, Intermediate o Advanced.\n- **Topic**: ingresa un tema opcional de hasta 200 caracteres para orientar la generación.\n\nCuando termines la configuración, haz clic en **Generar**.\n\n[[image:edit-lesson-ai-make/09.png|Ejecutar el botón Generar]]\n\n### Paso 6. Completar la generación\n\nLa pantalla \"**LUMI AI está generando**\" aparece mientras la IA crea las actividades. Cuando termina la generación, las actividades se agregan automáticamente a Edit Lesson.\n\n[[image:edit-lesson-ai-make/10.png|Pantalla LUMI AI está generando]]\n\nSi haces clic en **Cancel Generating** durante la generación, se mostrará un popup de confirmación de cancelación.\n\n[[image:edit-lesson-ai-make/11.png|Botón Cancel Generating]]\n\n> **\"Used AI credits are non-refundable. Are you sure you want to cancel?\"**\n> - **Keep**: continúa la generación.\n> - **Cancel**: detiene la generación.\n\n[[image:edit-lesson-ai-make/12.png|Popup de confirmación para cancelar la generación con IA]]\n\n⚠️ **Los créditos de IA no se reembolsan aunque canceles.** Los créditos usados hasta el momento de la cancelación se consideran consumidos. Una vez iniciada la generación, se recomienda dejar que finalice siempre que sea posible.\n\n[[image:edit-lesson-ai-make/13.png|Actividades agregadas después de finalizar la generación con IA]]\n\nAunque las actividades generadas no te convenzan, puedes editarlas directamente en cualquier momento. (Service Tip: \"Not satisfied with the AI-generated options? You can click to edit them anytime!\")\n\n[[image:edit-lesson-ai-make/14.png|Guía para editar resultados generados por IA]]",
-      "En el popup **Make with AI**, selecciona la pestaña **Google Drive**. Cuando se abra la ventana **Select a file**, elige el archivo que quieres desde My Drive.\n\n[[image:edit-lesson-ai-make/15.png|Seleccionar un archivo en la pestaña Google Drive]]\n\n- Google Drive también admite formatos adicionales: **pdf, doc, docx, ppt, pptx, odt, rtf, odp, txt**\n- Después de seleccionar el archivo, el progreso de conversión aparece como \"Converting file N%...\". Al completarse, pasarás a la pantalla de vista previa de páginas.\n\n[[image:edit-lesson-ai-make/16.png|Progreso de conversión del archivo de Google Drive]]\n\nDespués de eso, los **Pasos 4 a 6** son iguales al método con archivo local.\n\n> ⚠️ Crear IA **consume créditos de IA**. Antes de generar, revisa el aviso \"AI credits will be deducted.\" en la parte inferior."
+      "### Paso 1. Iniciar Crear IA\n\nEn la pantalla Edit Lesson, haz clic en **✦ Crear IA**. Si la pantalla está vacía y aún no hay ninguna actividad, haz clic en el botón **✦ Crear IA** del centro. Si ya hay actividades, haz clic en **✦ Crear IA** en la esquina superior izquierda.\n\n[[image:edit-lesson-ai-make/01.png|Botón Crear IA en la pantalla Edit Lesson]]\n\n### Paso 2. Subir un archivo\n\nCuando se abra el popup **Make with AI**, la pestaña **Desde archivo** estará seleccionada de forma predeterminada. Haz clic en el área de carga o en **Subir archivo** para elegir un archivo.\n\n[[image:edit-lesson-ai-make/02.png|Pestaña Desde archivo en el popup Make with AI]]\n\n- Formato de archivo compatible: **pdf, doc, docx, ppt, pptx**\n- Límite de archivo: 1 archivo, hasta 50 MB\n\nDespués de seleccionar el archivo, la carga comienza con el mensaje \"Verificando formato del archivo...\".\n\n[[image:edit-lesson-ai-make/04.png|Estado Verificando formato del archivo después de subir un archivo]]\n\n### Paso 3. Seleccionar páginas\n\nCuando finaliza el análisis del archivo, se muestran las vistas previas de las páginas del documento. Selecciona las páginas que la IA debe usar como referencia.\n\n[[image:edit-lesson-ai-make/05.png|Vistas previas de páginas después del análisis del archivo]]\n\n- Puedes seleccionar hasta **30 páginas** a la vez.\n- Después de seleccionar las páginas, haz clic en **Importar N páginas**.\n\n[[image:edit-lesson-ai-make/05.png|Importar después de seleccionar páginas de referencia para la IA]]\n\n### Paso 4. Configurar Required information\n\nEn **Activity Composition**, selecciona el tipo de actividad que quieres generar.\n\n[[image:edit-lesson-ai-make/06.png|Selección de Activity Composition]]\n\n- **Full Lesson**: crea todo el flujo de la clase a partir del material subido.\n- **Quiz**: genera una actividad de quiz para evaluar la comprensión de los estudiantes.\n- **Discussion**: genera una actividad basada en discusión para promover opiniones diversas.\n\nEn **Number of activities to Generate**, define cuántas actividades se crearán. Para Full Lesson, puedes ajustar el número dentro del rango de **5 a 20**.\n\n[[image:edit-lesson-ai-make/13.png|Configuración de Number of activities to Generate]]\n\n### Paso 5. Configurar opciones Optional\n\nPuedes configurar opciones adicionales en la sección **Optional**.\n\n[[image:edit-lesson-ai-make/07.png|Área de configuración Optional]]\n\n- **Preference**: define Grade, Subject y Language.\n- **Difficulty**: elige Auto, Basic, Intermediate o Advanced.\n- **Topic**: ingresa un tema opcional de hasta 200 caracteres para orientar la generación.\n\nCuando termines la configuración, haz clic en **Generar**.\n\n[[image:edit-lesson-ai-make/14.png|Ejecutar el botón Generar]]\n\n### Paso 6. Completar la generación\n\nLa pantalla \"**LUMI AI está generando**\" aparece mientras la IA crea las actividades. Cuando termina la generación, las actividades se agregan automáticamente a Edit Lesson.\n\n[[image:edit-lesson-ai-make/08.png|Pantalla LUMI AI está generando]]\n\nSi haces clic en **Cancel Generating** durante la generación, se mostrará un popup de confirmación de cancelación.\n\n[[image:edit-lesson-ai-make/08.png|Botón Cancel Generating]]\n\n> **\"Used AI credits are non-refundable. Are you sure you want to cancel?\"**\n> - **Keep**: continúa la generación.\n> - **Cancel**: detiene la generación.\n\n[[image:edit-lesson-ai-make/16.png|Popup de confirmación para cancelar la generación con IA]]\n\n⚠️ **Los créditos de IA no se reembolsan aunque canceles.** Los créditos usados hasta el momento de la cancelación se consideran consumidos. Una vez iniciada la generación, se recomienda dejar que finalice siempre que sea posible.\n\n[[image:edit-lesson-ai-make/09.png|Actividades agregadas después de finalizar la generación con IA]]\n\nAunque las actividades generadas no te convenzan, puedes editarlas directamente en cualquier momento. (Service Tip: \"Not satisfied with the AI-generated options? You can click to edit them anytime!\")\n\n[[image:edit-lesson-ai-make/09.png|Guía para editar resultados generados por IA]]",
+      "En el popup **Make with AI**, selecciona la pestaña **Google Drive**. Cuando se abra la ventana **Select a file**, elige el archivo que quieres desde My Drive.\n\n[[image:edit-lesson-ai-make/10.png|Seleccionar un archivo en la pestaña Google Drive]]\n\n- Google Drive también admite formatos adicionales: **pdf, doc, docx, ppt, pptx, odt, rtf, odp, txt**\n- Después de seleccionar el archivo, el progreso de conversión aparece como \"Converting file N%...\". Al completarse, pasarás a la pantalla de vista previa de páginas.\n\n[[image:edit-lesson-ai-make/11.png|Progreso de conversión del archivo de Google Drive]]\n\nDespués de eso, los **Pasos 4 a 6** son iguales al método con archivo local.\n\n> ⚠️ Crear IA **consume créditos de IA**. Antes de generar, revisa el aviso \"AI credits will be deducted.\" en la parte inferior."
     ],
   'edit-lesson-load-storage': [
     "Mientras trabajas en la pantalla Editar lección, puedes traer directamente contenido desde Mis archivos.\n\n[[image:edit-lesson-load-storage/01.png|Ir a la pestaña Mis archivos desde Editar lección]]\n\n- Entra en la pantalla Editar lección.\n- Haz clic en el botón **+ Manual** en la esquina superior izquierda o en el centro de la pantalla.\n- Cuando se abra el popup **Crear manualmente**, haz clic en la pestaña **Mis archivos** en la parte superior.\n- Se muestran las carpetas y lecciones guardadas en Mis archivos. Selecciona la lección que quieras.\n- Selecciona el Activity Slide que quieres importar desde la lección.\n- Para importar todas las actividades, haz clic en la casilla **Seleccionar todas las actividades**.\n- Haz clic en **Importar** para agregar la actividad seleccionada a la lección actual.\n\n[[image:edit-lesson-load-storage/02.png|Seleccionar una lección en Mis archivos]]\n\n[[image:edit-lesson-load-storage/03.png|Importar la actividad seleccionada con Importar]]",
@@ -6319,8 +6319,8 @@ Object.assign(translations.ja.articleBodies, {
       "設定が完了すると、Interaction授業画面に入ります。\n\n[[image:edit-lesson-interaction/04.png|Interaction授業画面]]\n\n- **左上 — Access Code**: 学生がLumiTeachにアクセスするときに入力するコードです。このコードを学生に共有すると、授業に参加できます。\n- **右上 — Instructor View**: 進行者ビューを開きます。教師はスライドプレビュー、タイマー、学生からの質問などを一目で確認できます。\n- **右上 — End Lesson**: 授業を終了します。\n- **下部のスライド移動（< 1/5 >）**: 前後のスライドに移動します。\n- **右下 — 学生数**: 現在授業に参加している学生数をリアルタイムで確認できます。"
     ],
     'edit-lesson-ai-make': [
-      "### Step 1. AI作成を開始する\n\n授業編集画面で **✦ AI作成** をクリックします。まだアクティビティがない空の画面では中央の **✦ AI作成** ボタンを、すでにアクティビティがある場合は左上の **✦ AI作成** ボタンをクリックします。\n\n[[image:edit-lesson-ai-make/01.png|授業編集画面のAI作成ボタン]]\n\n### Step 2. ファイルをアップロードする\n\n**Make with AI** ポップアップが開くと、**ファイルから** タブが初期表示で選択されています。アップロード領域をクリックするか、**ファイルアップロード** ボタンをクリックしてファイルを選択します。\n\n[[image:edit-lesson-ai-make/02.png|Make with AIポップアップのファイルからタブ]]\n\n- 対応ファイル形式: **pdf, doc, docx, ppt, pptx**\n- ファイル制限: 1ファイル、最大50MB\n\nファイルを選択すると、\"ファイル形式を確認中...\" というメッセージとともに読み込みが始まります。\n\n[[image:edit-lesson-ai-make/03.png|ファイルアップロード後のファイル形式確認状態]]\n\n### Step 3. ページを選択する\n\nファイルの分析が完了すると、文書のページプレビューが表示されます。AIが参照するページを選択します。\n\n[[image:edit-lesson-ai-make/04.png|ファイル分析後のページプレビュー]]\n\n- 一度に最大 **30ページ** まで選択できます。\n- ページを選択したら、**Nページをインポート** をクリックします。\n\n[[image:edit-lesson-ai-make/05.png|AIが参照するページを選択してインポート]]\n\n### Step 4. Required informationを設定する\n\n**Activity Composition** で、生成するアクティビティの種類を選択します。\n\n[[image:edit-lesson-ai-make/06.png|Activity Compositionの選択]]\n\n- **Full Lesson**: アップロードした資料をもとに、授業全体の流れを構成します。\n- **Quiz**: 生徒の理解度を確認するQuizアクティビティを生成します。\n- **Discussion**: さまざまな意見を引き出すDiscussionベースのアクティビティを生成します。\n\n**Number of activities to Generate** で、生成するアクティビティ数を設定します。Full Lessonの場合は **5〜20** の範囲で調整できます。\n\n[[image:edit-lesson-ai-make/07.png|Number of activities to Generateの設定]]\n\n### Step 5. Optionalを設定する\n\n**Optional** セクションでは追加設定を行えます。\n\n[[image:edit-lesson-ai-make/08.png|Optional設定エリア]]\n\n- **Preference**: Grade、Subject、Languageを設定します。\n- **Difficulty**: Auto、Basic、Intermediate、Advancedから選択します。\n- **Topic**: 生成方向を指定するトピックを200文字以内で入力します（任意）。\n\n設定が完了したら、**生成** をクリックします。\n\n[[image:edit-lesson-ai-make/09.png|生成ボタンの実行]]\n\n### Step 6. 生成を完了する\n\nAIがアクティビティを生成している間、\"**LUMI AIが生成しています**\" 画面が表示されます。生成が完了すると、授業編集にアクティビティが自動で追加されます。\n\n[[image:edit-lesson-ai-make/10.png|LUMI AIが生成しています画面]]\n\n生成中に **Cancel Generating** をクリックすると、キャンセル確認ポップアップが表示されます。\n\n[[image:edit-lesson-ai-make/11.png|Cancel Generatingボタン]]\n\n> **\"Used AI credits are non-refundable. Are you sure you want to cancel?\"**\n> - **Keep**: 生成を続けます。\n> - **Cancel**: 生成を中止します。\n\n[[image:edit-lesson-ai-make/12.png|AI生成キャンセル確認ポップアップ]]\n\n⚠️ **キャンセルしてもAIクレジットは返金されません。** キャンセル時点までに進行した分のクレジットは、すでに消費されたものとして扱われます。生成を開始した場合は、できるだけ完了まで進めることをおすすめします。\n\n[[image:edit-lesson-ai-make/13.png|AI生成完了後に追加されたアクティビティ]]\n\n生成されたアクティビティが期待どおりでない場合でも、いつでも直接編集できます。(Service Tip: \"Not satisfied with the AI-generated options? You can click to edit them anytime!\")\n\n[[image:edit-lesson-ai-make/14.png|AI生成結果の編集案内]]",
-      "**Make with AI** ポップアップで **Google Drive** タブを選択します。**Select a file** ウィンドウが開いたら、My Driveから目的のファイルを選択します。\n\n[[image:edit-lesson-ai-make/15.png|Google Driveタブでファイルを選択]]\n\n- Google Driveでは追加形式にも対応しています: **pdf, doc, docx, ppt, pptx, odt, rtf, odp, txt**\n- ファイルを選択すると、\"Converting file N%...\" の変換進行率が表示されます。完了するとページプレビュー画面に移動します。\n\n[[image:edit-lesson-ai-make/16.png|Google Driveファイルの変換進行率]]\n\n以降の **Step 4〜6** はローカルファイル方式と同じです。\n\n> ⚠️ AI作成機能では **AIクレジットが差し引かれます**。生成前に、下部の \"AI credits will be deducted.\" という案内を確認してください。"
+      "### Step 1. AI作成を開始する\n\n授業編集画面で **✦ AI作成** をクリックします。まだアクティビティがない空の画面では中央の **✦ AI作成** ボタンを、すでにアクティビティがある場合は左上の **✦ AI作成** ボタンをクリックします。\n\n[[image:edit-lesson-ai-make/01.png|授業編集画面のAI作成ボタン]]\n\n### Step 2. ファイルをアップロードする\n\n**Make with AI** ポップアップが開くと、**ファイルから** タブが初期表示で選択されています。アップロード領域をクリックするか、**ファイルアップロード** ボタンをクリックしてファイルを選択します。\n\n[[image:edit-lesson-ai-make/02.png|Make with AIポップアップのファイルからタブ]]\n\n- 対応ファイル形式: **pdf, doc, docx, ppt, pptx**\n- ファイル制限: 1ファイル、最大50MB\n\nファイルを選択すると、\"ファイル形式を確認中...\" というメッセージとともに読み込みが始まります。\n\n[[image:edit-lesson-ai-make/04.png|ファイルアップロード後のファイル形式確認状態]]\n\n### Step 3. ページを選択する\n\nファイルの分析が完了すると、文書のページプレビューが表示されます。AIが参照するページを選択します。\n\n[[image:edit-lesson-ai-make/05.png|ファイル分析後のページプレビュー]]\n\n- 一度に最大 **30ページ** まで選択できます。\n- ページを選択したら、**Nページをインポート** をクリックします。\n\n[[image:edit-lesson-ai-make/05.png|AIが参照するページを選択してインポート]]\n\n### Step 4. Required informationを設定する\n\n**Activity Composition** で、生成するアクティビティの種類を選択します。\n\n[[image:edit-lesson-ai-make/06.png|Activity Compositionの選択]]\n\n- **Full Lesson**: アップロードした資料をもとに、授業全体の流れを構成します。\n- **Quiz**: 生徒の理解度を確認するQuizアクティビティを生成します。\n- **Discussion**: さまざまな意見を引き出すDiscussionベースのアクティビティを生成します。\n\n**Number of activities to Generate** で、生成するアクティビティ数を設定します。Full Lessonの場合は **5〜20** の範囲で調整できます。\n\n[[image:edit-lesson-ai-make/13.png|Number of activities to Generateの設定]]\n\n### Step 5. Optionalを設定する\n\n**Optional** セクションでは追加設定を行えます。\n\n[[image:edit-lesson-ai-make/07.png|Optional設定エリア]]\n\n- **Preference**: Grade、Subject、Languageを設定します。\n- **Difficulty**: Auto、Basic、Intermediate、Advancedから選択します。\n- **Topic**: 生成方向を指定するトピックを200文字以内で入力します（任意）。\n\n設定が完了したら、**生成** をクリックします。\n\n[[image:edit-lesson-ai-make/14.png|生成ボタンの実行]]\n\n### Step 6. 生成を完了する\n\nAIがアクティビティを生成している間、\"**LUMI AIが生成しています**\" 画面が表示されます。生成が完了すると、授業編集にアクティビティが自動で追加されます。\n\n[[image:edit-lesson-ai-make/08.png|LUMI AIが生成しています画面]]\n\n生成中に **Cancel Generating** をクリックすると、キャンセル確認ポップアップが表示されます。\n\n[[image:edit-lesson-ai-make/08.png|Cancel Generatingボタン]]\n\n> **\"Used AI credits are non-refundable. Are you sure you want to cancel?\"**\n> - **Keep**: 生成を続けます。\n> - **Cancel**: 生成を中止します。\n\n[[image:edit-lesson-ai-make/16.png|AI生成キャンセル確認ポップアップ]]\n\n⚠️ **キャンセルしてもAIクレジットは返金されません。** キャンセル時点までに進行した分のクレジットは、すでに消費されたものとして扱われます。生成を開始した場合は、できるだけ完了まで進めることをおすすめします。\n\n[[image:edit-lesson-ai-make/09.png|AI生成完了後に追加されたアクティビティ]]\n\n生成されたアクティビティが期待どおりでない場合でも、いつでも直接編集できます。(Service Tip: \"Not satisfied with the AI-generated options? You can click to edit them anytime!\")\n\n[[image:edit-lesson-ai-make/09.png|AI生成結果の編集案内]]",
+      "**Make with AI** ポップアップで **Google Drive** タブを選択します。**Select a file** ウィンドウが開いたら、My Driveから目的のファイルを選択します。\n\n[[image:edit-lesson-ai-make/10.png|Google Driveタブでファイルを選択]]\n\n- Google Driveでは追加形式にも対応しています: **pdf, doc, docx, ppt, pptx, odt, rtf, odp, txt**\n- ファイルを選択すると、\"Converting file N%...\" の変換進行率が表示されます。完了するとページプレビュー画面に移動します。\n\n[[image:edit-lesson-ai-make/11.png|Google Driveファイルの変換進行率]]\n\n以降の **Step 4〜6** はローカルファイル方式と同じです。\n\n> ⚠️ AI作成機能では **AIクレジットが差し引かれます**。生成前に、下部の \"AI credits will be deducted.\" という案内を確認してください。"
     ],
   'edit-lesson-load-storage': [
     "授業編集画面で作業している途中に、マイストレージのコンテンツを直接取り込むことができます。\n\n[[image:edit-lesson-load-storage/01.png|授業編集からマイストレージタブへ移動]]\n\n- 授業編集画面に入ります。\n- 左上、または画面中央の **+ 手動** ボタンをクリックします。\n- **手動で作成** ポップアップが開いたら、上部の **マイストレージ** タブをクリックします。\n- マイストレージに保存されているフォルダと授業の一覧が表示されます。目的の授業を選択します。\n- 授業内からインポートするActivity Slideを選択します。\n- すべてのアクティビティをインポートする場合は、**全アクティビティを選択** チェックボックスをクリックします。\n- **インポート** ボタンをクリックすると、選択したアクティビティが現在の授業に追加されます。\n\n[[image:edit-lesson-load-storage/02.png|マイストレージで授業を選択]]\n\n[[image:edit-lesson-load-storage/03.png|選択したアクティビティをインポートで取り込む]]",
@@ -6543,8 +6543,8 @@ Object.assign(translations.vi.articleBodies, {
       "Khi thiết lập xong, màn hình lớp học Interaction sẽ mở ra.\n\n[[image:edit-lesson-interaction/04.png|Màn hình lớp học Interaction]]\n\n- **Góc trên bên trái — Access Code**: mã học sinh nhập khi truy cập LumiTeach. Chia sẻ mã này để học sinh có thể tham gia lớp học.\n- **Góc trên bên phải — Instructor View**: mở chế độ xem của giáo viên, nơi giáo viên có thể kiểm tra bản xem trước slide, bộ hẹn giờ và câu hỏi của học sinh trong một màn hình.\n- **Góc trên bên phải — End Lesson**: kết thúc lớp học.\n- **Điều hướng slide phía dưới (< 1/5 >)**: chuyển sang slide trước hoặc slide tiếp theo.\n- **Góc dưới bên phải — số học sinh**: hiển thị theo thời gian thực số học sinh đang tham gia lớp học."
     ],
     'edit-lesson-ai-make': [
-      "### Bước 1. Bắt đầu Tạo bằng AI\n\nTrên màn hình Edit Lesson, nhấp vào **✦ Tạo bằng AI**. Nếu màn hình đang trống và chưa có hoạt động nào, hãy nhấp vào nút **✦ Tạo bằng AI** ở giữa màn hình. Nếu đã có hoạt động, hãy nhấp vào **✦ Tạo bằng AI** ở góc trên bên trái.\n\n[[image:edit-lesson-ai-make/01.png|Nút Tạo bằng AI trên màn hình Edit Lesson]]\n\n### Bước 2. Tải tệp lên\n\nKhi cửa sổ **Make with AI** mở ra, tab **Từ tệp** được chọn mặc định. Nhấp vào khu vực tải lên hoặc nhấp **Tải tệp lên** để chọn tệp.\n\n[[image:edit-lesson-ai-make/02.png|Tab Từ tệp trong cửa sổ Make with AI]]\n\n- Định dạng tệp được hỗ trợ: **pdf, doc, docx, ppt, pptx**\n- Giới hạn tệp: 1 tệp, tối đa 50 MB\n\nSau khi chọn tệp, quá trình tải bắt đầu cùng thông báo \"Đang kiểm tra định dạng tệp...\".\n\n[[image:edit-lesson-ai-make/03.png|Trạng thái kiểm tra định dạng tệp sau khi tải lên]]\n\n### Bước 3. Chọn trang\n\nKhi quá trình phân tích tệp hoàn tất, bản xem trước các trang trong tài liệu sẽ hiển thị. Hãy chọn những trang mà AI sẽ dùng làm tài liệu tham khảo.\n\n[[image:edit-lesson-ai-make/04.png|Bản xem trước trang sau khi phân tích tệp]]\n\n- Bạn có thể chọn tối đa **30 trang** mỗi lần.\n- Sau khi chọn trang, nhấp **Nhập N trang**.\n\n[[image:edit-lesson-ai-make/05.png|Nhập sau khi chọn trang tham khảo cho AI]]\n\n### Bước 4. Thiết lập Required information\n\nTrong **Activity Composition**, chọn loại hoạt động muốn tạo.\n\n[[image:edit-lesson-ai-make/06.png|Chọn Activity Composition]]\n\n- **Full Lesson**: xây dựng toàn bộ luồng bài học dựa trên tài liệu đã tải lên.\n- **Quiz**: tạo hoạt động Quiz để kiểm tra mức độ hiểu bài của học sinh.\n- **Discussion**: tạo hoạt động thảo luận nhằm khuyến khích nhiều ý kiến khác nhau.\n\nTrong **Number of activities to Generate**, đặt số lượng hoạt động cần tạo. Với Full Lesson, bạn có thể điều chỉnh trong phạm vi **5 đến 20**.\n\n[[image:edit-lesson-ai-make/07.png|Thiết lập Number of activities to Generate]]\n\n### Bước 5. Thiết lập Optional\n\nBạn có thể cấu hình thêm trong phần **Optional**.\n\n[[image:edit-lesson-ai-make/08.png|Khu vực thiết lập Optional]]\n\n- **Preference**: thiết lập Grade, Subject và Language.\n- **Difficulty**: chọn Auto, Basic, Intermediate hoặc Advanced.\n- **Topic**: nhập chủ đề tùy chọn trong vòng 200 ký tự để định hướng nội dung được tạo.\n\nSau khi hoàn tất thiết lập, nhấp **Tạo**.\n\n[[image:edit-lesson-ai-make/09.png|Thực hiện bằng nút Tạo]]\n\n### Bước 6. Hoàn tất tạo nội dung\n\nMàn hình \"**LUMI AI đang khởi tạo...**\" hiển thị trong khi AI tạo các hoạt động. Khi quá trình tạo hoàn tất, các hoạt động sẽ tự động được thêm vào Edit Lesson.\n\n[[image:edit-lesson-ai-make/10.png|Màn hình LUMI AI đang khởi tạo]]\n\nNếu nhấp **Cancel Generating** trong lúc đang tạo, cửa sổ xác nhận hủy sẽ hiển thị.\n\n[[image:edit-lesson-ai-make/11.png|Nút Cancel Generating]]\n\n> **\"Used AI credits are non-refundable. Are you sure you want to cancel?\"**\n> - **Keep**: tiếp tục tạo.\n> - **Cancel**: dừng tạo.\n\n[[image:edit-lesson-ai-make/12.png|Cửa sổ xác nhận hủy tạo bằng AI]]\n\n⚠️ **Tín dụng AI sẽ không được hoàn lại dù bạn hủy.** Phần tín dụng đã dùng đến thời điểm hủy được xem là đã tiêu thụ. Sau khi bắt đầu tạo, bạn nên để quá trình hoàn tất nếu có thể.\n\n[[image:edit-lesson-ai-make/13.png|Hoạt động được thêm sau khi AI tạo xong]]\n\nNgay cả khi hoạt động được tạo chưa đúng ý, bạn vẫn có thể chỉnh sửa trực tiếp bất cứ lúc nào. (Service Tip: \"Not satisfied with the AI-generated options? You can click to edit them anytime!\")\n\n[[image:edit-lesson-ai-make/14.png|Hướng dẫn chỉnh sửa kết quả do AI tạo]]",
-      "Trong cửa sổ **Make with AI**, chọn tab **Google Drive**. Khi cửa sổ **Select a file** mở ra, hãy chọn tệp mong muốn trong My Drive.\n\n[[image:edit-lesson-ai-make/15.png|Chọn tệp trong tab Google Drive]]\n\n- Google Drive cũng hỗ trợ thêm các định dạng: **pdf, doc, docx, ppt, pptx, odt, rtf, odp, txt**\n- Sau khi chọn tệp, tiến trình chuyển đổi sẽ hiển thị dưới dạng \"Converting file N%...\". Khi hoàn tất, bạn sẽ chuyển sang màn hình xem trước trang.\n\n[[image:edit-lesson-ai-make/16.png|Tiến trình chuyển đổi tệp Google Drive]]\n\nSau đó, **Bước 4 đến 6** giống với cách dùng tệp cục bộ.\n\n> ⚠️ Tạo bằng AI **sẽ trừ tín dụng AI**. Trước khi tạo, hãy kiểm tra thông báo \"AI credits will be deducted.\" ở phía dưới."
+      "### Bước 1. Bắt đầu Tạo bằng AI\n\nTrên màn hình Edit Lesson, nhấp vào **✦ Tạo bằng AI**. Nếu màn hình đang trống và chưa có hoạt động nào, hãy nhấp vào nút **✦ Tạo bằng AI** ở giữa màn hình. Nếu đã có hoạt động, hãy nhấp vào **✦ Tạo bằng AI** ở góc trên bên trái.\n\n[[image:edit-lesson-ai-make/01.png|Nút Tạo bằng AI trên màn hình Edit Lesson]]\n\n### Bước 2. Tải tệp lên\n\nKhi cửa sổ **Make with AI** mở ra, tab **Từ tệp** được chọn mặc định. Nhấp vào khu vực tải lên hoặc nhấp **Tải tệp lên** để chọn tệp.\n\n[[image:edit-lesson-ai-make/02.png|Tab Từ tệp trong cửa sổ Make with AI]]\n\n- Định dạng tệp được hỗ trợ: **pdf, doc, docx, ppt, pptx**\n- Giới hạn tệp: 1 tệp, tối đa 50 MB\n\nSau khi chọn tệp, quá trình tải bắt đầu cùng thông báo \"Đang kiểm tra định dạng tệp...\".\n\n[[image:edit-lesson-ai-make/04.png|Trạng thái kiểm tra định dạng tệp sau khi tải lên]]\n\n### Bước 3. Chọn trang\n\nKhi quá trình phân tích tệp hoàn tất, bản xem trước các trang trong tài liệu sẽ hiển thị. Hãy chọn những trang mà AI sẽ dùng làm tài liệu tham khảo.\n\n[[image:edit-lesson-ai-make/05.png|Bản xem trước trang sau khi phân tích tệp]]\n\n- Bạn có thể chọn tối đa **30 trang** mỗi lần.\n- Sau khi chọn trang, nhấp **Nhập N trang**.\n\n[[image:edit-lesson-ai-make/05.png|Nhập sau khi chọn trang tham khảo cho AI]]\n\n### Bước 4. Thiết lập Required information\n\nTrong **Activity Composition**, chọn loại hoạt động muốn tạo.\n\n[[image:edit-lesson-ai-make/06.png|Chọn Activity Composition]]\n\n- **Full Lesson**: xây dựng toàn bộ luồng bài học dựa trên tài liệu đã tải lên.\n- **Quiz**: tạo hoạt động Quiz để kiểm tra mức độ hiểu bài của học sinh.\n- **Discussion**: tạo hoạt động thảo luận nhằm khuyến khích nhiều ý kiến khác nhau.\n\nTrong **Number of activities to Generate**, đặt số lượng hoạt động cần tạo. Với Full Lesson, bạn có thể điều chỉnh trong phạm vi **5 đến 20**.\n\n[[image:edit-lesson-ai-make/13.png|Thiết lập Number of activities to Generate]]\n\n### Bước 5. Thiết lập Optional\n\nBạn có thể cấu hình thêm trong phần **Optional**.\n\n[[image:edit-lesson-ai-make/07.png|Khu vực thiết lập Optional]]\n\n- **Preference**: thiết lập Grade, Subject và Language.\n- **Difficulty**: chọn Auto, Basic, Intermediate hoặc Advanced.\n- **Topic**: nhập chủ đề tùy chọn trong vòng 200 ký tự để định hướng nội dung được tạo.\n\nSau khi hoàn tất thiết lập, nhấp **Tạo**.\n\n[[image:edit-lesson-ai-make/14.png|Thực hiện bằng nút Tạo]]\n\n### Bước 6. Hoàn tất tạo nội dung\n\nMàn hình \"**LUMI AI đang khởi tạo...**\" hiển thị trong khi AI tạo các hoạt động. Khi quá trình tạo hoàn tất, các hoạt động sẽ tự động được thêm vào Edit Lesson.\n\n[[image:edit-lesson-ai-make/08.png|Màn hình LUMI AI đang khởi tạo]]\n\nNếu nhấp **Cancel Generating** trong lúc đang tạo, cửa sổ xác nhận hủy sẽ hiển thị.\n\n[[image:edit-lesson-ai-make/08.png|Nút Cancel Generating]]\n\n> **\"Used AI credits are non-refundable. Are you sure you want to cancel?\"**\n> - **Keep**: tiếp tục tạo.\n> - **Cancel**: dừng tạo.\n\n[[image:edit-lesson-ai-make/16.png|Cửa sổ xác nhận hủy tạo bằng AI]]\n\n⚠️ **Tín dụng AI sẽ không được hoàn lại dù bạn hủy.** Phần tín dụng đã dùng đến thời điểm hủy được xem là đã tiêu thụ. Sau khi bắt đầu tạo, bạn nên để quá trình hoàn tất nếu có thể.\n\n[[image:edit-lesson-ai-make/09.png|Hoạt động được thêm sau khi AI tạo xong]]\n\nNgay cả khi hoạt động được tạo chưa đúng ý, bạn vẫn có thể chỉnh sửa trực tiếp bất cứ lúc nào. (Service Tip: \"Not satisfied with the AI-generated options? You can click to edit them anytime!\")\n\n[[image:edit-lesson-ai-make/09.png|Hướng dẫn chỉnh sửa kết quả do AI tạo]]",
+      "Trong cửa sổ **Make with AI**, chọn tab **Google Drive**. Khi cửa sổ **Select a file** mở ra, hãy chọn tệp mong muốn trong My Drive.\n\n[[image:edit-lesson-ai-make/10.png|Chọn tệp trong tab Google Drive]]\n\n- Google Drive cũng hỗ trợ thêm các định dạng: **pdf, doc, docx, ppt, pptx, odt, rtf, odp, txt**\n- Sau khi chọn tệp, tiến trình chuyển đổi sẽ hiển thị dưới dạng \"Converting file N%...\". Khi hoàn tất, bạn sẽ chuyển sang màn hình xem trước trang.\n\n[[image:edit-lesson-ai-make/11.png|Tiến trình chuyển đổi tệp Google Drive]]\n\nSau đó, **Bước 4 đến 6** giống với cách dùng tệp cục bộ.\n\n> ⚠️ Tạo bằng AI **sẽ trừ tín dụng AI**. Trước khi tạo, hãy kiểm tra thông báo \"AI credits will be deducted.\" ở phía dưới."
     ],
   'edit-lesson-load-storage': [
     "Trong khi làm việc trên màn hình Chỉnh sửa bài học, bạn có thể đưa trực tiếp nội dung từ Bộ nhớ của tôi vào.\n\n[[image:edit-lesson-load-storage/01.png|Chuyển đến tab Bộ nhớ của tôi từ Chỉnh sửa bài học]]\n\n- Vào màn hình Chỉnh sửa bài học.\n- Nhấp vào nút **+ Tạo thủ công** ở góc trên bên trái hoặc ở giữa màn hình.\n- Khi popup **Tạo thủ công** mở ra, nhấp vào tab **Bộ nhớ của tôi** ở phía trên.\n- Các thư mục và bài học đã lưu trong Bộ nhớ của tôi sẽ hiển thị. Chọn bài học mong muốn.\n- Chọn Activity Slide muốn nhập từ bài học.\n- Để nhập tất cả hoạt động, nhấp vào hộp chọn **Chọn tất cả hoạt động**.\n- Nhấp vào nút **Nhập** để thêm hoạt động đã chọn vào bài học hiện tại.\n\n[[image:edit-lesson-load-storage/02.png|Chọn bài học trong Bộ nhớ của tôi]]\n\n[[image:edit-lesson-load-storage/03.png|Nhập hoạt động đã chọn bằng Nhập]]",
@@ -10331,7 +10331,7 @@ Object.entries(translationFallbacks).forEach(([language, fallback]) => {
                 },
                 [
                           "Click the **Card Draw** icon on the toolbar at the bottom of the class screen to open the card draw setup screen. Card Draw is a tool that turns candidate names or items into cards, then randomly draws one or more cards.\n\nUse it when you need a light random selection, such as choosing a presenter, deciding an order, or selecting a group representative.",
-                          "[[image:toolkit-card-draw/03.png|Card Draw candidate list setup screen]]\n\nIn the **Pick [N] of [M]** area at the top, set how many cards (N) to draw from the total number of cards (M). Use the **− / +** buttons to adjust the number of cards to draw and the total number of cards. You can set up to **50** candidates.\n\nIn each input field, enter the name or item that will appear on the card. If you have a saved student list, you can load it with **Load Student List**. When setup is complete, click **Set** to move to the card draw screen.",
+                          "[[image:toolkit-card-draw/04.png|Card Draw candidate list setup screen]]\n\nIn the **Pick [N] of [M]** area at the top, set how many cards (N) to draw from the total number of cards (M). Use the **− / +** buttons to adjust the number of cards to draw and the total number of cards. You can set up to **50** candidates.\n\nIn each input field, enter the name or item that will appear on the card. If you have a saved student list, you can load it with **Load Student List**. When setup is complete, click **Set** to move to the card draw screen.",
                           "[[image:toolkit-card-draw/05.png|Card Draw waiting screen before draw]]\n\nWhen you click **Set**, the cards are laid out face down according to the number of candidates entered. At the top, the current condition appears, such as **Pick 3 of 10**.\n\nOn this screen, click **Draw** to randomly select the configured number of cards. The intermediate screen where cards shuffle or move is not essential for checking the result, so this manual focuses on the waiting screen before the draw and the result screen.",
                           "[[image:toolkit-card-draw/08.png|Card Draw result screen]]\n\nWhen the draw is complete, the selected cards are revealed face up, and the candidate names appear inside the cards. If multiple cards were configured to be drawn, the selected cards appear side by side.\n\n- **Redraw**: Draw again with the same candidate setup.\n\n- **Reset**: Clear the current setup and return to the initial setup screen.\n\nUse Redraw when you need to draw once more from the same candidate list. Use Reset when you need to change the number of candidates or their names."
                 ]
@@ -10354,7 +10354,7 @@ Object.entries(translationFallbacks).forEach(([language, fallback]) => {
                 },
                 [
                           "Clique no ícone **Card Draw** na barra de ferramentas na parte inferior da tela da aula para abrir a tela de configuração de sorteio de cartas. Card Draw é uma ferramenta que transforma nomes de candidatos ou itens em cartas e depois sorteia uma ou mais cartas aleatoriamente.\n\nUse quando precisar de uma seleção aleatória simples, como escolher um apresentador, definir uma ordem ou selecionar um representante de grupo.",
-                          "[[image:toolkit-card-draw/03.png|Tela de configuração da lista de candidatos do Card Draw]]\n\nNa área **Pick [N] of [M]** na parte superior, defina quantas cartas (N) serão sorteadas entre o total de cartas (M). Use os botões **− / +** para ajustar a quantidade de cartas a sortear e o total de cartas. É possível configurar até **50** candidatos.\n\nEm cada campo de entrada, escreva o nome ou item que aparecerá na carta. Se houver uma lista de alunos salva, você pode carregá-la com **Load Student List**. Quando a configuração estiver concluída, clique em **Set** para ir para a tela de sorteio de cartas.",
+                          "[[image:toolkit-card-draw/04.png|Tela de configuração da lista de candidatos do Card Draw]]\n\nNa área **Pick [N] of [M]** na parte superior, defina quantas cartas (N) serão sorteadas entre o total de cartas (M). Use os botões **− / +** para ajustar a quantidade de cartas a sortear e o total de cartas. É possível configurar até **50** candidatos.\n\nEm cada campo de entrada, escreva o nome ou item que aparecerá na carta. Se houver uma lista de alunos salva, você pode carregá-la com **Load Student List**. Quando a configuração estiver concluída, clique em **Set** para ir para a tela de sorteio de cartas.",
                           "[[image:toolkit-card-draw/05.png|Tela de espera do sorteio do Card Draw]]\n\nAo clicar em **Set**, as cartas são exibidas viradas para baixo de acordo com a quantidade de candidatos inseridos. Na parte superior, a condição atual aparece, como **Pick 3 of 10**.\n\nNesta tela, clique em **Draw** para selecionar aleatoriamente a quantidade configurada de cartas. A tela intermediária em que as cartas se misturam ou se movem não é essencial para conferir o resultado, por isso este manual se concentra na tela de espera antes do sorteio e na tela de resultado.",
                           "[[image:toolkit-card-draw/08.png|Tela de resultado do Card Draw]]\n\nQuando o sorteio é concluído, as cartas selecionadas são reveladas com a frente visível, e os nomes dos candidatos aparecem dentro das cartas. Se várias cartas tiverem sido configuradas para sorteio, as cartas selecionadas aparecerão lado a lado.\n\n- **Redraw**: Sorteia novamente com a mesma configuração de candidatos.\n\n- **Reset**: Limpa a configuração atual e retorna à tela inicial de configuração.\n\nUse Redraw quando precisar sortear mais uma vez a partir da mesma lista de candidatos. Use Reset quando precisar alterar a quantidade de candidatos ou seus nomes."
                 ]
@@ -10377,7 +10377,7 @@ Object.entries(translationFallbacks).forEach(([language, fallback]) => {
                 },
                 [
                           "Haz clic en el ícono **Card Draw** en la barra de herramientas de la parte inferior de la pantalla de la clase para abrir la pantalla de configuración del sorteo de cartas. Card Draw es una herramienta que convierte nombres de candidatos o elementos en cartas y luego sortea una o varias cartas al azar.\n\nÚsala cuando necesites una selección aleatoria sencilla, como elegir un presentador, decidir un orden o seleccionar un representante de grupo.",
-                          "[[image:toolkit-card-draw/03.png|Pantalla de configuración de lista de candidatos de Card Draw]]\n\nEn el área **Pick [N] of [M]** de la parte superior, define cuántas cartas (N) se sortearán del total de cartas (M). Usa los botones **− / +** para ajustar la cantidad de cartas a sortear y la cantidad total de cartas. Puedes configurar hasta **50** candidatos.\n\nEn cada campo de entrada, escribe el nombre o elemento que aparecerá en la carta. Si tienes una lista de estudiantes guardada, puedes cargarla con **Load Student List**. Cuando la configuración esté completa, haz clic en **Set** para ir a la pantalla de sorteo de cartas.",
+                          "[[image:toolkit-card-draw/04.png|Pantalla de configuración de lista de candidatos de Card Draw]]\n\nEn el área **Pick [N] of [M]** de la parte superior, define cuántas cartas (N) se sortearán del total de cartas (M). Usa los botones **− / +** para ajustar la cantidad de cartas a sortear y la cantidad total de cartas. Puedes configurar hasta **50** candidatos.\n\nEn cada campo de entrada, escribe el nombre o elemento que aparecerá en la carta. Si tienes una lista de estudiantes guardada, puedes cargarla con **Load Student List**. Cuando la configuración esté completa, haz clic en **Set** para ir a la pantalla de sorteo de cartas.",
                           "[[image:toolkit-card-draw/05.png|Pantalla de espera del sorteo de Card Draw]]\n\nAl hacer clic en **Set**, las cartas se muestran boca abajo según la cantidad de candidatos ingresados. En la parte superior aparece la condición actual, como **Pick 3 of 10**.\n\nEn esta pantalla, haz clic en **Draw** para seleccionar al azar la cantidad configurada de cartas. La pantalla intermedia en la que las cartas se mezclan o se mueven no es esencial para comprobar el resultado, por lo que este manual se centra en la pantalla de espera antes del sorteo y en la pantalla de resultado.",
                           "[[image:toolkit-card-draw/08.png|Pantalla de resultado de Card Draw]]\n\nCuando el sorteo termina, las cartas seleccionadas se revelan boca arriba, y los nombres de los candidatos aparecen dentro de las cartas. Si se configuró el sorteo de varias cartas, las cartas seleccionadas aparecen una al lado de la otra.\n\n- **Redraw**: Vuelve a sortear con la misma configuración de candidatos.\n\n- **Reset**: Borra la configuración actual y vuelve a la pantalla inicial de configuración.\n\nUsa Redraw cuando necesites sortear una vez más desde la misma lista de candidatos. Usa Reset cuando necesites cambiar la cantidad de candidatos o sus nombres."
                 ]
@@ -10400,7 +10400,7 @@ Object.entries(translationFallbacks).forEach(([language, fallback]) => {
                 },
                 [
                           "授業画面下部のツールバーで**Card Draw**アイコンをクリックすると、カード抽選の設定画面が開きます。Card Drawは、候補者名や項目をカードにしてから、1枚または複数枚のカードをランダムに引くツールです。\n\n発表者を選ぶ、順番を決める、グループ代表を選ぶなど、気軽なランダム選択が必要な場面で使用できます。",
-                          "[[image:toolkit-card-draw/03.png|Card Drawの候補リスト設定画面]]\n\n上部の**Pick [N] of [M]**エリアで、カード総数（M）のうち何枚（N）を引くかを設定します。**− / +**ボタンで、引くカード数とカード総数を調整できます。候補は最大**50件**まで設定できます。\n\n各入力欄には、カードに表示する名前や項目を直接入力します。保存済みの生徒名簿がある場合は、**Load Student List**で読み込めます。設定が完了したら、**Set**をクリックしてカード抽選画面に移動します。",
+                          "[[image:toolkit-card-draw/04.png|Card Drawの候補リスト設定画面]]\n\n上部の**Pick [N] of [M]**エリアで、カード総数（M）のうち何枚（N）を引くかを設定します。**− / +**ボタンで、引くカード数とカード総数を調整できます。候補は最大**50件**まで設定できます。\n\n各入力欄には、カードに表示する名前や項目を直接入力します。保存済みの生徒名簿がある場合は、**Load Student List**で読み込めます。設定が完了したら、**Set**をクリックしてカード抽選画面に移動します。",
                           "[[image:toolkit-card-draw/05.png|Card Drawのカード抽選待機画面]]\n\n**Set**をクリックすると、入力した候補数に合わせてカードが裏向きで並びます。上部には、現在の設定条件が**Pick 3 of 10**のように表示されます。\n\nこの画面で**Draw**をクリックすると、設定した数のカードがランダムに選ばれます。カードが混ざったり動いたりする中間画面は結果確認に必須ではないため、このマニュアルでは抽選前の待機画面と結果画面を中心に確認します。",
                           "[[image:toolkit-card-draw/08.png|Card Drawの結果確認画面]]\n\n抽選が完了すると、選ばれたカードが表向きで公開され、カード内に候補者名が表示されます。複数枚を引く設定にした場合は、選ばれたカードが横に並んで表示されます。\n\n- **Redraw**：同じ候補構成でもう一度引きます。\n\n- **Reset**：現在の設定を初期化し、最初の設定画面に戻ります。\n\n同じ候補リストでもう一度引く必要がある場合はRedrawを使用し、候補数や名前を変更する場合はResetで再設定します。"
                 ]
@@ -10423,7 +10423,7 @@ Object.entries(translationFallbacks).forEach(([language, fallback]) => {
                 },
                 [
                           "Nhấp vào biểu tượng **Card Draw** trên thanh công cụ ở phía dưới màn hình lớp học để mở màn hình thiết lập rút thẻ. Card Draw là công cụ biến tên ứng viên hoặc mục thành thẻ, sau đó rút ngẫu nhiên một hoặc nhiều thẻ.\n\nCó thể dùng trong những tình huống cần chọn ngẫu nhiên nhẹ nhàng, như chọn người thuyết trình, quyết định thứ tự hoặc chọn đại diện nhóm.",
-                          "[[image:toolkit-card-draw/03.png|Màn hình thiết lập danh sách ứng viên của Card Draw]]\n\nTrong khu vực **Pick [N] of [M]** ở phía trên, hãy thiết lập số thẻ (N) cần rút trong tổng số thẻ (M). Dùng các nút **− / +** để điều chỉnh số thẻ cần rút và tổng số thẻ. Bạn có thể thiết lập tối đa **50** ứng viên.\n\nTrong mỗi ô nhập, hãy nhập trực tiếp tên hoặc mục sẽ hiển thị trên thẻ. Nếu có danh sách học sinh đã lưu, bạn có thể tải bằng **Load Student List**. Khi thiết lập xong, nhấp vào **Set** để chuyển đến màn hình rút thẻ.",
+                          "[[image:toolkit-card-draw/04.png|Màn hình thiết lập danh sách ứng viên của Card Draw]]\n\nTrong khu vực **Pick [N] of [M]** ở phía trên, hãy thiết lập số thẻ (N) cần rút trong tổng số thẻ (M). Dùng các nút **− / +** để điều chỉnh số thẻ cần rút và tổng số thẻ. Bạn có thể thiết lập tối đa **50** ứng viên.\n\nTrong mỗi ô nhập, hãy nhập trực tiếp tên hoặc mục sẽ hiển thị trên thẻ. Nếu có danh sách học sinh đã lưu, bạn có thể tải bằng **Load Student List**. Khi thiết lập xong, nhấp vào **Set** để chuyển đến màn hình rút thẻ.",
                           "[[image:toolkit-card-draw/05.png|Màn hình chờ rút thẻ của Card Draw]]\n\nKhi nhấp vào **Set**, các thẻ sẽ được xếp úp xuống theo số lượng ứng viên đã nhập. Ở phía trên, điều kiện hiện tại sẽ hiển thị, chẳng hạn như **Pick 3 of 10**.\n\nTrên màn hình này, nhấp vào **Draw** để chọn ngẫu nhiên số thẻ đã thiết lập. Màn hình trung gian khi thẻ được trộn hoặc di chuyển không phải là thông tin bắt buộc để kiểm tra kết quả, nên tài liệu này tập trung vào màn hình chờ trước khi rút và màn hình kết quả.",
                           "[[image:toolkit-card-draw/08.png|Màn hình kiểm tra kết quả của Card Draw]]\n\nKhi rút thẻ hoàn tất, các thẻ được chọn sẽ được lật lên và tên ứng viên sẽ hiển thị trong thẻ. Nếu thiết lập rút nhiều thẻ, các thẻ được chọn sẽ hiển thị cạnh nhau.\n\n- **Redraw**: Rút lại với cùng cấu hình ứng viên.\n\n- **Reset**: Xóa thiết lập hiện tại và quay về màn hình thiết lập ban đầu.\n\nDùng Redraw khi cần rút thêm một lần từ cùng danh sách ứng viên. Dùng Reset khi cần thay đổi số lượng ứng viên hoặc tên ứng viên."
                 ]
@@ -12921,3 +12921,1529 @@ Object.entries(getStartedFaqTranslations).forEach(([language, pages]) => {
   Object.assign(translations[language].articleBodies, pages.articleBodies);
 });
 // END GET STARTED FAQ TRANSLATION PATCH
+
+// BEGIN ASSESSMENT CLASS TRANSLATION PATCH
+const assessmentClassTranslationPatch = {
+  en: {
+    manualTree: {
+      'group-assessment-run': { title: 'Use Assessment' },
+      'cat-class': { title: 'Class', description: 'Check class and assignment reports, and manage student rosters' },
+      'class-teaching-report': { title: 'Check Teaching Report' },
+      'class-assignment-report': { title: 'Check Assignment Report' },
+      'class-management': { title: 'Use Class Management' }
+    },
+    articles: {
+      'group-assessment-run': {
+        category: 'Export Assignments',
+        title: 'Use Assessment',
+        desc: 'Assessment is an asynchronous evaluation feature that lets teachers assign assessment sheets from Curriculum, and students solve and submit them on their own devices before the due date.',
+        note: 'This guide explains the flow in this order: ① find an assessment sheet → ② assign it → ③ share it → ④ students take it → ⑤ check results and review.',
+        sections: ['Find an assessment sheet (Curriculum → Assessment)', 'Assign an assessment sheet (Assign)', 'Share with students (Share Assessment)', 'Student screen — taking the assessment', 'Check results & review']
+      },
+      'cat-class': {
+        category: 'LumiTeach Help Center',
+        title: 'Use Class',
+        desc: 'Learn how to check live class and assignment results from the Class menu, and manage the student roster used for classes.',
+        note: 'Class includes report areas for student participation results and a class management area for classes and student lists.',
+        sections: ['Check Teaching Report', 'Check Assignment Report', 'Use Class Management']
+      },
+      'class-teaching-report': {
+        category: 'Class',
+        title: 'Check Teaching Report',
+        desc: 'Teaching Report gives a comprehensive view of live class participation, accuracy rate, completion rate, and student activity status.',
+        note: 'Review the class list, summary metrics, student distribution chart, student table, and student detail screen in order.',
+        sections: ['Entry and filters', 'Class list', 'Summary metrics', 'Student distribution chart', 'Student Activity Performance', 'Student detail screen']
+      },
+      'class-assignment-report': {
+        category: 'Class',
+        title: 'Check Assignment Report',
+        desc: 'Assignment Report lets you check student participation and results for assignments or assessments distributed as assignments.',
+        note: 'Review the assignment list, accuracy distribution, student table, Share Assignment window, and student detail screen in order.',
+        sections: ['Entry and filters', 'Assignment list', 'Accuracy distribution', 'Student Activity Performance', 'Share assignment', 'Student detail screen']
+      },
+      'class-management': {
+        category: 'Class',
+        title: 'Use Class Management',
+        desc: 'In Class Management, you can create classes and issue or manage individual login information and QR codes for each student.',
+        note: 'Manage classes, student lists, Student Codes, and Personal QR Codes so assignments can be distributed and reports can be tracked by Class.',
+        sections: ['Entry and filters', 'Create a Class', 'Class card & management', 'Student list', 'Register students', 'Personal QR Code']
+      }
+    },
+    hubDescriptions: {
+      'cat-class': 'Check class and assignment reports, and manage student rosters.',
+      'class-teaching-report': 'Check live class participation, accuracy, completion, and each student Activity record.',
+      'class-assignment-report': 'Check assignment submission rate, average accuracy, and each student submission details.',
+      'class-management': 'Create Classes and manage student lists, QR Code, Class information edits, and filters.',
+      'group-assessment-run': 'Find an Assessment provided in Curriculum, assign it, share it, check student submissions, and review results.'
+    },
+    articleBodies: {
+      'group-assessment-run': [
+        `[[image:assessment/01.png|Curriculum Assessment tab]]
+
+From the top menu, go to **Curriculum**, then select the **Assessment** tab on the curriculum screen, such as **NGSS – Next Generation Science Standards**. The top area has two tabs: **Lesson / Assessment**.
+
+In the left **Curriculum Tree**, select the school level (**Elementary School / Middle School**), grade (**Grade K – Grade 5**, etc.), and domain (**PS · LS · ESS · ETS**, etc.) to filter the assessment list. You can also change the grade from the top dropdown, such as grade All.
+
+[[image:assessment/02.png|Assessment card list]]
+
+The **Assessment** tab lists assessment cards by standard, such as "Forces and Interactions: Pushes and Pulls". Each card shows the title, item count, such as "13 item(s)", question types such as **Multiple Choice**, **Short Answer**, **True or False**, and **fill in the blank**, and the subject, such as Science.
+
+Use **Change Curriculum** to switch to another curriculum.`,
+        `[[image:assessment/03.png|Assessment assignment window]]
+
+Click an assessment card to open the assignment window. The left side shows a question preview, and the right side contains assignment settings.
+
+In the left preview area, switch between mobile and desktop views to check how students will see it. Use the **‹ / ›** buttons to move through questions.
+
+[[image:assessment/04.png|Question preview screen]]
+
+In the right settings area, configure the title, curriculum information, due date, question shuffle, and assignment scope.
+
+[[image:assessment/07.png|Title editing state]]
+
+Click the pencil icon next to the title to edit it, then use **Cancel / Save** to cancel or save the change.
+
+[[image:assessment/06.png|Expanded Curriculum Details]]
+
+Expand **Curriculum Details** to check the curriculum information connected to the assessment sheet. It includes **School Level**, such as Elementary School, **Grade**, such as Grade K, **Domain**, such as PS, **Cluster**, such as Forces and Interactions: Pushes and Pulls, and **Standard**, such as K-PS2-1 and K-PS2-2.
+
+In **Due Date**, set the submission deadline by date and time, such as 06/26/2026, 11:00 PM. Turn on **Shuffle Questions** to provide each student with the questions in a different random order.
+
+[[image:assessment/05.png|Assigned to options]]
+
+Select the distribution scope in **Assigned to**.
+
+- **Public Link (Guest Access)**: anyone with the link can access the assessment.
+- **Class Only (Private Access)**: only students on the class list can access it, using an individual QR code or unique Access Code.
+
+After completing the settings, click **Assign** in the lower-right corner to finish assigning it.`,
+        `[[image:assessment/08.png|Share Assessment window]]
+
+After the assignment is created, the **Share Assessment** window opens. Share it with students using the methods below.
+
+- The assessment title and **Due Date** are displayed.
+- **URL**: the assessment link is provided, such as https://dev.lumiteach.ai/student?code=6326. Copy it with **Copy Link**.
+- **QR Code**: share the assessment with a QR code.
+- **Access Code**: the code students enter to join, such as 6326.`,
+        `[[image:assessment/09.png|Student entry screen]]
+
+When students open the link or code, they see **Nickname**, such as Lumi, the **Assessment** title, item count, such as 13 item(s), a preview of the first question, and the due date, such as "Until 2026.06.26. 11:00 PM". Students click **Start** to begin.
+
+[[image:assessment/10.png|Multiple Choice question screen]]
+
+On the question screen, the question number and question appear on the left, and the answer area appears on the right. Students move between questions with the **N/13** indicator and **‹ / ›** buttons at the bottom.
+
+- **Multiple Choice**: select an option under "Choose your answer". Example: "Steam is an example of a___" → gas / food / solid / liquid
+- **Short Answer**: type the answer directly in "Write your Answer". Example: "Rain falls from___." → Cloud
+
+[[image:assessment/12.png|Short Answer question screen]]
+
+After answering, students submit with **Submit**. The assessment may also include types such as **True or False** and **fill in the blank**.`,
+        `[[image:assessment/15.png|Submission completed screen]]
+
+After all questions are submitted, "Your submission has been completed." appears and the results are summarized.
+
+The top area shows counts for **Correct**, **Wrong**, and **Not Submitted**. The **Results** grid shows each question number, 1–13, with ✓ for correct or ✕ for wrong.
+
+Use **View Detailed Review** to open detailed review, or **Go to Home** to go to the home screen.
+
+[[image:assessment/13.png|Review Mode wrong answer screen]]
+
+Click **View Detailed Review** to move to **Review Mode** for each question. Each question shows the question number and a **Correct / Wrong** badge at the top, and the student's selected answer is highlighted. The right result card shows "The correct answer is" with the correct answer.
+
+[[image:assessment/14.png|Review Mode correct answer screen]]
+
+Wrong answers are shown with an orange **Wrong**, and correct answers with a green **Correct!**. Use **‹ N/13 ›** at the bottom to move between questions, or **Back to Results** to return to the result summary.`
+      ],
+      'cat-class': [
+        `**Class** is the space where you can understand class and assignment results at a glance, and manage classes and students. The top **Class** menu has three tabs, each with the following role.
+
+- **Teaching Report**: gives a comprehensive view of participation, accuracy, and Activity status for live **Teaching** sessions.
+- **Assignment Report**: lets you check student participation and results for assignments or assessments.
+- **Class Management**: lets you create classes and issue or manage individual student login information, including **Student Code** and QR.`,
+        `Check the detailed usage of each tab in the child pages below. Use **Teaching Report** for class results, **Assignment Report** for assignment results, and **Class Management** to manage classes and student rosters.`
+      ],
+      'class-teaching-report': [
+        `**Teaching Report** is a report that provides a comprehensive view of participation, accuracy rate, completion rate, and student activity status for live **Teaching** sessions ("Provides a comprehensive view of lesson participation, accuracy rate, and student activity overview").
+
+[[image:class-teaching-report/01.png|Teaching Report main screen]]`,
+        `Check it from the top menu under **Class → Teaching Report**. Use the top filters to find the class you want.
+
+- **Type**: filter by class type.
+- **Date**: filter by date.
+- Search field ("Enter a search term"): search by class name.`,
+        `On the left side, class sessions are listed as cards. Each card shows the session mode, such as **Interaction**, class name, such as Planet Earth Quiz, date and time, and session type, such as Guest Session or Service group. Use **Delete** from the **⋮** menu on the right side of the card to delete it.
+
+Key metrics for the selected class are shown at the top.
+
+- **Participation**: number of participating students, such as 10
+- **Avg. Accuracy Rate**: average accuracy rate, or "No Quiz" if there is no quiz
+- **Avg. Completion Rate**: average completion rate, such as 90%, "0.9/1 Activities"`,
+        `[[image:class-teaching-report/04.png|Student distribution chart]]
+
+The distribution chart shows student status at a glance using **Accuracy Rate** and **Completion Rate** as two axes. The chart is divided into four quadrants, and if all students are doing well, "All students are on track!" is displayed.
+
+- **Good**: Accuracy Rate ≥ 50% and Completion Rate ≥ 50% (green — Good Student)
+- **At Risk**: one of the two metrics is below 50% (yellow — At Risk Student)
+- **Need Attention**: both metrics are below 50% (red — Need Attention Student)
+
+The quadrant labels are **Low Accuracy, High Completion / Good / Need Attention / High Accuracy, Low Completion**.`,
+        `[[image:class-teaching-report/02.png|Student Activity Performance table]]
+
+Student participation status is organized in the **Student Activity Performance** table.
+
+- Columns: **Name**, **Total Activity**, **Participation** (Joined), **Accuracy Rate**, **Completion Rate**
+- Use the search icon on the right to view student details, and use the **⋮** menu to delete.
+
+[[image:class-teaching-report/06.png|Join Time sort options]]
+
+Use the sort dropdown to switch between **Join Time** and **Nickname**.`,
+        `[[image:class-teaching-report/07.png|Student detail screen]]
+
+Select a student to open the individual detail screen. The top area shows that student's **Accuracy Rate**, **Completion Rate**, and **Join Time**.
+
+The table below shows each item with **No**, **Activity Type**, such as General/Image, Board/Whiteboard, Board/Brainstorming, Discussion/Vote, and Quiz/Multiple Choice, **Submitted Answer**, **Result**, such as correct, wrong, or Skipped, and **Q&A**. Activities the student did not participate in are shown as **Skipped**.`
+      ],
+      'class-assignment-report': [
+        `**Assignment Report** is a report for checking student participation and results for assignments or assessments distributed as assignments ("View student participation and results for each assignment."). It covers asynchronous assignments with due dates, not live classes.
+
+[[image:class-assignment-report/03.png|Assignment Report main screen]]`,
+        `Check it from the top menu under **Class → Assignment Report**. Use the top filters to find assignments.
+
+- **Sort**: choose the sort criterion, such as Latest.
+- **Status**: choose the assignment status, such as All.
+- **Type**: choose the assignment type, such as All.
+- **Date**: choose the date condition, such as All.
+- Use the search field to search assignments.`,
+        `On the left side, distributed assignment cards are listed. Each card shows the type badge, such as **Individual** or **Assessment**, assignment name, status, such as ongoing, distributed date and due date, session type, such as Guest Session, and the number of participating students, such as 5 Students.`,
+        `[[image:class-assignment-report/05.png|Accuracy distribution by assignment]]
+
+The selected assignment's results are displayed on the right.
+
+- **Average Accuracy**: shows the average accuracy, such as 73%, "26 Quiz", and the score distribution chart. It also shows the average line, such as "avg 73%", together with student distribution.
+- Legend: **On Track (≥50%)**, **At-risk (<50%)**, Class avg, avg ±10%, Score Distribution
+- **Submission Rate**: number of students who submitted
+
+> ⚠️ **Open-Ended** questions are excluded from accuracy scoring.
+
+> **Score Distribution** is available when at least **5 students** have submitted.`,
+        `[[image:class-assignment-report/06.png|Student list sort options]]
+
+Use the **Student Activity Performance** table to check each student's assignment performance.
+
+- Columns: **Name**, **Total Activity**, **Participation** (Participated), **Accuracy Rate**, **Completion Rate**
+- Use the search icon on the right to view student details, and use the **⋮** menu to delete.
+- Sort dropdown: **Nickname** / **Submission Time**`,
+        `[[image:class-assignment-report/01.png|Share Assignment window]]
+
+When sharing an assignment with students, use the **Share Assignment** window. It provides the assignment name, **Due Date**, response **URL**, such as https://dev.lumiteach.ai/student?code=5566, **Copy Link**, **QR Code**, and **Access Code**, such as 5566.`,
+        `[[image:class-assignment-report/09.png|Individual student submission details]]
+
+Select a student to view the individual response record. The top area shows **Accuracy Rate**, such as 73% 19/26, **Completion Rate**, such as 81% 38/43, and **Submitted Time**.
+
+The table columns are **No**, **Activity Type**, such as General, Discussion, Quiz(Multiple Choice/True or False/Short Answer/Fill in the Blank/Matching/Sorting/Open-Ended), **Submitted Answer**, **Result** (Correct/Wrong/-), and **Status** (Submitted / Not Submitted / -).
+
+Because **Open-Ended** questions are not automatically graded, you can manually set **Correct / Wrong** in Result.`
+      ],
+      'class-management': [
+        `**Class Management** is where you create **Class** and issue or manage individual student login information, such as **Student Code** and QR ("Manage classes and assign individual login credentials to students."). After creating a class and registering students, you can distribute assignments by Class and track reports.
+
+[[image:class-management/01.png|Class Management main screen]]`,
+        `Check it from the top menu under **Class → Class Management**. Use the top filters to find classes.
+
+- **Year**: year (All / 2025 / 2026 / 2027 / 2028)
+- **Grade**: grade (All / Common / Grade 1–12)
+- **School**: search by school name
+
+If no class has been created yet, "No Class Created Yet." appears with the **New Class** button.`,
+        `[[image:class-management/04.png|Required information for Create Class]]
+
+Click **New Class** to open the **Create Class** window.
+
+### Required information
+
+- **Class Code**: generated automatically ("Auto-generated").
+- **Year**: select the year, such as 2026.
+- **Grade**: select the grade, such as Common or Grade 1–12.
+- **Class Name**: enter the class name, up to 30 characters.
+
+[[image:class-management/05.png|Optional information for Create Class]]
+
+### Optional
+
+- **School**: enter the school name, up to 50 characters.
+
+[[image:class-management/06.png|Class can be created]]
+
+After required fields are filled, the **Create** button becomes active and the class can be created.`,
+        `[[image:class-management/07.png|Class card and student list]]
+
+The created class appears as a card on the left. It shows the year, such as 2026, class name, such as Lumi Class, school, such as Lumiteach Elementary School, grade and student count, such as Grade 5 (10 Student), and Class Code, such as 5ZCWNB.
+
+- **⋮** menu on the card: **Edit Class Info** / **Delete**
+- Sort dropdown at the top left: **Recently Created** / **Recently Used**
+
+[[image:class-management/24.png|Class card more menu]]
+
+[[image:class-management/25.png|Class sort options]]`,
+        `[[image:class-management/10.png|Student list screen]]
+
+The selected class's student list appears on the right.
+
+- Use the sort dropdown (**Nickname** / **Number**) and the search field ("Search by nickname or number") to find a student.
+- Use the right-side icons to print, download, or delete.
+- If there are no students yet, "No students registered yet. Please add students." is displayed.
+- Each student row hides the **Student Code** as dots (••••). Click the eye icon to reveal the code, such as 7662. Use the QR icon to view the personal QR, and the trash icon to delete.`,
+        `[[image:class-management/08.png|Choose Bulk Add method]]
+
+Click **Manage Students** to switch to **Student List Edit mode**.
+
+- **Add Student**: add rows one by one and enter **Name** and **Student Code**. If Student Code is left blank, it is automatically generated ("e.g. 1234 (Auto)"), but you can also enter it manually.
+- **Bulk Add**: add multiple students at once.
+  - **Import from Past Lesson**: import students from a previous class.
+  - **Upload Excel/CSV**: upload with an Excel/CSV file.
+  - **Download Excel Template**: download an Excel template for upload.
+
+After entering the information, click **Save**, then end editing with **Manage Students End**. After saving, each student receives a unique Student Code, such as Ethan 7662.`,
+        `[[image:class-management/13.png|Personal QR Code popup]]
+
+Click the QR icon in a student row to open the **Personal QR Code** window. It shows the QR code and the following information.
+
+- **Grade**
+- **Class**, such as Grade 5, Lumi Class
+- **Class Code**, such as 5ZCWNB
+- **Student No.**, such as 1
+- **Student Code**, such as 7662
+- **Name**, such as Ethan
+- **Student Home**, such as https://dev.lumiteach.ai/student
+
+Use **Print** to print and hand it out to students. Students can join classes or assignments with this QR or Student Code.`,
+        `[[image:class-management/26.png|Year filter]]
+
+[[image:class-management/27.png|Grade filter]]
+
+Use the Year and Grade filters to narrow the list to Classes for a specific school year and grade.`
+      ]
+    }
+  }
+};
+
+const sharedAssessmentClassTranslations = {
+  pt: {
+    manualTree: {
+      'group-assessment-run': { title: 'Usar Assessment' },
+      'cat-class': { title: 'Class', description: 'Ver relatórios de aulas e tarefas, e gerir listas de alunos' },
+      'class-teaching-report': { title: 'Ver Teaching Report' },
+      'class-assignment-report': { title: 'Ver Assignment Report' },
+      'class-management': { title: 'Usar Class Management' }
+    },
+    articles: {
+      'group-assessment-run': {
+        category: 'Exportar Assignments',
+        title: 'Usar Assessment',
+        desc: 'Assessment é uma funcionalidade de avaliação assíncrona que permite ao professor atribuir folhas de avaliação do Curriculum, para que os alunos resolvam e submetam nos próprios dispositivos dentro do prazo.',
+        note: 'Este guia explica o fluxo nesta ordem: ① encontrar uma folha de avaliação → ② atribuir (Assign) → ③ partilhar → ④ aluno responde → ⑤ verificar resultados e revisão.',
+        sections: ['Encontrar uma folha de avaliação (Curriculum → Assessment)', 'Atribuir uma folha de avaliação (Assign)', 'Partilhar com os alunos (Share Assessment)', 'Ecrã do aluno — responder à avaliação', 'Ver resultados e revisão']
+      },
+      'cat-class': {
+        category: 'LumiTeach Help Center',
+        title: 'Usar Class',
+        desc: 'Saiba como verificar resultados de aulas ao vivo e Assignments no menu Class, e como gerir a lista de alunos usada nas aulas.',
+        note: 'Class reúne áreas de relatório para resultados de participação dos alunos e uma área de gestão de turmas e listas de alunos.',
+        sections: ['Ver Teaching Report', 'Ver Assignment Report', 'Usar Class Management']
+      },
+      'class-teaching-report': {
+        category: 'Class',
+        title: 'Ver Teaching Report',
+        desc: 'Teaching Report mostra uma visão geral da participação, taxa de acerto, taxa de conclusão e atividades de cada aluno em aulas ao vivo.',
+        note: 'Verifique, em ordem, a lista de aulas, indicadores resumidos, gráfico de distribuição dos alunos, tabela de alunos e ecrã de detalhe.',
+        sections: ['Entrada e filtros', 'Lista de aulas', 'Indicadores resumidos', 'Gráfico de distribuição dos alunos', 'Student Activity Performance', 'Ecrã de detalhe do aluno']
+      },
+      'class-assignment-report': {
+        category: 'Class',
+        title: 'Ver Assignment Report',
+        desc: 'Assignment Report permite verificar a participação e os resultados dos alunos em tarefas ou avaliações distribuídas como Assignment.',
+        note: 'Verifique, em ordem, a lista de Assignments, distribuição de acertos, tabela de alunos, janela Share Assignment e ecrã de detalhe.',
+        sections: ['Entrada e filtros', 'Lista de Assignments', 'Distribuição de acertos', 'Student Activity Performance', 'Partilhar Assignment', 'Ecrã de detalhe do aluno']
+      },
+      'class-management': {
+        category: 'Class',
+        title: 'Usar Class Management',
+        desc: 'Em Class Management, pode criar turmas e emitir ou gerir informações individuais de login e QR codes para cada aluno.',
+        note: 'Gira Classes, listas de alunos, Student Codes e Personal QR Codes para distribuir Assignments e acompanhar relatórios por Class.',
+        sections: ['Entrada e filtros', 'Criar uma Class', 'Cartão e gestão da Class', 'Lista de alunos', 'Registar alunos', 'Personal QR Code']
+      }
+    }
+  },
+  es: {
+    manualTree: {
+      'group-assessment-run': { title: 'Usar Assessment' },
+      'cat-class': { title: 'Class', description: 'Consultar reportes de clases y tareas, y gestionar listas de estudiantes' },
+      'class-teaching-report': { title: 'Consultar Teaching Report' },
+      'class-assignment-report': { title: 'Consultar Assignment Report' },
+      'class-management': { title: 'Usar Class Management' }
+    },
+    articles: {
+      'group-assessment-run': {
+        category: 'Exportar Assignments',
+        title: 'Usar Assessment',
+        desc: 'Assessment es una función de evaluación asincrónica que permite al docente asignar hojas de evaluación desde Curriculum, para que los estudiantes las resuelvan y envíen en sus propios dispositivos dentro del plazo.',
+        note: 'Esta guía explica el flujo en este orden: ① buscar una hoja de evaluación → ② asignarla (Assign) → ③ compartirla → ④ el estudiante responde → ⑤ revisar resultados.',
+        sections: ['Buscar una hoja de evaluación (Curriculum → Assessment)', 'Asignar una hoja de evaluación (Assign)', 'Compartir con estudiantes (Share Assessment)', 'Pantalla del estudiante — responder la evaluación', 'Consultar resultados y revisión']
+      },
+      'cat-class': {
+        category: 'LumiTeach Help Center',
+        title: 'Usar Class',
+        desc: 'Aprende a consultar resultados de clases en vivo y Assignments desde el menú Class, y a gestionar la lista de estudiantes usada en las clases.',
+        note: 'Class reúne áreas de reportes para resultados de participación y un área de gestión de clases y listas de estudiantes.',
+        sections: ['Consultar Teaching Report', 'Consultar Assignment Report', 'Usar Class Management']
+      },
+      'class-teaching-report': {
+        category: 'Class',
+        title: 'Consultar Teaching Report',
+        desc: 'Teaching Report muestra una vista integral de la participación, tasa de acierto, tasa de finalización y actividad de cada estudiante en clases en vivo.',
+        note: 'Revisa en orden la lista de clases, métricas resumidas, gráfico de distribución, tabla de estudiantes y pantalla de detalle.',
+        sections: ['Entrada y filtros', 'Lista de clases', 'Métricas resumidas', 'Gráfico de distribución de estudiantes', 'Student Activity Performance', 'Pantalla de detalle del estudiante']
+      },
+      'class-assignment-report': {
+        category: 'Class',
+        title: 'Consultar Assignment Report',
+        desc: 'Assignment Report permite revisar la participación y los resultados de los estudiantes en tareas o evaluaciones distribuidas como Assignment.',
+        note: 'Revisa en orden la lista de Assignments, distribución de aciertos, tabla de estudiantes, ventana Share Assignment y pantalla de detalle.',
+        sections: ['Entrada y filtros', 'Lista de Assignments', 'Distribución de aciertos', 'Student Activity Performance', 'Compartir Assignment', 'Pantalla de detalle del estudiante']
+      },
+      'class-management': {
+        category: 'Class',
+        title: 'Usar Class Management',
+        desc: 'En Class Management puedes crear clases y emitir o gestionar información individual de acceso y códigos QR para cada estudiante.',
+        note: 'Gestiona Classes, listas de estudiantes, Student Codes y Personal QR Codes para distribuir Assignments y hacer seguimiento de reportes por Class.',
+        sections: ['Entrada y filtros', 'Crear una Class', 'Tarjeta y gestión de Class', 'Lista de estudiantes', 'Registrar estudiantes', 'Personal QR Code']
+      }
+    }
+  },
+  ja: {
+    manualTree: {
+      'group-assessment-run': { title: 'Assessmentを活用する' },
+      'cat-class': { title: 'Classを使う', description: '授業・課題レポートを確認し、学生名簿を管理する' },
+      'class-teaching-report': { title: 'Teaching Reportを確認する' },
+      'class-assignment-report': { title: 'Assignment Reportを確認する' },
+      'class-management': { title: 'Class Managementを使う' }
+    },
+    articles: {
+      'group-assessment-run': {
+        category: 'Assignmentを書き出す',
+        title: 'Assessmentを活用する',
+        desc: 'Assessmentは、Curriculumで提供される評価シートを教師が割り当て、学生が自分の端末で期限内に解いて提出する非同期型の評価機能です。',
+        note: 'このガイドでは、①評価シートを探す → ②割り当てる(Assign) → ③共有する → ④学生が受験する → ⑤結果とレビューを確認する、の順に説明します。',
+        sections: ['評価シートを探す (Curriculum → Assessment)', '評価シートを割り当てる (Assign)', '学生に共有する (Share Assessment)', '学生画面 — Assessmentを受ける', '結果とレビューを確認する']
+      },
+      'cat-class': {
+        category: 'LumiTeach Help Center',
+        title: 'Classを使う',
+        desc: 'Classメニューでリアルタイム授業とAssignmentの結果を確認し、授業で使用する学生名簿を管理する方法を案内します。',
+        note: 'Classには、学生の参加結果を確認するレポート領域と、Classおよび学生リストを管理する領域があります。',
+        sections: ['Teaching Reportを確認する', 'Assignment Reportを確認する', 'Class Managementを使う']
+      },
+      'class-teaching-report': {
+        category: 'Class',
+        title: 'Teaching Reportを確認する',
+        desc: 'Teaching Reportでは、リアルタイム授業の参加率、正答率、完了率、学生別Activity状況を総合的に確認できます。',
+        note: '授業一覧、概要指標、学生分布チャート、学生別テーブル、詳細画面を順に確認します。',
+        sections: ['入口とフィルター', '授業一覧', '概要指標', '学生分布チャート', 'Student Activity Performance', '学生詳細画面']
+      },
+      'class-assignment-report': {
+        category: 'Class',
+        title: 'Assignment Reportを確認する',
+        desc: 'Assignment Reportでは、Assignmentとして配布した課題やAssessmentについて、学生別の参加状況と結果を確認できます。',
+        note: 'Assignment一覧、正答率分布、学生別テーブル、Share Assignment、学生詳細画面を順に確認します。',
+        sections: ['入口とフィルター', 'Assignment一覧', '正答率分布', 'Student Activity Performance', 'Assignmentを共有する', '学生詳細画面']
+      },
+      'class-management': {
+        category: 'Class',
+        title: 'Class Managementを使う',
+        desc: 'Class Managementでは、Classを作成し、学生ごとの個別ログイン情報とQRコードを発行・管理できます。',
+        note: 'Class単位でAssignmentを配布し、レポートを追跡できるように、Class、学生リスト、Student Code、Personal QR Codeを管理します。',
+        sections: ['入口とフィルター', 'Classを作成する', 'Classカードと管理', '学生リスト', '学生を登録する', 'Personal QR Code']
+      }
+    }
+  },
+  vi: {
+    manualTree: {
+      'group-assessment-run': { title: 'Sử dụng Assessment' },
+      'cat-class': { title: 'Sử dụng Class', description: 'Xem báo cáo lớp học và bài tập, đồng thời quản lý danh sách học sinh' },
+      'class-teaching-report': { title: 'Xem Teaching Report' },
+      'class-assignment-report': { title: 'Xem Assignment Report' },
+      'class-management': { title: 'Sử dụng Class Management' }
+    },
+    articles: {
+      'group-assessment-run': {
+        category: 'Xuất Assignments',
+        title: 'Sử dụng Assessment',
+        desc: 'Assessment là tính năng đánh giá không đồng bộ, cho phép giáo viên giao phiếu đánh giá có sẵn trong Curriculum để học sinh làm và nộp trên thiết bị cá nhân trong thời hạn quy định.',
+        note: 'Hướng dẫn này mô tả quy trình theo thứ tự: ① tìm phiếu đánh giá → ② giao (Assign) → ③ chia sẻ → ④ học sinh làm bài → ⑤ kiểm tra kết quả và xem lại.',
+        sections: ['Tìm phiếu đánh giá (Curriculum → Assessment)', 'Giao phiếu đánh giá (Assign)', 'Chia sẻ với học sinh (Share Assessment)', 'Màn hình học sinh — làm Assessment', 'Kiểm tra kết quả và xem lại']
+      },
+      'cat-class': {
+        category: 'LumiTeach Help Center',
+        title: 'Sử dụng Class',
+        desc: 'Tìm hiểu cách xem kết quả lớp học trực tiếp và Assignments trong menu Class, đồng thời quản lý danh sách học sinh dùng cho lớp học.',
+        note: 'Class bao gồm khu vực báo cáo kết quả tham gia của học sinh và khu vực quản lý lớp cùng danh sách học sinh.',
+        sections: ['Xem Teaching Report', 'Xem Assignment Report', 'Sử dụng Class Management']
+      },
+      'class-teaching-report': {
+        category: 'Class',
+        title: 'Xem Teaching Report',
+        desc: 'Teaching Report hiển thị tổng quan về mức độ tham gia, tỷ lệ chính xác, tỷ lệ hoàn thành và tình trạng hoạt động của từng học sinh trong lớp học trực tiếp.',
+        note: 'Kiểm tra lần lượt danh sách lớp học, chỉ số tóm tắt, biểu đồ phân bố học sinh, bảng học sinh và màn hình chi tiết.',
+        sections: ['Truy cập và bộ lọc', 'Danh sách lớp học', 'Chỉ số tóm tắt', 'Biểu đồ phân bố học sinh', 'Student Activity Performance', 'Màn hình chi tiết học sinh']
+      },
+      'class-assignment-report': {
+        category: 'Class',
+        title: 'Xem Assignment Report',
+        desc: 'Assignment Report cho phép kiểm tra mức độ tham gia và kết quả của học sinh đối với bài tập hoặc Assessment đã phát dưới dạng Assignment.',
+        note: 'Kiểm tra lần lượt danh sách Assignments, phân bố độ chính xác, bảng học sinh, cửa sổ Share Assignment và màn hình chi tiết.',
+        sections: ['Truy cập và bộ lọc', 'Danh sách Assignments', 'Phân bố độ chính xác', 'Student Activity Performance', 'Chia sẻ Assignment', 'Màn hình chi tiết học sinh']
+      },
+      'class-management': {
+        category: 'Class',
+        title: 'Sử dụng Class Management',
+        desc: 'Trong Class Management, bạn có thể tạo lớp và cấp hoặc quản lý thông tin đăng nhập cá nhân cùng mã QR cho từng học sinh.',
+        note: 'Quản lý Classes, danh sách học sinh, Student Codes và Personal QR Codes để phát Assignments và theo dõi báo cáo theo Class.',
+        sections: ['Truy cập và bộ lọc', 'Tạo Class', 'Thẻ Class và quản lý', 'Danh sách học sinh', 'Đăng ký học sinh', 'Personal QR Code']
+      }
+    }
+  }
+};
+
+Object.entries(sharedAssessmentClassTranslations).forEach(([language, pages]) => {
+  assessmentClassTranslationPatch[language] = {
+    ...pages,
+    hubDescriptions: {
+      'cat-class': pages.manualTree['cat-class'].description,
+      'class-teaching-report': pages.articles['class-teaching-report'].desc,
+      'class-assignment-report': pages.articles['class-assignment-report'].desc,
+      'class-management': pages.articles['class-management'].desc,
+      'group-assessment-run': pages.articles['group-assessment-run'].desc
+    }
+  };
+});
+assessmentClassTranslationPatch.pt.articleBodies = {
+  'group-assessment-run': [
+    `[[image:assessment/01.png|Aba Assessment em Curriculum]]
+
+No menu superior, aceda a **Curriculum** e selecione a aba **Assessment** no ecrã do currículo, por exemplo **NGSS – Next Generation Science Standards**. A parte superior tem duas abas: **Lesson / Assessment**.
+
+Na **Curriculum Tree** à esquerda, selecione o nível escolar (**Elementary School / Middle School**), o ano (**Grade K – Grade 5**, etc.) e o domínio (**PS · LS · ESS · ETS**, etc.) para filtrar a lista de avaliações. Também pode alterar o ano no dropdown superior, como grade All.
+
+[[image:assessment/02.png|Lista de cartões de Assessment]]
+
+A aba **Assessment** apresenta cartões de avaliação por padrão, como "Forces and Interactions: Pushes and Pulls". Cada cartão mostra o título, número de itens, como "13 item(s)", tipos de pergunta como **Multiple Choice**, **Short Answer**, **True or False** e **fill in the blank**, e a disciplina, como Science.
+
+Use **Change Curriculum** para mudar para outro currículo.`,
+    `[[image:assessment/03.png|Janela de atribuição do Assessment]]
+
+Clique num cartão de avaliação para abrir a janela de atribuição. À esquerda aparece a pré-visualização das perguntas; à direita ficam as definições de atribuição.
+
+Na área de pré-visualização à esquerda, alterne entre vista móvel e desktop para confirmar como os alunos verão o conteúdo. Use os botões **‹ / ›** para navegar pelas perguntas.
+
+[[image:assessment/04.png|Ecrã de pré-visualização da pergunta]]
+
+Na área de definições à direita, configure o título, as informações do currículo, o prazo, a ordem aleatória das perguntas e o âmbito de distribuição.
+
+[[image:assessment/07.png|Estado de edição do título]]
+
+Clique no ícone de lápis ao lado do título para o editar, depois use **Cancel / Save** para cancelar ou guardar.
+
+[[image:assessment/06.png|Curriculum Details expandido]]
+
+Expanda **Curriculum Details** para verificar as informações do currículo ligadas à folha de avaliação. Inclui **School Level**, como Elementary School, **Grade**, como Grade K, **Domain**, como PS, **Cluster**, como Forces and Interactions: Pushes and Pulls, e **Standard**, como K-PS2-1 e K-PS2-2.
+
+Em **Due Date**, defina o prazo de submissão por data e hora, como 06/26/2026, 11:00 PM. Ao ativar **Shuffle Questions**, cada aluno recebe as perguntas em ordem aleatória diferente.
+
+[[image:assessment/05.png|Opções de Assigned to]]
+
+Selecione o âmbito de distribuição em **Assigned to**.
+
+- **Public Link (Guest Access)**: qualquer pessoa com o link pode aceder.
+- **Class Only (Private Access)**: apenas alunos da lista da turma podem aceder, usando um QR individual ou um Access Code único.
+
+Depois de concluir as definições, clique em **Assign** no canto inferior direito para finalizar.`,
+    `[[image:assessment/08.png|Janela Share Assessment]]
+
+Depois da atribuição, a janela **Share Assessment** é aberta. Partilhe com os alunos pelos métodos abaixo.
+
+- O título da avaliação e o **Due Date** são apresentados.
+- **URL**: é fornecido o link de resposta, como https://dev.lumiteach.ai/student?code=6326. Copie-o com **Copy Link**.
+- **QR Code**: partilhe por QR code.
+- **Access Code**: código que o aluno insere para entrar, como 6326.`,
+    `[[image:assessment/09.png|Ecrã de entrada do aluno]]
+
+Quando o aluno acede pelo link ou código, vê **Nickname**, como Lumi, o título do **Assessment**, o número de itens, como 13 item(s), uma pré-visualização da primeira pergunta e o prazo, como "Until 2026.06.26. 11:00 PM". O aluno clica em **Start** para começar.
+
+[[image:assessment/10.png|Ecrã de pergunta Multiple Choice]]
+
+No ecrã da pergunta, o número e a pergunta aparecem à esquerda, e a área de resposta aparece à direita. O aluno navega pelas perguntas com o indicador **N/13** e os botões **‹ / ›** na parte inferior.
+
+- **Multiple Choice**: selecione uma opção em "Choose your answer". Exemplo: "Steam is an example of a___" → gas / food / solid / liquid
+- **Short Answer**: escreva diretamente em "Write your Answer". Exemplo: "Rain falls from___." → Cloud
+
+[[image:assessment/12.png|Ecrã de pergunta Short Answer]]
+
+Depois de responder, submeta com **Submit**. A avaliação também pode incluir tipos como **True or False** e **fill in the blank**.`,
+    `[[image:assessment/15.png|Ecrã de submissão concluída]]
+
+Depois de submeter todas as perguntas, aparece "Your submission has been completed." e os resultados são resumidos.
+
+No topo, aparecem as contagens de **Correct**, **Wrong** e **Not Submitted**. A grelha **Results** mostra cada número de pergunta, 1–13, com ✓ para correto ou ✕ para incorreto.
+
+Use **View Detailed Review** para abrir a revisão detalhada, ou **Go to Home** para voltar ao início.
+
+[[image:assessment/13.png|Review Mode com resposta incorreta]]
+
+Ao clicar em **View Detailed Review**, passa para o **Review Mode** de cada pergunta. Cada pergunta mostra o número e o selo **Correct / Wrong** no topo, e a resposta escolhida pelo aluno fica destacada. O cartão de resultado à direita mostra "The correct answer is" com a resposta correta.
+
+[[image:assessment/14.png|Review Mode com resposta correta]]
+
+Respostas incorretas aparecem com **Wrong** em laranja, e respostas corretas com **Correct!** em verde. Use **‹ N/13 ›** na parte inferior para navegar, ou **Back to Results** para voltar ao resumo.`
+  ]
+};
+
+Object.entries(assessmentClassTranslationPatch).forEach(([language, pages]) => {
+  if (!translations[language]) return;
+  translations[language].hubDescriptions = translations[language].hubDescriptions || {};
+  Object.assign(translations[language].manualTree, pages.manualTree || {});
+  Object.assign(translations[language].articles, pages.articles || {});
+  Object.assign(translations[language].hubDescriptions, pages.hubDescriptions || {});
+  Object.assign(translations[language].articleBodies, pages.articleBodies || {});
+});
+// END ASSESSMENT CLASS TRANSLATION PATCH
+
+// BEGIN ASSESSMENT CLASS BODY TRANSLATION CORRECTION
+Object.assign(translations.pt.articleBodies, {
+  'cat-class': [
+    `**Class** é o espaço onde pode compreender rapidamente os resultados de aulas e tarefas, além de gerir turmas e alunos. O menu superior **Class** tem três abas, cada uma com a função abaixo.
+
+- **Teaching Report**: mostra uma visão geral da participação, taxa de acerto e estado das Activities em aulas **Teaching** ao vivo.
+- **Assignment Report**: permite verificar a participação e os resultados dos alunos em Assignments ou avaliações.
+- **Class Management**: permite criar turmas e emitir ou gerir informações individuais de login dos alunos, incluindo **Student Code** e QR.`,
+    `Consulte o uso detalhado de cada aba nas páginas inferiores. Use **Teaching Report** para resultados de aulas, **Assignment Report** para resultados de Assignments, e **Class Management** para gerir turmas e listas de alunos.`
+  ],
+  'class-teaching-report': [
+    `**Teaching Report** é um relatório que mostra uma visão geral da participação, taxa de acerto, taxa de conclusão e estado das atividades dos alunos em aulas **Teaching** ao vivo ("Provides a comprehensive view of lesson participation, accuracy rate, and student activity overview").
+
+[[image:class-teaching-report/01.png|Ecrã principal do Teaching Report]]`,
+    `Pode encontrá-lo no menu superior em **Class → Teaching Report**. Use os filtros superiores para localizar a aula desejada.
+
+- **Type**: filtra por tipo de aula.
+- **Date**: filtra por data.
+- Campo de pesquisa ("Enter a search term"): pesquisa pelo nome da aula.`,
+    `No lado esquerdo, as sessões de aula são apresentadas em cartões. Cada cartão mostra o modo de sessão, como **Interaction**, o nome da aula, como Planet Earth Quiz, data e hora, e tipo de sessão, como Guest Session ou Service group. No menu **⋮** à direita do cartão, use **Delete** para eliminar.
+
+Os indicadores principais da aula selecionada aparecem no topo.
+
+- **Participation**: número de alunos participantes, por exemplo 10
+- **Avg. Accuracy Rate**: taxa média de acerto; se não houver quiz, aparece "No Quiz"
+- **Avg. Completion Rate**: taxa média de conclusão, por exemplo 90%, "0.9/1 Activities"`,
+    `[[image:class-teaching-report/04.png|Gráfico de distribuição dos alunos]]
+
+O gráfico de distribuição mostra o estado dos alunos usando **Accuracy Rate** e **Completion Rate** como dois eixos. O gráfico é dividido em quatro quadrantes; quando todos os alunos estão bem, aparece "All students are on track!".
+
+- **Good**: Accuracy Rate ≥ 50% e Completion Rate ≥ 50% (verde — Good Student)
+- **At Risk**: um dos dois indicadores está abaixo de 50% (amarelo — At Risk Student)
+- **Need Attention**: os dois indicadores estão abaixo de 50% (vermelho — Need Attention Student)
+
+Os rótulos dos quadrantes são **Low Accuracy, High Completion / Good / Need Attention / High Accuracy, Low Completion**.`,
+    `[[image:class-teaching-report/02.png|Tabela Student Activity Performance]]
+
+A participação de cada aluno é organizada na tabela **Student Activity Performance**.
+
+- Colunas: **Name**, **Total Activity**, **Participation** (Joined), **Accuracy Rate**, **Completion Rate**
+- Use o ícone de pesquisa à direita para ver detalhes do aluno, e o menu **⋮** para eliminar.
+
+[[image:class-teaching-report/06.png|Opções de ordenação Join Time]]
+
+Use o dropdown de ordenação para alternar entre **Join Time** e **Nickname**.`,
+    `[[image:class-teaching-report/07.png|Ecrã de detalhe do aluno]]
+
+Ao selecionar um aluno, abre-se o ecrã de detalhe individual. No topo aparecem o **Accuracy Rate**, **Completion Rate** e **Join Time** desse aluno.
+
+A tabela abaixo mostra cada item com **No**, **Activity Type**, como General/Image, Board/Whiteboard, Board/Brainstorming, Discussion/Vote e Quiz/Multiple Choice, **Submitted Answer**, **Result**, como correto, incorreto ou Skipped, e **Q&A**. Activities nas quais o aluno não participou aparecem como **Skipped**.`
+  ],
+  'class-assignment-report': [
+    `**Assignment Report** é um relatório para verificar a participação e os resultados dos alunos em tarefas ou avaliações distribuídas como Assignments ("View student participation and results for each assignment."). Trata de Assignments assíncronos com prazo, não de aulas ao vivo.
+
+[[image:class-assignment-report/03.png|Ecrã principal do Assignment Report]]`,
+    `Pode encontrá-lo no menu superior em **Class → Assignment Report**. Use os filtros superiores para localizar Assignments.
+
+- **Sort**: escolha o critério de ordenação, como Latest.
+- **Status**: escolha o estado do Assignment, como All.
+- **Type**: escolha o tipo de Assignment, como All.
+- **Date**: escolha a condição de data, como All.
+- Use o campo de pesquisa para procurar Assignments.`,
+    `No lado esquerdo, são listados os cartões dos Assignments distribuídos. Cada cartão mostra o selo de tipo, como **Individual** ou **Assessment**, nome do Assignment, estado, como ongoing, data de distribuição e prazo, tipo de sessão, como Guest Session, e número de alunos participantes, como 5 Students.`,
+    `[[image:class-assignment-report/05.png|Distribuição de acertos por Assignment]]
+
+Os resultados do Assignment selecionado aparecem à direita.
+
+- **Average Accuracy**: mostra a taxa média de acerto, como 73%, "26 Quiz", e o gráfico de distribuição de pontuações. Também mostra a linha média, como "avg 73%", junto com a distribuição dos alunos.
+- Legenda: **On Track (≥50%)**, **At-risk (<50%)**, Class avg, avg ±10%, Score Distribution
+- **Submission Rate**: número de alunos que submeteram
+
+> ⚠️ Perguntas **Open-Ended** são excluídas do cálculo de acerto.
+
+> **Score Distribution** fica disponível quando pelo menos **5 alunos** submeteram.`,
+    `[[image:class-assignment-report/06.png|Opções de ordenação da lista de alunos]]
+
+Use a tabela **Student Activity Performance** para verificar o desempenho de cada aluno no Assignment.
+
+- Colunas: **Name**, **Total Activity**, **Participation** (Participated), **Accuracy Rate**, **Completion Rate**
+- Use o ícone de pesquisa à direita para ver detalhes do aluno, e o menu **⋮** para eliminar.
+- Dropdown de ordenação: **Nickname** / **Submission Time**`,
+    `[[image:class-assignment-report/01.png|Janela Share Assignment]]
+
+Ao partilhar um Assignment com os alunos, use a janela **Share Assignment**. Ela fornece o nome do Assignment, **Due Date**, **URL** de resposta, como https://dev.lumiteach.ai/student?code=5566, **Copy Link**, **QR Code** e **Access Code**, como 5566.`,
+    `[[image:class-assignment-report/09.png|Detalhes de submissão por aluno]]
+
+Selecione um aluno para ver o registo de respostas individual. No topo aparecem **Accuracy Rate**, como 73% 19/26, **Completion Rate**, como 81% 38/43, e **Submitted Time**.
+
+As colunas da tabela são **No**, **Activity Type**, como General, Discussion, Quiz(Multiple Choice/True or False/Short Answer/Fill in the Blank/Matching/Sorting/Open-Ended), **Submitted Answer**, **Result** (Correct/Wrong/-) e **Status** (Submitted / Not Submitted / -).
+
+Como perguntas **Open-Ended** não são corrigidas automaticamente, pode definir manualmente **Correct / Wrong** em Result.`
+  ],
+  'class-management': [
+    `**Class Management** é o local onde cria **Class** e emite ou gere informações individuais de login dos alunos, como **Student Code** e QR ("Manage classes and assign individual login credentials to students."). Depois de criar uma turma e registar os alunos, pode distribuir Assignments por Class e acompanhar relatórios.
+
+[[image:class-management/01.png|Ecrã principal do Class Management]]`,
+    `Pode encontrá-lo no menu superior em **Class → Class Management**. Use os filtros superiores para localizar turmas.
+
+- **Year**: ano (All / 2025 / 2026 / 2027 / 2028)
+- **Grade**: ano escolar (All / Common / Grade 1–12)
+- **School**: pesquisa por nome da escola
+
+Se ainda não houver nenhuma turma criada, aparece "No Class Created Yet." com o botão **New Class**.`,
+    `[[image:class-management/04.png|Informações obrigatórias para Create Class]]
+
+Clique em **New Class** para abrir a janela **Create Class**.
+
+### Required information
+
+- **Class Code**: gerado automaticamente ("Auto-generated").
+- **Year**: selecione o ano, como 2026.
+- **Grade**: selecione o ano escolar, como Common ou Grade 1–12.
+- **Class Name**: introduza o nome da turma, até 30 caracteres.
+
+[[image:class-management/05.png|Informações opcionais para Create Class]]
+
+### Optional
+
+- **School**: introduza o nome da escola, até 50 caracteres.
+
+[[image:class-management/06.png|Class pronta para criação]]
+
+Depois de preencher os campos obrigatórios, o botão **Create** fica ativo e a turma pode ser criada.`,
+    `[[image:class-management/07.png|Cartão da Class e lista de alunos]]
+
+A Class criada aparece como um cartão à esquerda. O cartão mostra o ano, como 2026, nome da turma, como Lumi Class, escola, como Lumiteach Elementary School, ano e número de alunos, como Grade 5 (10 Student), e Class Code, como 5ZCWNB.
+
+- Menu **⋮** no cartão: **Edit Class Info** / **Delete**
+- Dropdown de ordenação no canto superior esquerdo: **Recently Created** / **Recently Used**
+
+[[image:class-management/24.png|Menu mais do cartão da Class]]
+
+[[image:class-management/25.png|Opções de ordenação da Class]]`,
+    `[[image:class-management/10.png|Ecrã da lista de alunos]]
+
+A lista de alunos da Class selecionada aparece à direita.
+
+- Use o dropdown de ordenação (**Nickname** / **Number**) e o campo de pesquisa ("Search by nickname or number") para encontrar alunos.
+- Use os ícones à direita para imprimir, descarregar ou eliminar.
+- Se ainda não houver alunos, aparece "No students registered yet. Please add students."
+- Em cada linha, o **Student Code** aparece oculto por pontos (••••). Clique no ícone de olho para revelar o código, como 7662. Use o ícone QR para ver o QR pessoal, e o ícone de lixo para eliminar.`,
+    `[[image:class-management/08.png|Escolher método de Bulk Add]]
+
+Clique em **Manage Students** para mudar para **Student List Edit mode**.
+
+- **Add Student**: adicione linhas uma a uma e introduza **Name** e **Student Code**. Se deixar Student Code vazio, ele é gerado automaticamente ("e.g. 1234 (Auto)"), mas também pode introduzi-lo manualmente.
+- **Bulk Add**: adicione vários alunos de uma só vez.
+  - **Import from Past Lesson**: importa alunos de uma aula anterior.
+  - **Upload Excel/CSV**: faz upload com ficheiro Excel/CSV.
+  - **Download Excel Template**: descarrega um template Excel para upload.
+
+Depois de introduzir as informações, clique em **Save** e termine a edição com **Manage Students End**. Depois de guardar, cada aluno recebe um Student Code único, como Ethan 7662.`,
+    `[[image:class-management/13.png|Popup Personal QR Code]]
+
+Clique no ícone QR na linha do aluno para abrir a janela **Personal QR Code**. Ela mostra o QR code e as seguintes informações.
+
+- **Grade**
+- **Class**, como Grade 5, Lumi Class
+- **Class Code**, como 5ZCWNB
+- **Student No.**, como 1
+- **Student Code**, como 7662
+- **Name**, como Ethan
+- **Student Home**, como https://dev.lumiteach.ai/student
+
+Use **Print** para imprimir e entregar aos alunos. Os alunos podem entrar em aulas ou Assignments com este QR ou Student Code.`,
+    `[[image:class-management/26.png|Filtro Year]]
+
+[[image:class-management/27.png|Filtro Grade]]
+
+Use os filtros Year e Grade para limitar a lista a Classes de um ano letivo e ano escolar específicos.`
+  ]
+});
+// END ASSESSMENT CLASS BODY TRANSLATION CORRECTION
+
+// BEGIN ASSESSMENT CLASS BODY TRANSLATION CORRECTION 2
+Object.assign(translations.es.articleBodies, {
+  'group-assessment-run': [
+    `[[image:assessment/01.png|Pestaña Assessment en Curriculum]]
+
+En el menú superior, ve a **Curriculum** y selecciona la pestaña **Assessment** en la pantalla del currículo, por ejemplo **NGSS – Next Generation Science Standards**. En la parte superior hay dos pestañas: **Lesson / Assessment**.
+
+En **Curriculum Tree**, a la izquierda, selecciona el nivel escolar (**Elementary School / Middle School**), el grado (**Grade K – Grade 5**, etc.) y el dominio (**PS · LS · ESS · ETS**, etc.) para filtrar la lista de evaluaciones. También puedes cambiar el grado desde el desplegable superior, como grade All.
+
+[[image:assessment/02.png|Lista de tarjetas de Assessment]]
+
+La pestaña **Assessment** muestra tarjetas de evaluación por estándar, como "Forces and Interactions: Pushes and Pulls". Cada tarjeta muestra el título, número de ítems, como "13 item(s)", tipos de pregunta como **Multiple Choice**, **Short Answer**, **True or False** y **fill in the blank**, y la asignatura, como Science.
+
+Usa **Change Curriculum** para cambiar a otro currículo.`,
+    `[[image:assessment/03.png|Ventana de asignación de Assessment]]
+
+Haz clic en una tarjeta de evaluación para abrir la ventana de asignación. A la izquierda se muestra la vista previa de las preguntas y a la derecha están los ajustes de asignación.
+
+En el área de vista previa izquierda, alterna entre vista móvil y desktop para comprobar cómo lo verán los estudiantes. Usa los botones **‹ / ›** para pasar por las preguntas.
+
+[[image:assessment/04.png|Pantalla de vista previa de pregunta]]
+
+En el área de ajustes derecha, configura el título, la información del currículo, la fecha límite, el orden aleatorio de preguntas y el alcance de distribución.
+
+[[image:assessment/07.png|Estado de edición del título]]
+
+Haz clic en el icono de lápiz junto al título para editarlo y usa **Cancel / Save** para cancelar o guardar.
+
+[[image:assessment/06.png|Curriculum Details expandido]]
+
+Expande **Curriculum Details** para revisar la información del currículo conectada a la hoja de evaluación. Incluye **School Level**, como Elementary School, **Grade**, como Grade K, **Domain**, como PS, **Cluster**, como Forces and Interactions: Pushes and Pulls, y **Standard**, como K-PS2-1 y K-PS2-2.
+
+En **Due Date**, define la fecha y hora límite de entrega, como 06/26/2026, 11:00 PM. Si activas **Shuffle Questions**, cada estudiante recibirá las preguntas en un orden aleatorio diferente.
+
+[[image:assessment/05.png|Opciones de Assigned to]]
+
+Selecciona el alcance de distribución en **Assigned to**.
+
+- **Public Link (Guest Access)**: cualquier persona con el enlace puede acceder.
+- **Class Only (Private Access)**: solo los estudiantes de la lista de la clase pueden acceder, usando un QR individual o un Access Code único.
+
+Después de completar los ajustes, haz clic en **Assign** en la esquina inferior derecha para finalizar la asignación.`,
+    `[[image:assessment/08.png|Ventana Share Assessment]]
+
+Cuando la asignación se completa, se abre la ventana **Share Assessment**. Compártela con los estudiantes usando los métodos siguientes.
+
+- Se muestran el título de la evaluación y el **Due Date**.
+- **URL**: se proporciona el enlace de respuesta, como https://dev.lumiteach.ai/student?code=6326. Cópialo con **Copy Link**.
+- **QR Code**: permite compartir mediante código QR.
+- **Access Code**: código que el estudiante introduce para entrar, como 6326.`,
+    `[[image:assessment/09.png|Pantalla de entrada del estudiante]]
+
+Cuando el estudiante accede con el enlace o código, ve **Nickname**, como Lumi, el título de **Assessment**, el número de ítems, como 13 item(s), una vista previa de la primera pregunta y la fecha límite, como "Until 2026.06.26. 11:00 PM". El estudiante pulsa **Start** para comenzar.
+
+[[image:assessment/10.png|Pantalla de pregunta Multiple Choice]]
+
+En la pantalla de pregunta, el número y el enunciado aparecen a la izquierda, y el área de respuesta a la derecha. El estudiante se mueve entre preguntas con el indicador **N/13** y los botones **‹ / ›** inferiores.
+
+- **Multiple Choice**: selecciona una opción en "Choose your answer". Ejemplo: "Steam is an example of a___" → gas / food / solid / liquid
+- **Short Answer**: escribe directamente en "Write your Answer". Ejemplo: "Rain falls from___." → Cloud
+
+[[image:assessment/12.png|Pantalla de pregunta Short Answer]]
+
+Después de responder, envía con **Submit**. La evaluación también puede incluir tipos como **True or False** y **fill in the blank**.`,
+    `[[image:assessment/15.png|Pantalla de envío completado]]
+
+Después de enviar todas las preguntas, aparece "Your submission has been completed." y se resumen los resultados.
+
+En la parte superior se muestran los conteos de **Correct**, **Wrong** y **Not Submitted**. La cuadrícula **Results** muestra cada número de pregunta, 1–13, con ✓ para correcto o ✕ para incorrecto.
+
+Usa **View Detailed Review** para abrir la revisión detallada o **Go to Home** para volver al inicio.
+
+[[image:assessment/13.png|Review Mode con respuesta incorrecta]]
+
+Al hacer clic en **View Detailed Review**, se abre **Review Mode** para cada pregunta. Cada pregunta muestra arriba el número y una etiqueta **Correct / Wrong**, y la respuesta elegida por el estudiante queda resaltada. La tarjeta de resultado derecha muestra "The correct answer is" con la respuesta correcta.
+
+[[image:assessment/14.png|Review Mode con respuesta correcta]]
+
+Las respuestas incorrectas se muestran con **Wrong** en naranja, y las correctas con **Correct!** en verde. Usa **‹ N/13 ›** en la parte inferior para moverte entre preguntas o **Back to Results** para volver al resumen.`
+  ],
+  'cat-class': [
+    `**Class** es el espacio donde puedes entender de un vistazo los resultados de clases y tareas, además de gestionar clases y estudiantes. El menú superior **Class** tiene tres pestañas, cada una con la función siguiente.
+
+- **Teaching Report**: muestra una vista general de participación, tasa de acierto y estado de Activities en sesiones **Teaching** en vivo.
+- **Assignment Report**: permite revisar participación y resultados de estudiantes en Assignments o evaluaciones.
+- **Class Management**: permite crear clases y emitir o gestionar información individual de acceso de estudiantes, incluyendo **Student Code** y QR.`,
+    `Consulta el uso detallado de cada pestaña en las páginas inferiores. Usa **Teaching Report** para resultados de clases, **Assignment Report** para resultados de Assignments y **Class Management** para gestionar clases y listas de estudiantes.`
+  ],
+  'class-teaching-report': [
+    `**Teaching Report** es un reporte que muestra una vista integral de participación, tasa de acierto, tasa de finalización y estado de actividades de estudiantes en sesiones **Teaching** en vivo ("Provides a comprehensive view of lesson participation, accuracy rate, and student activity overview").
+
+[[image:class-teaching-report/01.png|Pantalla principal de Teaching Report]]`,
+    `Puedes consultarlo desde el menú superior en **Class → Teaching Report**. Usa los filtros superiores para encontrar la clase que necesitas.
+
+- **Type**: filtra por tipo de clase.
+- **Date**: filtra por fecha.
+- Campo de búsqueda ("Enter a search term"): busca por nombre de clase.`,
+    `A la izquierda, las sesiones de clase se muestran como tarjetas. Cada tarjeta muestra el modo de sesión, como **Interaction**, el nombre de la clase, como Planet Earth Quiz, fecha y hora, y tipo de sesión, como Guest Session o Service group. En el menú **⋮** del lado derecho de la tarjeta, usa **Delete** para eliminarla.
+
+Los indicadores principales de la clase seleccionada aparecen en la parte superior.
+
+- **Participation**: número de estudiantes participantes, por ejemplo 10
+- **Avg. Accuracy Rate**: tasa media de acierto; si no hay quiz, aparece "No Quiz"
+- **Avg. Completion Rate**: tasa media de finalización, por ejemplo 90%, "0.9/1 Activities"`,
+    `[[image:class-teaching-report/04.png|Gráfico de distribución de estudiantes]]
+
+El gráfico de distribución muestra el estado de los estudiantes usando **Accuracy Rate** y **Completion Rate** como dos ejes. El gráfico se divide en cuatro cuadrantes; si todos van bien, aparece "All students are on track!".
+
+- **Good**: Accuracy Rate ≥ 50% y Completion Rate ≥ 50% (verde — Good Student)
+- **At Risk**: uno de los dos indicadores está por debajo de 50% (amarillo — At Risk Student)
+- **Need Attention**: ambos indicadores están por debajo de 50% (rojo — Need Attention Student)
+
+Las etiquetas de cuadrante son **Low Accuracy, High Completion / Good / Need Attention / High Accuracy, Low Completion**.`,
+    `[[image:class-teaching-report/02.png|Tabla Student Activity Performance]]
+
+La participación de cada estudiante se organiza en la tabla **Student Activity Performance**.
+
+- Columnas: **Name**, **Total Activity**, **Participation** (Joined), **Accuracy Rate**, **Completion Rate**
+- Usa el icono de búsqueda a la derecha para ver detalles del estudiante, y el menú **⋮** para eliminar.
+
+[[image:class-teaching-report/06.png|Opciones de orden Join Time]]
+
+Usa el desplegable de orden para alternar entre **Join Time** y **Nickname**.`,
+    `[[image:class-teaching-report/07.png|Pantalla de detalle del estudiante]]
+
+Al seleccionar un estudiante, se abre la pantalla de detalle individual. En la parte superior aparecen su **Accuracy Rate**, **Completion Rate** y **Join Time**.
+
+La tabla inferior muestra cada ítem con **No**, **Activity Type**, como General/Image, Board/Whiteboard, Board/Brainstorming, Discussion/Vote y Quiz/Multiple Choice, **Submitted Answer**, **Result**, como correcto, incorrecto o Skipped, y **Q&A**. Las Activities en las que no participó se muestran como **Skipped**.`
+  ],
+  'class-assignment-report': [
+    `**Assignment Report** es un reporte para revisar participación y resultados de estudiantes en tareas o evaluaciones distribuidas como Assignments ("View student participation and results for each assignment."). Trata Assignments asincrónicos con fecha límite, no clases en vivo.
+
+[[image:class-assignment-report/03.png|Pantalla principal de Assignment Report]]`,
+    `Puedes consultarlo desde el menú superior en **Class → Assignment Report**. Usa los filtros superiores para encontrar Assignments.
+
+- **Sort**: elige el criterio de orden, como Latest.
+- **Status**: elige el estado del Assignment, como All.
+- **Type**: elige el tipo de Assignment, como All.
+- **Date**: elige la condición de fecha, como All.
+- Usa el campo de búsqueda para buscar Assignments.`,
+    `A la izquierda, se listan tarjetas de los Assignments distribuidos. Cada tarjeta muestra la etiqueta de tipo, como **Individual** o **Assessment**, nombre del Assignment, estado, como ongoing, fecha de distribución y fecha límite, tipo de sesión, como Guest Session, y número de estudiantes participantes, como 5 Students.`,
+    `[[image:class-assignment-report/05.png|Distribución de aciertos por Assignment]]
+
+Los resultados del Assignment seleccionado aparecen a la derecha.
+
+- **Average Accuracy**: muestra la tasa media de acierto, como 73%, "26 Quiz", y el gráfico de distribución de puntajes. También muestra la línea media, como "avg 73%", junto con la distribución de estudiantes.
+- Leyenda: **On Track (≥50%)**, **At-risk (<50%)**, Class avg, avg ±10%, Score Distribution
+- **Submission Rate**: número de estudiantes que enviaron
+
+> ⚠️ Las preguntas **Open-Ended** se excluyen del cálculo de acierto.
+
+> **Score Distribution** está disponible cuando al menos **5 estudiantes** han enviado.`,
+    `[[image:class-assignment-report/06.png|Opciones de orden de lista de estudiantes]]
+
+Usa la tabla **Student Activity Performance** para revisar el desempeño de cada estudiante en el Assignment.
+
+- Columnas: **Name**, **Total Activity**, **Participation** (Participated), **Accuracy Rate**, **Completion Rate**
+- Usa el icono de búsqueda a la derecha para ver detalles del estudiante, y el menú **⋮** para eliminar.
+- Desplegable de orden: **Nickname** / **Submission Time**`,
+    `[[image:class-assignment-report/01.png|Ventana Share Assignment]]
+
+Al compartir un Assignment con estudiantes, usa la ventana **Share Assignment**. Muestra el nombre del Assignment, **Due Date**, **URL** de respuesta, como https://dev.lumiteach.ai/student?code=5566, **Copy Link**, **QR Code** y **Access Code**, como 5566.`,
+    `[[image:class-assignment-report/09.png|Detalle de envío por estudiante]]
+
+Selecciona un estudiante para ver su registro individual de respuestas. En la parte superior aparecen **Accuracy Rate**, como 73% 19/26, **Completion Rate**, como 81% 38/43, y **Submitted Time**.
+
+Las columnas de la tabla son **No**, **Activity Type**, como General, Discussion, Quiz(Multiple Choice/True or False/Short Answer/Fill in the Blank/Matching/Sorting/Open-Ended), **Submitted Answer**, **Result** (Correct/Wrong/-) y **Status** (Submitted / Not Submitted / -).
+
+Como las preguntas **Open-Ended** no se califican automáticamente, puedes definir manualmente **Correct / Wrong** en Result.`
+  ],
+  'class-management': [
+    `**Class Management** es donde creas **Class** y emites o gestionas información individual de acceso de estudiantes, como **Student Code** y QR ("Manage classes and assign individual login credentials to students."). Después de crear una clase y registrar estudiantes, puedes distribuir Assignments por Class y hacer seguimiento en reportes.
+
+[[image:class-management/01.png|Pantalla principal de Class Management]]`,
+    `Puedes consultarlo desde el menú superior en **Class → Class Management**. Usa los filtros superiores para encontrar clases.
+
+- **Year**: año (All / 2025 / 2026 / 2027 / 2028)
+- **Grade**: grado (All / Common / Grade 1–12)
+- **School**: búsqueda por nombre de escuela
+
+Si todavía no se ha creado ninguna clase, aparece "No Class Created Yet." junto con el botón **New Class**.`,
+    `[[image:class-management/04.png|Información obligatoria para Create Class]]
+
+Haz clic en **New Class** para abrir la ventana **Create Class**.
+
+### Required information
+
+- **Class Code**: se genera automáticamente ("Auto-generated").
+- **Year**: selecciona el año, como 2026.
+- **Grade**: selecciona el grado, como Common o Grade 1–12.
+- **Class Name**: introduce el nombre de la clase, hasta 30 caracteres.
+
+[[image:class-management/05.png|Información opcional para Create Class]]
+
+### Optional
+
+- **School**: introduce el nombre de la escuela, hasta 50 caracteres.
+
+[[image:class-management/06.png|Class lista para crear]]
+
+Después de completar los campos obligatorios, el botón **Create** se activa y la clase puede crearse.`,
+    `[[image:class-management/07.png|Tarjeta de Class y lista de estudiantes]]
+
+La Class creada aparece como tarjeta a la izquierda. Muestra el año, como 2026, nombre de clase, como Lumi Class, escuela, como Lumiteach Elementary School, grado y número de estudiantes, como Grade 5 (10 Student), y Class Code, como 5ZCWNB.
+
+- Menú **⋮** de la tarjeta: **Edit Class Info** / **Delete**
+- Desplegable de orden arriba a la izquierda: **Recently Created** / **Recently Used**
+
+[[image:class-management/24.png|Menú más de tarjeta de Class]]
+
+[[image:class-management/25.png|Opciones de orden de Class]]`,
+    `[[image:class-management/10.png|Pantalla de lista de estudiantes]]
+
+La lista de estudiantes de la Class seleccionada aparece a la derecha.
+
+- Usa el desplegable de orden (**Nickname** / **Number**) y el campo de búsqueda ("Search by nickname or number") para encontrar estudiantes.
+- Usa los iconos de la derecha para imprimir, descargar o eliminar.
+- Si aún no hay estudiantes, aparece "No students registered yet. Please add students."
+- En cada fila, el **Student Code** se oculta con puntos (••••). Haz clic en el icono de ojo para revelar el código, como 7662. Usa el icono QR para ver el QR personal y el icono de papelera para eliminar.`,
+    `[[image:class-management/08.png|Elegir método Bulk Add]]
+
+Haz clic en **Manage Students** para cambiar a **Student List Edit mode**.
+
+- **Add Student**: añade filas una por una e introduce **Name** y **Student Code**. Si Student Code queda vacío, se genera automáticamente ("e.g. 1234 (Auto)"), pero también puedes introducirlo manualmente.
+- **Bulk Add**: añade varios estudiantes a la vez.
+  - **Import from Past Lesson**: importa estudiantes de una clase anterior.
+  - **Upload Excel/CSV**: sube un archivo Excel/CSV.
+  - **Download Excel Template**: descarga una plantilla Excel para subir.
+
+Después de introducir la información, haz clic en **Save** y termina la edición con **Manage Students End**. Después de guardar, cada estudiante recibe un Student Code único, como Ethan 7662.`,
+    `[[image:class-management/13.png|Popup Personal QR Code]]
+
+Haz clic en el icono QR de una fila de estudiante para abrir la ventana **Personal QR Code**. Muestra el código QR y la información siguiente.
+
+- **Grade**
+- **Class**, como Grade 5, Lumi Class
+- **Class Code**, como 5ZCWNB
+- **Student No.**, como 1
+- **Student Code**, como 7662
+- **Name**, como Ethan
+- **Student Home**, como https://dev.lumiteach.ai/student
+
+Usa **Print** para imprimir y entregar a los estudiantes. Los estudiantes pueden entrar a clases o Assignments con este QR o Student Code.`,
+    `[[image:class-management/26.png|Filtro Year]]
+
+[[image:class-management/27.png|Filtro Grade]]
+
+Usa los filtros Year y Grade para limitar la lista a Classes de un año escolar y grado específicos.`
+  ]
+});
+// END ASSESSMENT CLASS BODY TRANSLATION CORRECTION 2
+
+// BEGIN ASSESSMENT CLASS BODY TRANSLATION CORRECTION 3
+Object.assign(translations.ja.articleBodies, {
+  'group-assessment-run': [
+    `[[image:assessment/01.png|CurriculumのAssessmentタブ]]
+
+上部メニューから**Curriculum**に移動し、**NGSS – Next Generation Science Standards**などのCurriculum画面で**Assessment**タブを選択します。上部には**Lesson / Assessment**の2つのタブがあります。
+
+左側の**Curriculum Tree**で、学校段階(**Elementary School / Middle School**)、学年(**Grade K – Grade 5**など)、領域(**PS · LS · ESS · ETS**など)を選択して、評価シートの一覧を絞り込みます。上部のドロップダウンから、grade Allなどに学年を変更することもできます。
+
+[[image:assessment/02.png|Assessmentカード一覧]]
+
+**Assessment**タブには、"Forces and Interactions: Pushes and Pulls"などのスタンダード別に評価カードが表示されます。各カードには、タイトル、"13 item(s)"などの設問数、**Multiple Choice**、**Short Answer**、**True or False**、**fill in the blank**などの問題タイプ、Scienceなどの科目が表示されます。
+
+**Change Curriculum**ボタンで別のCurriculumに切り替えることができます。`,
+    `[[image:assessment/03.png|Assessmentの割り当てウィンドウ]]
+
+評価カードをクリックすると、割り当てウィンドウが開きます。左側では問題プレビューを確認し、右側では割り当て設定を行います。
+
+左側のプレビュー領域では、モバイル表示とデスクトップ表示を切り替えながら、学生にどのように表示されるかを確認できます。**‹ / ›**ボタンで問題を移動できます。
+
+[[image:assessment/04.png|問題プレビュー画面]]
+
+右側の設定領域では、タイトル、Curriculum情報、提出期限、問題のシャッフル、配布範囲を設定します。
+
+[[image:assessment/07.png|タイトル編集状態]]
+
+タイトル横の鉛筆アイコンをクリックするとタイトルを編集でき、**Cancel / Save**でキャンセルまたは保存します。
+
+[[image:assessment/06.png|Curriculum Details展開]]
+
+**Curriculum Details**を展開すると、この評価シートに紐づくCurriculum情報を確認できます。**School Level**(例: Elementary School)、**Grade**(例: Grade K)、**Domain**(例: PS)、**Cluster**(例: Forces and Interactions: Pushes and Pulls)、**Standard**(例: K-PS2-1、K-PS2-2など)が含まれます。
+
+**Due Date**では、提出期限を日付と時刻で指定します(例: 06/26/2026, 11:00 PM)。**Shuffle Questions**をオンにすると、学生ごとに問題の順番がランダムに提供されます。
+
+[[image:assessment/05.png|Assigned toオプション]]
+
+**Assigned to**で配布範囲を選択します。
+
+- **Public Link (Guest Access)**: リンクを持っている人なら誰でもアクセスできる公開配布です。
+- **Class Only (Private Access)**: Classリスト内の学生だけが、個別QRコードまたは固有のAccess Codeでアクセスできます。
+
+設定が終わったら、右下の**Assign**ボタンをクリックして割り当てを完了します。`,
+    `[[image:assessment/08.png|Share Assessmentウィンドウ]]
+
+割り当てが完了すると、**Share Assessment**ウィンドウが開きます。以下の方法で学生に共有します。
+
+- 評価シートのタイトルと**Due Date**が表示されます。
+- **URL**: https://dev.lumiteach.ai/student?code=6326 のような受験リンクが提供されます。**Copy Link**でコピーします。
+- **QR Code**: QRコードで共有できます。
+- **Access Code**: 学生が入力して入室するコードです(例: 6326)。`,
+    `[[image:assessment/09.png|学生の入室画面]]
+
+学生がリンクまたはコードでアクセスすると、**Nickname**(例: Lumi)、**Assessment**タイトル、13 item(s)などの設問数、最初の問題プレビュー、"Until 2026.06.26. 11:00 PM"のような提出期限が表示されます。**Start**をクリックして受験を開始します。
+
+[[image:assessment/10.png|Multiple Choice問題画面]]
+
+問題画面では、左側に問題番号と問題、右側に回答入力エリアが表示されます。下部の**N/13**表示と**‹ / ›**で問題を移動します。
+
+- **Multiple Choice**: "Choose your answer"で選択肢を選びます。例: "Steam is an example of a___" → gas / food / solid / liquid
+- **Short Answer**: "Write your Answer"入力欄に直接回答を入力します。例: "Rain falls from___." → Cloud
+
+[[image:assessment/12.png|Short Answer問題画面]]
+
+回答後、**Submit**で提出します。**True or False**や**fill in the blank**などのタイプが含まれる場合もあります。`,
+    `[[image:assessment/15.png|提出完了画面]]
+
+すべての問題を提出すると、"Your submission has been completed."と表示され、結果が要約されます。
+
+上部には**Correct**、**Wrong**、**Not Submitted**の数が表示されます。**Results**グリッドには、1〜13の問題番号ごとに、正解は✓、不正解は✕で表示されます。
+
+**View Detailed Review**で詳細レビューを開くか、**Go to Home**でホーム画面に移動します。
+
+[[image:assessment/13.png|Review Mode不正解画面]]
+
+**View Detailed Review**をクリックすると、問題別の**Review Mode**に移動します。各問題の上部には問題番号と**Correct / Wrong**バッジが表示され、学生が選択した回答が強調表示されます。右側の結果カードには"The correct answer is"とともに正解が表示されます。
+
+[[image:assessment/14.png|Review Mode正解画面]]
+
+不正解の場合はオレンジの**Wrong**、正解の場合は緑の**Correct!**で表示されます。下部の**‹ N/13 ›**で問題を移動するか、**Back to Results**で結果サマリーに戻ります。`
+  ],
+  'cat-class': [
+    `**Class**は、授業・課題の結果を一目で把握し、Classと学生を管理するための場所です。上部メニューの**Class**には3つのタブがあり、それぞれ次の役割を持ちます。
+
+- **Teaching Report**: リアルタイム**Teaching**の参加状況、正答率、Activity状況を総合的に表示します。
+- **Assignment Report**: Assignmentまたは評価の学生別参加状況と結果を確認します。
+- **Class Management**: Classを作成し、学生ごとの**Student Code**やQRを含む個別ログイン情報を発行・管理します。`,
+    `各タブの詳しい使い方は、下位ページで確認します。授業結果は**Teaching Report**、Assignment結果は**Assignment Report**、Classと学生名簿の管理は**Class Management**を使用します。`
+  ],
+  'class-teaching-report': [
+    `**Teaching Report**は、リアルタイム**Teaching**の参加度、正答率、完了率、学生別Activity状況を総合的に表示するレポートです("Provides a comprehensive view of lesson participation, accuracy rate, and student activity overview")。
+
+[[image:class-teaching-report/01.png|Teaching Report基本画面]]`,
+    `上部メニューの**Class → Teaching Report**タブで確認します。上部フィルターで目的の授業を探せます。
+
+- **Type**: 授業タイプでフィルタリングします。
+- **Date**: 日付でフィルタリングします。
+- 検索欄("Enter a search term"): 授業名で検索します。`,
+    `画面左側には、実施した授業セッションがカードで表示されます。各カードには、**Interaction**などの進行モード、Planet Earth Quizなどの授業名、日時、Guest SessionやService groupなどのセッションタイプが表示されます。カード右側の**⋮**メニューから**Delete**で削除できます。
+
+選択した授業の主要指標は上部に表示されます。
+
+- **Participation**: 参加学生数(例: 10)
+- **Avg. Accuracy Rate**: 平均正答率。Quizがない場合は"No Quiz"と表示されます。
+- **Avg. Completion Rate**: 平均完了率(例: 90%, "0.9/1 Activities")`,
+    `[[image:class-teaching-report/04.png|学生分布チャート]]
+
+分布チャートでは、**Accuracy Rate**と**Completion Rate**を2つの軸として、学生の状態を一目で把握できます。チャートは4象限に分かれ、全員が良好な場合は"All students are on track!"と表示されます。
+
+- **Good**: Accuracy Rate ≥ 50%、かつ Completion Rate ≥ 50% (緑 — Good Student)
+- **At Risk**: 2つの指標のどちらかが50%未満 (黄 — At Risk Student)
+- **Need Attention**: 2つの指標がどちらも50%未満 (赤 — Need Attention Student)
+
+象限ラベルは**Low Accuracy, High Completion / Good / Need Attention / High Accuracy, Low Completion**です。`,
+    `[[image:class-teaching-report/02.png|Student Activity Performance表]]
+
+学生別の参加状況は、**Student Activity Performance**表で整理されます。
+
+- カラム: **Name**, **Total Activity**, **Participation** (Joined), **Accuracy Rate**, **Completion Rate**
+- 右側の検索アイコンで学生詳細を確認し、**⋮**メニューで削除できます。
+
+[[image:class-teaching-report/06.png|Join Time並び替えオプション]]
+
+並び替えドロップダウンで**Join Time**と**Nickname**を切り替えます。`,
+    `[[image:class-teaching-report/07.png|学生詳細画面]]
+
+学生を選択すると、個別詳細画面が開きます。上部には、その学生の**Accuracy Rate**、**Completion Rate**、**Join Time**が表示されます。
+
+下の表には、各項目ごとに**No**、General/Image、Board/Whiteboard、Board/Brainstorming、Discussion/Vote、Quiz/Multiple Choiceなどの**Activity Type**、**Submitted Answer**、正解・不正解またはSkippedなどの**Result**、**Q&A**が表示されます。参加していないActivityは**Skipped**と表示されます。`
+  ],
+  'class-assignment-report': [
+    `**Assignment Report**は、Assignmentとして配布した課題や評価について、学生別の参加状況と結果を確認するレポートです("View student participation and results for each assignment.")。リアルタイム授業ではなく、期限を設定して配布した非同期Assignmentの結果を扱います。
+
+[[image:class-assignment-report/03.png|Assignment Report基本画面]]`,
+    `上部メニューの**Class → Assignment Report**タブで確認します。上部フィルターでAssignmentを探せます。
+
+- **Sort**: 並び替え基準を選択します(例: Latest)。
+- **Status**: Assignmentの状態を選択します(例: All)。
+- **Type**: Assignmentタイプを選択します(例: All)。
+- **Date**: 日付条件を選択します(例: All)。
+- 検索欄でAssignmentを検索します。`,
+    `画面左側には、配布したAssignmentカードが表示されます。各カードには、**Individual**や**Assessment**などのタイプバッジ、Assignment名、ongoingなどの状態、配布日と期限、Guest Sessionなどのセッションタイプ、5 Studentsなどの参加学生数が表示されます。`,
+    `[[image:class-assignment-report/05.png|Assignment別正答率分布]]
+
+選択したAssignmentの結果は右側に表示されます。
+
+- **Average Accuracy**: 平均正答率(例: 73%, "26 Quiz")とスコア分布チャートを表示します。"avg 73%"などの平均線と学生分布も表示されます。
+- 凡例: **On Track (≥50%)**, **At-risk (<50%)**, Class avg, avg ±10%, Score Distribution
+- **Submission Rate**: 提出した学生数
+
+> ⚠️ **Open-Ended**問題は正答率計算から除外されます。
+
+> **Score Distribution**は、**5人以上**が提出した場合に提供されます。`,
+    `[[image:class-assignment-report/06.png|学生リスト並び替えオプション]]
+
+**Student Activity Performance**表では、学生別のAssignment実施状況を確認します。
+
+- カラム: **Name**, **Total Activity**, **Participation** (Participated), **Accuracy Rate**, **Completion Rate**
+- 右側の検索アイコンで学生詳細を確認し、**⋮**メニューで削除します。
+- 並び替えドロップダウン: **Nickname** / **Submission Time**`,
+    `[[image:class-assignment-report/01.png|Share Assignmentウィンドウ]]
+
+Assignmentを学生に共有するときは、**Share Assignment**ウィンドウを使用します。Assignment名、**Due Date**、https://dev.lumiteach.ai/student?code=5566 のような回答**URL**、**Copy Link**、**QR Code**、5566などの**Access Code**が提供されます。`,
+    `[[image:class-assignment-report/09.png|学生別提出詳細]]
+
+学生を選択すると、個別回答履歴が表示されます。上部には**Accuracy Rate**(例: 73% 19/26)、**Completion Rate**(例: 81% 38/43)、**Submitted Time**が表示されます。
+
+表のカラムは、**No**、General、Discussion、Quiz(Multiple Choice/True or False/Short Answer/Fill in the Blank/Matching/Sorting/Open-Ended)などの**Activity Type**、**Submitted Answer**、**Result**(Correct/Wrong/-)、**Status**(Submitted / Not Submitted / -)です。
+
+**Open-Ended**問題は自動採点対象ではないため、Resultで**Correct / Wrong**を手動で指定できます。`
+  ],
+  'class-management': [
+    `**Class Management**は、**Class**を作成し、学生別の**Student Code**やQRなどの個別ログイン情報を発行・管理する場所です("Manage classes and assign individual login credentials to students.")。Classを作成して学生を登録しておくと、Class単位でAssignmentを配布し、レポートで追跡できます。
+
+[[image:class-management/01.png|Class Management基本画面]]`,
+    `上部メニューの**Class → Class Management**タブで確認します。上部フィルターでClassを探せます。
+
+- **Year**: 年度(All / 2025 / 2026 / 2027 / 2028)
+- **Grade**: 学年(All / Common / Grade 1–12)
+- **School**: 学校名で検索
+
+まだClassが作成されていない場合は、"No Class Created Yet."という案内と**New Class**ボタンが表示されます。`,
+    `[[image:class-management/04.png|Create Class必須情報]]
+
+**New Class**をクリックすると、**Create Class**ウィンドウが開きます。
+
+### Required information
+
+- **Class Code**: 自動生成されます("Auto-generated")。
+- **Year**: 年度を選択します(例: 2026)。
+- **Grade**: 学年を選択します(Common、Grade 1–12)。
+- **Class Name**: Class名を入力します(最大30文字)。
+
+[[image:class-management/05.png|Create Class任意情報]]
+
+### Optional
+
+- **School**: 学校名を入力します(最大50文字)。
+
+[[image:class-management/06.png|Class作成可能状態]]
+
+必須項目を入力すると、**Create**ボタンが有効になり、Classを作成できます。`,
+    `[[image:class-management/07.png|Classカードと学生リスト]]
+
+作成されたClassは左側にカードで表示されます。年度(例: 2026)、Class名(例: Lumi Class)、学校(例: Lumiteach Elementary School)、学年・学生数(例: Grade 5 (10 Student))、Class Code(例: 5ZCWNB)が表示されます。
+
+- カードの**⋮**メニュー: **Edit Class Info** / **Delete**
+- 左上の並び替えドロップダウン: **Recently Created** / **Recently Used**
+
+[[image:class-management/24.png|Classカードのメニュー]]
+
+[[image:class-management/25.png|Class並び替えオプション]]`,
+    `[[image:class-management/10.png|学生リスト画面]]
+
+選択したClassの学生リストは右側に表示されます。
+
+- 並び替えドロップダウン(**Nickname** / **Number**)と検索欄("Search by nickname or number")で学生を探します。
+- 右側のアイコンで印刷、ダウンロード、削除ができます。
+- まだ学生がいない場合は、"No students registered yet. Please add students."と表示されます。
+- 各学生行では**Student Code**が点(••••)で非表示になっており、目のアイコンをクリックすると7662などのコードが表示されます。QRアイコンで個人QRを確認し、ゴミ箱アイコンで削除します。`,
+    `[[image:class-management/08.png|Bulk Add方法選択]]
+
+**Manage Students**ボタンをクリックすると、**Student List Edit mode**に切り替わります。
+
+- **Add Student**: 行を1つずつ追加し、**Name**と**Student Code**を入力します。Student Codeを空欄にすると自動生成され("e.g. 1234 (Auto)")、直接入力することもできます。
+- **Bulk Add**: 複数の学生をまとめて追加します。
+  - **Import from Past Lesson**: 過去の授業から学生を読み込みます。
+  - **Upload Excel/CSV**: Excel/CSVファイルでアップロードします。
+  - **Download Excel Template**: アップロード用Excelテンプレートをダウンロードします。
+
+入力後、**Save**で保存し、**Manage Students End**で編集を終了します。保存後、Ethan 7662のように各学生に固有のStudent Codeが付与されます。`,
+    `[[image:class-management/13.png|Personal QR Codeポップアップ]]
+
+学生行のQRアイコンをクリックすると、**Personal QR Code**ウィンドウが開きます。QRコードとともに次の情報が表示されます。
+
+- **Grade**
+- **Class** (例: Grade 5, Lumi Class)
+- **Class Code** (例: 5ZCWNB)
+- **Student No.** (例: 1)
+- **Student Code** (例: 7662)
+- **Name** (例: Ethan)
+- **Student Home** (例: https://dev.lumiteach.ai/student)
+
+**Print**で印刷して学生に配布できます。学生はこのQRまたはStudent Codeで授業やAssignmentに参加します。`,
+    `[[image:class-management/26.png|Yearフィルター]]
+
+[[image:class-management/27.png|Gradeフィルター]]
+
+YearとGradeフィルターを使うと、特定の年度と学年のClassだけに絞り込めます。`
+  ]
+});
+// END ASSESSMENT CLASS BODY TRANSLATION CORRECTION 3
+
+// BEGIN ASSESSMENT CLASS BODY TRANSLATION CORRECTION 4
+Object.assign(translations.vi.articleBodies, {
+  'group-assessment-run': [
+    `[[image:assessment/01.png|Tab Assessment trong Curriculum]]
+
+Từ menu phía trên, vào **Curriculum**, sau đó chọn tab **Assessment** trên màn hình curriculum, ví dụ **NGSS – Next Generation Science Standards**. Khu vực phía trên có hai tab: **Lesson / Assessment**.
+
+Trong **Curriculum Tree** bên trái, chọn cấp học (**Elementary School / Middle School**), khối lớp (**Grade K – Grade 5**, v.v.) và lĩnh vực (**PS · LS · ESS · ETS**, v.v.) để lọc danh sách phiếu đánh giá. Bạn cũng có thể đổi khối lớp từ dropdown phía trên, ví dụ grade All.
+
+[[image:assessment/02.png|Danh sách thẻ Assessment]]
+
+Tab **Assessment** hiển thị các thẻ đánh giá theo chuẩn, ví dụ "Forces and Interactions: Pushes and Pulls". Mỗi thẻ hiển thị tiêu đề, số câu hỏi, ví dụ "13 item(s)", các dạng câu hỏi như **Multiple Choice**, **Short Answer**, **True or False**, **fill in the blank**, và môn học, ví dụ Science.
+
+Dùng **Change Curriculum** để chuyển sang curriculum khác.`,
+    `[[image:assessment/03.png|Cửa sổ giao Assessment]]
+
+Nhấp vào thẻ đánh giá để mở cửa sổ giao bài. Bên trái là phần xem trước câu hỏi, bên phải là phần thiết lập giao bài.
+
+Trong khu vực xem trước bên trái, chuyển giữa chế độ mobile và desktop để kiểm tra học sinh sẽ nhìn thấy như thế nào. Dùng các nút **‹ / ›** để chuyển qua lại giữa các câu hỏi.
+
+[[image:assessment/04.png|Màn hình xem trước câu hỏi]]
+
+Ở khu vực thiết lập bên phải, cấu hình tiêu đề, thông tin curriculum, hạn nộp, đảo thứ tự câu hỏi và phạm vi phân phối.
+
+[[image:assessment/07.png|Trạng thái chỉnh sửa tiêu đề]]
+
+Nhấp vào biểu tượng bút chì cạnh tiêu đề để chỉnh sửa, sau đó dùng **Cancel / Save** để hủy hoặc lưu.
+
+[[image:assessment/06.png|Curriculum Details đã mở rộng]]
+
+Mở rộng **Curriculum Details** để kiểm tra thông tin curriculum được liên kết với phiếu đánh giá. Thông tin gồm **School Level**, ví dụ Elementary School, **Grade**, ví dụ Grade K, **Domain**, ví dụ PS, **Cluster**, ví dụ Forces and Interactions: Pushes and Pulls, và **Standard**, ví dụ K-PS2-1, K-PS2-2.
+
+Trong **Due Date**, đặt hạn nộp theo ngày và giờ, ví dụ 06/26/2026, 11:00 PM. Khi bật **Shuffle Questions**, mỗi học sinh sẽ nhận câu hỏi theo thứ tự ngẫu nhiên khác nhau.
+
+[[image:assessment/05.png|Tùy chọn Assigned to]]
+
+Chọn phạm vi phân phối trong **Assigned to**.
+
+- **Public Link (Guest Access)**: bất kỳ ai có liên kết đều có thể truy cập.
+- **Class Only (Private Access)**: chỉ học sinh trong danh sách lớp mới có thể truy cập bằng QR cá nhân hoặc Access Code riêng.
+
+Sau khi hoàn tất thiết lập, nhấp **Assign** ở góc dưới bên phải để hoàn tất giao bài.`,
+    `[[image:assessment/08.png|Cửa sổ Share Assessment]]
+
+Sau khi giao bài xong, cửa sổ **Share Assessment** sẽ mở ra. Chia sẻ với học sinh bằng các cách bên dưới.
+
+- Tiêu đề phiếu đánh giá và **Due Date** được hiển thị.
+- **URL**: liên kết làm bài được cung cấp, ví dụ https://dev.lumiteach.ai/student?code=6326. Sao chép bằng **Copy Link**.
+- **QR Code**: có thể chia sẻ bằng mã QR.
+- **Access Code**: mã học sinh nhập để vào làm bài, ví dụ 6326.`,
+    `[[image:assessment/09.png|Màn hình vào bài của học sinh]]
+
+Khi học sinh truy cập bằng liên kết hoặc mã, các em sẽ thấy **Nickname**, ví dụ Lumi, tiêu đề **Assessment**, số câu hỏi, ví dụ 13 item(s), phần xem trước câu đầu tiên và hạn nộp, ví dụ "Until 2026.06.26. 11:00 PM". Học sinh nhấp **Start** để bắt đầu.
+
+[[image:assessment/10.png|Màn hình câu hỏi Multiple Choice]]
+
+Trên màn hình câu hỏi, số câu và nội dung câu hỏi nằm bên trái, khu vực trả lời nằm bên phải. Học sinh di chuyển giữa các câu bằng chỉ báo **N/13** và các nút **‹ / ›** ở dưới.
+
+- **Multiple Choice**: chọn một đáp án trong "Choose your answer". Ví dụ: "Steam is an example of a___" → gas / food / solid / liquid
+- **Short Answer**: nhập trực tiếp vào ô "Write your Answer". Ví dụ: "Rain falls from___." → Cloud
+
+[[image:assessment/12.png|Màn hình câu hỏi Short Answer]]
+
+Sau khi trả lời, học sinh nộp bằng **Submit**. Assessment cũng có thể bao gồm các dạng như **True or False** và **fill in the blank**.`,
+    `[[image:assessment/15.png|Màn hình nộp bài hoàn tất]]
+
+Sau khi nộp tất cả câu hỏi, thông báo "Your submission has been completed." xuất hiện và kết quả được tóm tắt.
+
+Khu vực phía trên hiển thị số lượng **Correct**, **Wrong** và **Not Submitted**. Lưới **Results** hiển thị từng số câu, 1–13, với ✓ cho câu đúng hoặc ✕ cho câu sai.
+
+Dùng **View Detailed Review** để mở phần xem lại chi tiết, hoặc **Go to Home** để về màn hình chính.
+
+[[image:assessment/13.png|Review Mode câu sai]]
+
+Khi nhấp **View Detailed Review**, học sinh chuyển sang **Review Mode** theo từng câu. Ở đầu mỗi câu có số câu và nhãn **Correct / Wrong**, câu trả lời đã chọn của học sinh được tô nổi bật. Thẻ kết quả bên phải hiển thị "The correct answer is" kèm đáp án đúng.
+
+[[image:assessment/14.png|Review Mode câu đúng]]
+
+Câu sai hiển thị **Wrong** màu cam, câu đúng hiển thị **Correct!** màu xanh. Dùng **‹ N/13 ›** ở dưới để chuyển câu, hoặc **Back to Results** để quay lại tóm tắt kết quả.`
+  ],
+  'cat-class': [
+    `**Class** là nơi bạn có thể xem nhanh kết quả lớp học và bài tập, đồng thời quản lý lớp và học sinh. Menu **Class** phía trên có ba tab, mỗi tab có vai trò sau.
+
+- **Teaching Report**: hiển thị tổng quan về mức độ tham gia, tỷ lệ chính xác và trạng thái Activity trong các phiên **Teaching** trực tiếp.
+- **Assignment Report**: cho phép kiểm tra mức độ tham gia và kết quả của học sinh trong Assignments hoặc Assessment.
+- **Class Management**: cho phép tạo lớp và cấp hoặc quản lý thông tin đăng nhập cá nhân của học sinh, bao gồm **Student Code** và QR.`,
+    `Xem cách dùng chi tiết của từng tab ở các trang con bên dưới. Dùng **Teaching Report** để xem kết quả lớp học, **Assignment Report** để xem kết quả Assignments, và **Class Management** để quản lý lớp cùng danh sách học sinh.`
+  ],
+  'class-teaching-report': [
+    `**Teaching Report** là báo cáo hiển thị tổng quan về mức độ tham gia, tỷ lệ chính xác, tỷ lệ hoàn thành và trạng thái hoạt động của học sinh trong các phiên **Teaching** trực tiếp ("Provides a comprehensive view of lesson participation, accuracy rate, and student activity overview").
+
+[[image:class-teaching-report/01.png|Màn hình chính Teaching Report]]`,
+    `Bạn có thể xem tại menu phía trên **Class → Teaching Report**. Dùng các bộ lọc phía trên để tìm lớp học cần xem.
+
+- **Type**: lọc theo loại lớp học.
+- **Date**: lọc theo ngày.
+- Ô tìm kiếm ("Enter a search term"): tìm theo tên lớp học.`,
+    `Ở bên trái, các phiên lớp học được hiển thị dưới dạng thẻ. Mỗi thẻ hiển thị chế độ phiên, ví dụ **Interaction**, tên lớp học, ví dụ Planet Earth Quiz, ngày giờ và loại phiên, ví dụ Guest Session hoặc Service group. Trong menu **⋮** bên phải thẻ, dùng **Delete** để xóa.
+
+Các chỉ số chính của lớp học đã chọn hiển thị ở phía trên.
+
+- **Participation**: số học sinh tham gia, ví dụ 10
+- **Avg. Accuracy Rate**: tỷ lệ chính xác trung bình; nếu không có quiz, hiển thị "No Quiz"
+- **Avg. Completion Rate**: tỷ lệ hoàn thành trung bình, ví dụ 90%, "0.9/1 Activities"`,
+    `[[image:class-teaching-report/04.png|Biểu đồ phân bố học sinh]]
+
+Biểu đồ phân bố cho biết trạng thái học sinh bằng hai trục **Accuracy Rate** và **Completion Rate**. Biểu đồ được chia thành bốn phần; nếu tất cả học sinh đều ổn, thông báo "All students are on track!" sẽ hiển thị.
+
+- **Good**: Accuracy Rate ≥ 50% và Completion Rate ≥ 50% (xanh lá — Good Student)
+- **At Risk**: một trong hai chỉ số dưới 50% (vàng — At Risk Student)
+- **Need Attention**: cả hai chỉ số đều dưới 50% (đỏ — Need Attention Student)
+
+Nhãn các vùng là **Low Accuracy, High Completion / Good / Need Attention / High Accuracy, Low Completion**.`,
+    `[[image:class-teaching-report/02.png|Bảng Student Activity Performance]]
+
+Trạng thái tham gia của từng học sinh được tổng hợp trong bảng **Student Activity Performance**.
+
+- Cột: **Name**, **Total Activity**, **Participation** (Joined), **Accuracy Rate**, **Completion Rate**
+- Dùng biểu tượng tìm kiếm bên phải để xem chi tiết học sinh, và menu **⋮** để xóa.
+
+[[image:class-teaching-report/06.png|Tùy chọn sắp xếp Join Time]]
+
+Dùng dropdown sắp xếp để chuyển giữa **Join Time** và **Nickname**.`,
+    `[[image:class-teaching-report/07.png|Màn hình chi tiết học sinh]]
+
+Khi chọn một học sinh, màn hình chi tiết cá nhân sẽ mở ra. Phần trên hiển thị **Accuracy Rate**, **Completion Rate** và **Join Time** của học sinh đó.
+
+Bảng bên dưới hiển thị từng mục với **No**, **Activity Type**, ví dụ General/Image, Board/Whiteboard, Board/Brainstorming, Discussion/Vote, Quiz/Multiple Choice, **Submitted Answer**, **Result**, ví dụ đúng, sai hoặc Skipped, và **Q&A**. Các Activity học sinh không tham gia được hiển thị là **Skipped**.`
+  ],
+  'class-assignment-report': [
+    `**Assignment Report** là báo cáo dùng để kiểm tra mức độ tham gia và kết quả của học sinh đối với bài tập hoặc đánh giá được phát dưới dạng Assignments ("View student participation and results for each assignment."). Báo cáo này xử lý Assignments không đồng bộ có hạn nộp, không phải lớp học trực tiếp.
+
+[[image:class-assignment-report/03.png|Màn hình chính Assignment Report]]`,
+    `Bạn có thể xem tại menu phía trên **Class → Assignment Report**. Dùng các bộ lọc phía trên để tìm Assignments.
+
+- **Sort**: chọn tiêu chí sắp xếp, ví dụ Latest.
+- **Status**: chọn trạng thái Assignment, ví dụ All.
+- **Type**: chọn loại Assignment, ví dụ All.
+- **Date**: chọn điều kiện ngày, ví dụ All.
+- Dùng ô tìm kiếm để tìm Assignments.`,
+    `Ở bên trái, các thẻ Assignments đã phát được liệt kê. Mỗi thẻ hiển thị nhãn loại, ví dụ **Individual** hoặc **Assessment**, tên Assignment, trạng thái, ví dụ ongoing, ngày phát và hạn nộp, loại phiên, ví dụ Guest Session, và số học sinh tham gia, ví dụ 5 Students.`,
+    `[[image:class-assignment-report/05.png|Phân bố độ chính xác theo Assignment]]
+
+Kết quả của Assignment đã chọn hiển thị ở bên phải.
+
+- **Average Accuracy**: hiển thị tỷ lệ chính xác trung bình, ví dụ 73%, "26 Quiz", và biểu đồ phân bố điểm. Đường trung bình, ví dụ "avg 73%", cũng được hiển thị cùng phân bố học sinh.
+- Chú giải: **On Track (≥50%)**, **At-risk (<50%)**, Class avg, avg ±10%, Score Distribution
+- **Submission Rate**: số học sinh đã nộp
+
+> ⚠️ Câu hỏi **Open-Ended** không được tính vào điểm chính xác.
+
+> **Score Distribution** được cung cấp khi có ít nhất **5 học sinh** đã nộp.`,
+    `[[image:class-assignment-report/06.png|Tùy chọn sắp xếp danh sách học sinh]]
+
+Dùng bảng **Student Activity Performance** để kiểm tra kết quả thực hiện Assignment của từng học sinh.
+
+- Cột: **Name**, **Total Activity**, **Participation** (Participated), **Accuracy Rate**, **Completion Rate**
+- Dùng biểu tượng tìm kiếm bên phải để xem chi tiết học sinh, và menu **⋮** để xóa.
+- Dropdown sắp xếp: **Nickname** / **Submission Time**`,
+    `[[image:class-assignment-report/01.png|Cửa sổ Share Assignment]]
+
+Khi chia sẻ Assignment với học sinh, dùng cửa sổ **Share Assignment**. Cửa sổ cung cấp tên Assignment, **Due Date**, **URL** làm bài, ví dụ https://dev.lumiteach.ai/student?code=5566, **Copy Link**, **QR Code** và **Access Code**, ví dụ 5566.`,
+    `[[image:class-assignment-report/09.png|Chi tiết nộp bài theo học sinh]]
+
+Chọn một học sinh để xem lịch sử trả lời cá nhân. Phần trên hiển thị **Accuracy Rate**, ví dụ 73% 19/26, **Completion Rate**, ví dụ 81% 38/43, và **Submitted Time**.
+
+Các cột của bảng là **No**, **Activity Type**, ví dụ General, Discussion, Quiz(Multiple Choice/True or False/Short Answer/Fill in the Blank/Matching/Sorting/Open-Ended), **Submitted Answer**, **Result** (Correct/Wrong/-), và **Status** (Submitted / Not Submitted / -).
+
+Vì câu hỏi **Open-Ended** không được chấm tự động, bạn có thể đặt thủ công **Correct / Wrong** trong Result.`
+  ],
+  'class-management': [
+    `**Class Management** là nơi tạo **Class** và cấp hoặc quản lý thông tin đăng nhập cá nhân của học sinh, như **Student Code** và QR ("Manage classes and assign individual login credentials to students."). Sau khi tạo lớp và đăng ký học sinh, bạn có thể phát Assignments theo Class và theo dõi báo cáo.
+
+[[image:class-management/01.png|Màn hình chính Class Management]]`,
+    `Bạn có thể xem tại menu phía trên **Class → Class Management**. Dùng các bộ lọc phía trên để tìm lớp.
+
+- **Year**: năm (All / 2025 / 2026 / 2027 / 2028)
+- **Grade**: khối lớp (All / Common / Grade 1–12)
+- **School**: tìm theo tên trường
+
+Nếu chưa có lớp nào được tạo, thông báo "No Class Created Yet." sẽ hiển thị cùng nút **New Class**.`,
+    `[[image:class-management/04.png|Thông tin bắt buộc cho Create Class]]
+
+Nhấp **New Class** để mở cửa sổ **Create Class**.
+
+### Required information
+
+- **Class Code**: được tạo tự động ("Auto-generated").
+- **Year**: chọn năm, ví dụ 2026.
+- **Grade**: chọn khối lớp, ví dụ Common hoặc Grade 1–12.
+- **Class Name**: nhập tên lớp, tối đa 30 ký tự.
+
+[[image:class-management/05.png|Thông tin tùy chọn cho Create Class]]
+
+### Optional
+
+- **School**: nhập tên trường, tối đa 50 ký tự.
+
+[[image:class-management/06.png|Class có thể được tạo]]
+
+Sau khi điền các trường bắt buộc, nút **Create** được kích hoạt và lớp có thể được tạo.`,
+    `[[image:class-management/07.png|Thẻ Class và danh sách học sinh]]
+
+Class đã tạo hiển thị dưới dạng thẻ ở bên trái. Thẻ hiển thị năm, ví dụ 2026, tên lớp, ví dụ Lumi Class, trường, ví dụ Lumiteach Elementary School, khối lớp và số học sinh, ví dụ Grade 5 (10 Student), và Class Code, ví dụ 5ZCWNB.
+
+- Menu **⋮** trên thẻ: **Edit Class Info** / **Delete**
+- Dropdown sắp xếp ở góc trên bên trái: **Recently Created** / **Recently Used**
+
+[[image:class-management/24.png|Menu thêm của thẻ Class]]
+
+[[image:class-management/25.png|Tùy chọn sắp xếp Class]]`,
+    `[[image:class-management/10.png|Màn hình danh sách học sinh]]
+
+Danh sách học sinh của Class đã chọn hiển thị ở bên phải.
+
+- Dùng dropdown sắp xếp (**Nickname** / **Number**) và ô tìm kiếm ("Search by nickname or number") để tìm học sinh.
+- Dùng các biểu tượng bên phải để in, tải xuống hoặc xóa.
+- Nếu chưa có học sinh, thông báo "No students registered yet. Please add students." sẽ hiển thị.
+- Trong mỗi hàng học sinh, **Student Code** được ẩn bằng dấu chấm (••••). Nhấp biểu tượng mắt để hiện mã, ví dụ 7662. Dùng biểu tượng QR để xem QR cá nhân, và biểu tượng thùng rác để xóa.`,
+    `[[image:class-management/08.png|Chọn phương thức Bulk Add]]
+
+Nhấp **Manage Students** để chuyển sang **Student List Edit mode**.
+
+- **Add Student**: thêm từng hàng và nhập **Name** cùng **Student Code**. Nếu để trống Student Code, mã sẽ được tạo tự động ("e.g. 1234 (Auto)"), nhưng bạn cũng có thể nhập thủ công.
+- **Bulk Add**: thêm nhiều học sinh cùng lúc.
+  - **Import from Past Lesson**: nhập học sinh từ lớp học trước.
+  - **Upload Excel/CSV**: tải lên bằng file Excel/CSV.
+  - **Download Excel Template**: tải mẫu Excel để upload.
+
+Sau khi nhập thông tin, nhấp **Save**, rồi kết thúc chỉnh sửa bằng **Manage Students End**. Sau khi lưu, mỗi học sinh nhận một Student Code riêng, ví dụ Ethan 7662.`,
+    `[[image:class-management/13.png|Popup Personal QR Code]]
+
+Nhấp biểu tượng QR trong hàng học sinh để mở cửa sổ **Personal QR Code**. Cửa sổ hiển thị mã QR và các thông tin sau.
+
+- **Grade**
+- **Class**, ví dụ Grade 5, Lumi Class
+- **Class Code**, ví dụ 5ZCWNB
+- **Student No.**, ví dụ 1
+- **Student Code**, ví dụ 7662
+- **Name**, ví dụ Ethan
+- **Student Home**, ví dụ https://dev.lumiteach.ai/student
+
+Dùng **Print** để in và phát cho học sinh. Học sinh có thể tham gia lớp hoặc Assignments bằng QR này hoặc Student Code.`,
+    `[[image:class-management/26.png|Bộ lọc Year]]
+
+[[image:class-management/27.png|Bộ lọc Grade]]
+
+Dùng bộ lọc Year và Grade để thu hẹp danh sách chỉ còn các Classes của một năm học và khối lớp cụ thể.`
+  ]
+});
+// END ASSESSMENT CLASS BODY TRANSLATION CORRECTION 4

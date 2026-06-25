@@ -17,6 +17,41 @@ function formatInline(value) {
     .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
 }
 
+
+const manualImageBasePath = 'lumiteach_assets/manual';
+const fallbackManualImageLanguage = 'en';
+
+function normalizeManualImagePath(imagePath) {
+  return String(imagePath || '').replace(/^\/+/, '');
+}
+
+function getManualImageCandidates(imagePath) {
+  const normalizedPath = normalizeManualImagePath(imagePath);
+  const language = currentLanguage || defaultLanguage;
+  const candidates = [
+    `${manualImageBasePath}/${language}/${normalizedPath}`,
+    `${manualImageBasePath}/${defaultLanguage}/${normalizedPath}`,
+    `${manualImageBasePath}/${fallbackManualImageLanguage}/${normalizedPath}`,
+    `${manualImageBasePath}/${normalizedPath}`
+  ];
+
+  return candidates.filter((candidate, index) => candidate && candidates.indexOf(candidate) === index);
+}
+
+function handleManualImageError(imageElement) {
+  const fallbacks = (imageElement.dataset.fallbackSrcs || '').split('|').filter(Boolean);
+  const nextSrc = fallbacks.shift();
+
+  if (nextSrc) {
+    imageElement.dataset.fallbackSrcs = fallbacks.join('|');
+    imageElement.src = nextSrc;
+    return;
+  }
+
+  imageElement.hidden = true;
+  imageElement.closest('.manual-image')?.classList.add('manual-image-missing');
+}
+
 function renderRichText(value) {
   const lines = String(value).split(/\n/);
   const html = [];
@@ -59,8 +94,10 @@ function renderRichText(value) {
 
       const imageKey = trimmed.slice(8, -2);
       const [imagePath, imageCaption = ''] = imageKey.split('|');
+      const imageCandidates = getManualImageCandidates(imagePath);
       const image = manualImages[imagePath] || {
-        src: `lumiteach_assets/manual/${imagePath}`,
+        src: imageCandidates[0],
+        fallbackSrcs: imageCandidates.slice(1),
         alt: imageCaption,
         caption: imageCaption
       };
@@ -68,7 +105,7 @@ function renderRichText(value) {
       if (image) {
         html.push(`
           <figure class="manual-image">
-            <img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt || '')}" />
+            <img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt || '')}" data-fallback-srcs="${escapeHtml((image.fallbackSrcs || []).join('|'))}" onerror="handleManualImageError(this)" />
             ${image.caption ? `<figcaption>${escapeHtml(image.caption)}</figcaption>` : ''}
           </figure>
         `);

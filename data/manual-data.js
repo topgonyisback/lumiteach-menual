@@ -1115,6 +1115,20 @@ Object.entries(renumberedTemplateNumbers).forEach(([key, number]) => {
 });
 // END TOOL KIT CONTENT PATCH
 
+const faqCategory = {
+  key: 'cat-faq',
+  title: '10. 자주 묻는 질문 (FAQ)',
+  description: 'LumiTeach 사용 중 자주 묻는 질문과 답변',
+  children: []
+};
+if (!manualTree.some((category) => category.key === faqCategory.key)) {
+  manualTree.push(faqCategory);
+}
+
+Object.assign(articleTemplates, {
+  'cat-faq': ['10.', 'LumiTeach Help Center', '자주 묻는 질문 (FAQ)', 'LumiTeach를 사용하면서 자주 묻는 질문을 주제별로 모았습니다.', '찾는 내용이 없으면 각 기능 가이드를 참고하거나, 처음이라면 Get Started Guide를 먼저 읽어보세요.', ['시작 & 계정', '수업 만들기 (Edit Lesson)', '수업 진행 (Teaching)', '학생 화면 & 참여 (Student View)', '결과 확인', 'Idea Board / Whiteboard', '기타']]
+});
+
 const stripLeadingCategoryNumber = (title) => String(title || '').replace(/^\s*\d+\.\s*/, '');
 const categoryNumberMap = new Map();
 function syncVisibleCategoryNumbers() {
@@ -1793,11 +1807,11 @@ Object.assign(articleBodies, {
   'edit-lesson-interaction': [
     'Edit Lesson 화면 우측 상단의 **Start Teaching** 버튼 옆 **∨** 버튼을 클릭하면 수업 모드 드롭다운이 나타납니다. **Interaction**을 선택합니다.\n\n[[image:edit-lesson-interaction/01.png|Start Teaching 드롭다운의 Interaction 선택]]\n\n- **Interaction**: 학생 응답 수신에 유리한 온라인 수업 모드입니다.\n- **Presentation**: 인터넷 연결 없이도 수업할 수 있는 오프라인 모드입니다.\n- **Battle Mode**: 온라인 환경에서만 실행 가능한 배틀 형식의 수업 모드입니다.',
     '**Choose Access Type** 팝업에서 수업 참여 범위를 선택합니다.\n\n[[image:edit-lesson-interaction/02.png|Choose Access Type 팝업]]\n\n- **Public Link (Guest Access)**: 링크나 Access Code를 아는 누구나 참여할 수 있습니다. Class를 별도로 지정하지 않았다면 이 옵션을 선택하세요.\n- **Class Only (Private Access)**: 특정 Class에 배정된 학생만 참여할 수 있습니다.\n\n선택 후 **Assign** 버튼을 클릭합니다.\n\n### Class Only 선택 시 — 클래스 지정하기\n\nClass Only를 선택하면 **Choose a class** 팝업이 추가로 나타납니다. 참여시킬 클래스를 설정합니다.\n\n[[image:edit-lesson-interaction/03.png|Class Only 선택 시 클래스 지정 팝업]]\n\n- **Year**: 학년도 선택 (예: 2026)\n- **School**: 학교 선택\n- **Grade**: 학년 선택\n- **Class Name** (필수): 특정 클래스를 선택합니다.\n\n설정 완료 후 **Apply** 버튼을 클릭합니다.',
-    '설정이 완료되면 Interaction 수업 화면으로 진입합니다.\n\n[[image:edit-lesson-interaction/04.png|Interaction 수업 화면]]\n\n- **좌측 상단 — Access Code**: 학생이 LumiTeach에 접속할 때 입력하는 코드입니다. 학생들에게 이 코드를 공유하면 수업에 참여할 수 있습니다.\n- **우측 상단 — Remote Control**: 원격 제어 기능입니다. 학생 기기에서 슬라이드를 함께 제어할 수 있습니다.\n- **우측 상단 — End Lesson**: 수업을 종료합니다.\n- **하단 슬라이드 이동 (< 1/5 >)**: 이전/다음 슬라이드로 이동합니다.\n- **하단 우측 — 학생 수**: 현재 수업에 참여 중인 학생 수를 실시간으로 확인할 수 있습니다.'
+    '설정이 완료되면 Interaction 수업 화면으로 진입합니다.\n\n[[image:edit-lesson-interaction/04.png|Interaction 수업 화면]]\n\n- **좌측 상단 — Access Code**: 학생이 LumiTeach에 접속할 때 입력하는 코드입니다. 학생들에게 이 코드를 공유하면 수업에 참여할 수 있습니다.\n- **우측 상단 — Instructor View**: 진행자 보기 화면으로 이동합니다. 교사는 슬라이드 미리보기, 타이머, 학생 질문 등을 한눈에 확인할 수 있습니다.\n- **우측 상단 — End Lesson**: 수업을 종료합니다.\n- **하단 슬라이드 이동 (< 1/5 >)**: 이전/다음 슬라이드로 이동합니다.\n- **하단 우측 — 학생 수**: 현재 수업에 참여 중인 학생 수를 실시간으로 확인할 수 있습니다.'
   ],
   'edit-lesson-presentation': [
     'Edit Lesson 화면 우측 상단의 **Start Teaching** 버튼 옆 **∨** 버튼을 클릭하면 수업 모드 드롭다운이 나타납니다. **Presentation**을 선택합니다.\n\n[[image:edit-lesson-presentation/01.png|Start Teaching 드롭다운의 Presentation 선택]]\n\n- **Interaction**: 학생의 응답을 실시간으로 받는 상호작용 중심 수업 모드입니다.\n- **Presentation**: 인터넷 연결 없이 Lesson을 발표 형식으로 진행하는 오프라인 수업 모드입니다.\n- **Battle Mode**: 온라인 환경에서만 실행 가능한 배틀 방식의 수업 모드입니다.\n\n**Presentation**을 선택하면 Access Type 설정이나 학생 참여 없이 바로 수업 화면으로 진입합니다.',
-    'Presentation 모드로 진입하면 **Lesson View** 화면이 표시됩니다.\n\n[[image:edit-lesson-presentation/02.png|Presentation Lesson View 화면]]\n\n- **상단 중앙 — Lesson View**: 현재 Presentation 모드로 수업 중임을 나타냅니다.\n- **상단 우측 — End Lesson**: 수업을 종료합니다.\n- **좌우 화살표 (◀ ▶)**: 슬라이드를 앞뒤로 이동합니다. 키보드 방향키로도 조작할 수 있습니다.\n- **하단 슬라이드 위치 (예: 1/5)**: 전체 슬라이드 중 현재 위치를 표시합니다.\n\n> **Interaction 모드와의 차이**: Presentation 모드에는 Access Code, Remote Control, 학생 수 표시가 없습니다. 교사 화면 단독으로 콘텐츠를 제시하는 방식으로 운영됩니다.'
+    'Presentation 모드로 진입하면 **Lesson View** 화면이 표시됩니다.\n\n[[image:edit-lesson-presentation/02.png|Presentation Lesson View 화면]]\n\n- **상단 중앙 — Lesson View**: 현재 Presentation 모드로 수업 중임을 나타냅니다.\n- **상단 우측 — End Lesson**: 수업을 종료합니다.\n- **좌우 화살표 (◀ ▶)**: 슬라이드를 앞뒤로 이동합니다. 키보드 방향키로도 조작할 수 있습니다.\n- **하단 슬라이드 위치 (예: 1/5)**: 전체 슬라이드 중 현재 위치를 표시합니다.\n\n> **Interaction 모드와의 차이**: Presentation 모드에는 Access Code, Instructor View, 학생 수 표시가 없습니다. 교사 화면 단독으로 콘텐츠를 제시하는 방식으로 운영됩니다.'
   ],
   'edit-lesson-undo-redo': [
     'Edit Lesson 화면 상단 중앙에 **← (Undo)** 와 **→ (Redo)** 아이콘이 나란히 위치해 있습니다. Preview, Self Study, Start Teaching 버튼 왼쪽에서 확인할 수 있습니다.\n\n[[image:edit-lesson-undo-redo/01.png|Edit Lesson 화면 상단의 Undo 및 Redo 버튼]]\n\n- **← Undo**: 직전 작업을 취소하고 이전 상태로 되돌립니다.\n- **→ Redo**: 취소했던 작업을 다시 실행합니다.',
@@ -1805,7 +1819,7 @@ Object.assign(articleBodies, {
   ],
   'edit-lesson-preview': [
     'Edit Lesson 화면 상단 중앙의 **Preview 👁** 버튼을 클릭합니다. Undo/Redo 아이콘 오른쪽, Self Study 버튼 왼쪽에 위치해 있습니다.\n\n[[image:edit-lesson-preview/01.png|Edit Lesson 화면 상단의 Preview 버튼]]',
-    'Preview 화면 진입 시 상단에 다음 안내 문구가 표시됩니다.\n\n> **"This is a preview screen. Your responses will not be saved."**\n> 미리보기 화면이므로 입력한 응답은 저장되지 않습니다.\n\n화면은 두 개의 영역으로 나뉩니다.\n\n[[image:edit-lesson-preview/02.png|Preview 화면의 Presentation Screen과 Audience Screen]]\n\n- **Presentation Screen** (좌측): 교사가 수업 중 보게 되는 화면입니다. Access Code, Remote Control, End Lesson 버튼, 슬라이드 이동 등 실제 수업 UI가 그대로 표시됩니다.\n- **Audience Screen** (우측): 학생 기기에서 보이는 화면입니다. 학생 입장에서 콘텐츠가 어떻게 표시되는지 확인할 수 있습니다.',
+    'Preview 화면 진입 시 상단에 다음 안내 문구가 표시됩니다.\n\n> **"This is a preview screen. Your responses will not be saved."**\n> 미리보기 화면이므로 입력한 응답은 저장되지 않습니다.\n\n화면은 두 개의 영역으로 나뉩니다.\n\n[[image:edit-lesson-preview/02.png|Preview 화면의 Presentation Screen과 Audience Screen]]\n\n- **Presentation Screen** (좌측): 교사가 수업 중 보게 되는 화면입니다. Access Code, Instructor View, End Lesson 버튼, 슬라이드 이동 등 실제 수업 UI가 그대로 표시됩니다.\n- **Audience Screen** (우측): 학생 기기에서 보이는 화면입니다. 학생 입장에서 콘텐츠가 어떻게 표시되는지 확인할 수 있습니다.',
     'Preview 화면 우측 하단의 **View Mobile** 토글로 학생 화면을 모바일 기준으로 전환할 수 있습니다.\n\n[[image:edit-lesson-preview/03.png|View Mobile 토글로 모바일 화면 확인]]\n\n- **토글 OFF**: Audience Screen이 PC/태블릿 화면 비율로 표시됩니다.\n- **토글 ON**: Audience Screen이 모바일 세로 화면 비율로 전환됩니다. 스마트폰으로 참여하는 학생의 화면을 미리 확인할 때 유용합니다.\n\n우측 상단의 **X** 버튼을 클릭하면 Preview를 종료하고 Edit Lesson 화면으로 돌아옵니다.'
   ],
   'edit-lesson-background-color': [
@@ -2141,6 +2155,18 @@ Object.assign(articleBodies, {
   ]
 });
 
+Object.assign(articleBodies, {
+  'cat-faq': [
+      "**Q. LumiTeach를 처음 쓰는데 어디서부터 시작하나요?**\n\nGet Started Guide를 따라 가세요. 계정 설정 → 첫 수업 만들기 → 수업 진행까지 순서대로 안내합니다. Step 1–3만 따라 해도 첫 수업을 진행할 수 있습니다.\n\n**Q. 프로필과 소개(Bio)는 어디서 바꾸나요?**\n\nSetting에서 이름·소개 등 기본 정보를 수정합니다. 자세한 내용은 Setting 가이드를 참고하세요.\n\n**Q. 제가 쓴 소개글은 어디에 표시되나요?**\n\nSetting의 Bio는 다른 사용자가 보는 크리에이터 페이지(Explore)에 함께 표시됩니다. Edit에서 수정한 Bio가 그대로 반영됩니다.",
+      "**Q. 수업(Lesson)에 활동을 어떻게 추가하나요?**\n\n편집 화면 왼쪽의 + Manual(직접 골라 추가) 또는 AI Make(AI 자동 생성)을 사용합니다. + Manual을 누르면 Create Manually 창에서 카테고리별로 활동을 고를 수 있습니다.\n\n**Q. 어떤 활동 종류가 있나요?**\n\nGeneral(기본 슬라이드), Embed(외부 콘텐츠), Quiz(정답이 있는 문제), Discussion(토론·투표), Idea Board(Brainstorming·Whiteboard·Ideas), Games가 있습니다.\n\n**Q. AI Make는 무엇인가요?**\n\nAI의 도움을 받아 슬라이드를 자동으로 만들어 주는 기능입니다. 직접 만들기(+ Manual)와 함께 슬라이드 추가 방법으로 제공됩니다.\n\n**Q. 학생에게 보이기 전에 미리 확인할 수 있나요?**\n\n있습니다. 상단의 Preview로 학생 화면을 미리 볼 수 있습니다.\n\n**Q. Self Study는 무엇인가요?**\n\n만든 Lesson을 학생이 스스로 학습하도록 배포하는 방식입니다. 편집 화면 상단에서 선택할 수 있습니다.\n\n**Q. 이미 만든 활동을 다시 쓸 수 있나요?**\n\nMy Storage에 저장된 활동을 불러와 재사용할 수 있습니다. Create Manually 창의 My Storage 탭에서도 접근할 수 있습니다.",
+      "**Q. 수업은 어떻게 시작하나요?**\n\n편집 화면 오른쪽 위의 Start Teaching을 누르고 진행 모드를 선택합니다.\n\n**Q. Interaction과 Presentation 모드는 어떻게 다른가요?**\n\nInteraction은 학생과 실시간으로 상호작용하는 수업 모드이고, Presentation은 인터넷 연결 없이 발표 형식으로 진행하는 오프라인 모드입니다.\n\n**Q. 학생은 수업에 어떻게 입장하나요?**\n\n수업이 시작되면 화면에 Access Code가 표시됩니다. 학생은 자신의 기기에서 이 코드를 입력해 입장합니다.\n\n**Q. 수업 중에 타이머나 모둠 편성 같은 도구를 쓰려면?**\n\nTool Kit을 사용하세요. 타이머, 룰렛, 모둠 편성 등 Normal·Timer·Competition·Draw·Math Tools 카테고리의 도구를 제공합니다.\n\n**Q. 학생 질문이나 진행 상황은 어디서 확인하나요?**\n\nInstructor View(진행자 보기)에서 슬라이드 미리보기, 타이머, 학생 질문(Live Q&A) 등을 한눈에 확인할 수 있습니다.\n\n**Q. 수업을 끝내려면 어떻게 하나요?**\n\n우측 상단의 End Lesson을 누릅니다.",
+      "**Q. 학생 화면에 \"Please wait...\"만 보여요.**\n\n아직 선생님이 활동을 시작하지 않은 상태입니다. \"Please wait until your teacher starts the activity.\"는 대기 화면이며, 선생님이 활동을 시작하면 자동으로 넘어갑니다.\n\n**Q. 학생은 답을 어떻게 제출하나요?**\n\n입력칸에 답을 쓴 뒤 Submit 버튼을 누릅니다. 입력이 비어 있으면 버튼이 비활성(회색)이며, 내용을 적으면 활성화됩니다.\n\n**Q. 학생이 의견을 여러 번 낼 수 있나요?**\n\n활동 설정의 Response Limit으로 결정됩니다. One Time은 1회, Unlimited는 횟수 제한 없이 제출할 수 있습니다.\n\n**Q. 학생 닉네임을 표시하거나 숨길 수 있나요?**\n\n활동 설정의 Nickname Shown을 켜면 응답에 작성자 닉네임이 함께 표시됩니다.",
+      "**Q. 학생 응답 결과는 어떻게 보나요?**\n\n활동을 마친 뒤 View Result(결과 보기)로 학생들의 응답을 정리해 확인합니다.\n\n**Q. 결과를 단어 구름이나 마인드맵으로 볼 수 있나요?**\n\n네. 활동 설정의 Classify Opinion Result를 켜면 Word Cloud / Classification / Mind Map 중에서 결과 형태를 고를 수 있습니다.\n\n**Q. 결과 자동 정리에 AI 크레딧이 차감되나요?**\n\n네. Classify Opinion Result(Word Cloud·Classification·Mind Map)는 AI를 사용하므로 크레딧이 차감됩니다(\"AI credits will be deducted\").",
+      "**Q. 학생들이 직접 그림을 그리게 하려면?**\n\nIdea Board → Whiteboard 활동을 사용하세요. Artboard Style에서 빈 화면·모눈·영어 4선 노트·오선지 등 바탕을 고를 수 있습니다.\n\n**Q. 한 학생의 작업을 전체 학생에게 보여주려면?**\n\nWhiteboard의 Monitoring 화면에서 해당 학생 카드를 누른 뒤 Send to All을 선택하면 모든 학생 보드로 전송됩니다.\n\n**Q. 모든 학생의 작업을 한 번에 보려면?**\n\nWhiteboard의 Monitoring 화면에서 접속한 모든 학생의 보드를 그리드로 모아 실시간으로 확인할 수 있습니다. 제출을 마친 학생은 카드가 Complete로 표시됩니다.",
+      "**Q. 각 기능의 더 자세한 사용법은 어디서 보나요?**\n\n아래 가이드를 참고하세요.\n\n- Get Started Guide — 처음 시작하는 선생님을 위한 전체 흐름 안내\n- Edit Lesson — 활동 종류별 상세 설정(General·Embed·Quiz·Discussion·Idea Board·Games)\n- Tool Kit — 수업 중 도구(Normal·Timer·Competition·Draw·Math Tools)\n- Curriculum / Explore / My Storage / Setting — 관리 및 설정"
+  ]
+});
+
 
 const categories = manualTree.map((category) => ({
   title: category.title,
@@ -2426,6 +2452,14 @@ Object.assign(hubCovers, {
   'storage-folder': { icon: '⌕', bg: 'linear-gradient(135deg, #eaf1ff, #e9fff6)', color: '#0f7f78', size: '64px' },
   'storage-move': { icon: '▦', bg: 'linear-gradient(135deg, #e6f0ff, #fff7df)', color: '#2563e9', size: '56px' },
   'storage-trash': { icon: '⋯', bg: 'linear-gradient(135deg, #f7f7f6, #eaf1ff)', color: '#233a78', size: '64px' }
+});
+
+Object.assign(hubVisuals, {
+  'cat-faq': { icon: '?', bg: 'linear-gradient(135deg, #eaf1ff, #f6f9ff)', color: '#204cff', size: '54px' }
+});
+
+Object.assign(hubCovers, {
+  'cat-faq': { icon: '?', bg: 'linear-gradient(135deg, #eaf1ff, #f6f9ff)', color: '#204cff', size: '72px' }
 });
 
 // END TOOL KIT VISUAL PATCH

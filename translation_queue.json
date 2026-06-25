@@ -2290,7 +2290,7 @@
       "bodies": [
         "Edit Lesson 화면 우측 상단의 **Start Teaching** 버튼 옆 **∨** 버튼을 클릭하면 수업 모드 드롭다운이 나타납니다. **Interaction**을 선택합니다.\n\n[[image:edit-lesson-interaction/01.png|Start Teaching 드롭다운의 Interaction 선택]]\n\n- **Interaction**: 학생 응답 수신에 유리한 온라인 수업 모드입니다.\n- **Presentation**: 인터넷 연결 없이도 수업할 수 있는 오프라인 모드입니다.\n- **Battle Mode**: 온라인 환경에서만 실행 가능한 배틀 형식의 수업 모드입니다.",
         "**Choose Access Type** 팝업에서 수업 참여 범위를 선택합니다.\n\n[[image:edit-lesson-interaction/02.png|Choose Access Type 팝업]]\n\n- **Public Link (Guest Access)**: 링크나 Access Code를 아는 누구나 참여할 수 있습니다. Class를 별도로 지정하지 않았다면 이 옵션을 선택하세요.\n- **Class Only (Private Access)**: 특정 Class에 배정된 학생만 참여할 수 있습니다.\n\n선택 후 **Assign** 버튼을 클릭합니다.\n\n### Class Only 선택 시 — 클래스 지정하기\n\nClass Only를 선택하면 **Choose a class** 팝업이 추가로 나타납니다. 참여시킬 클래스를 설정합니다.\n\n[[image:edit-lesson-interaction/03.png|Class Only 선택 시 클래스 지정 팝업]]\n\n- **Year**: 학년도 선택 (예: 2026)\n- **School**: 학교 선택\n- **Grade**: 학년 선택\n- **Class Name** (필수): 특정 클래스를 선택합니다.\n\n설정 완료 후 **Apply** 버튼을 클릭합니다.",
-        "설정이 완료되면 Interaction 수업 화면으로 진입합니다.\n\n[[image:edit-lesson-interaction/04.png|Interaction 수업 화면]]\n\n- **좌측 상단 — Access Code**: 학생이 LumiTeach에 접속할 때 입력하는 코드입니다. 학생들에게 이 코드를 공유하면 수업에 참여할 수 있습니다.\n- **우측 상단 — Remote Control**: 원격 제어 기능입니다. 학생 기기에서 슬라이드를 함께 제어할 수 있습니다.\n- **우측 상단 — End Lesson**: 수업을 종료합니다.\n- **하단 슬라이드 이동 (< 1/5 >)**: 이전/다음 슬라이드로 이동합니다.\n- **하단 우측 — 학생 수**: 현재 수업에 참여 중인 학생 수를 실시간으로 확인할 수 있습니다."
+        "설정이 완료되면 Interaction 수업 화면으로 진입합니다.\n\n[[image:edit-lesson-interaction/04.png|Interaction 수업 화면]]\n\n- **좌측 상단 — Access Code**: 학생이 LumiTeach에 접속할 때 입력하는 코드입니다. 학생들에게 이 코드를 공유하면 수업에 참여할 수 있습니다.\n- **우측 상단 — Instructor View**: 진행자 보기 화면으로 이동합니다. 교사는 슬라이드 미리보기, 타이머, 학생 질문 등을 한눈에 확인할 수 있습니다.\n- **우측 상단 — End Lesson**: 수업을 종료합니다.\n- **하단 슬라이드 이동 (< 1/5 >)**: 이전/다음 슬라이드로 이동합니다.\n- **하단 우측 — 학생 수**: 현재 수업에 참여 중인 학생 수를 실시간으로 확인할 수 있습니다."
       ],
       "images": [
         "edit-lesson-interaction/01.png",
@@ -2402,7 +2402,7 @@
       "intro": "Presentation 모드는 인터넷 연결 없이도 수업을 진행할 수 있는 오프라인 수업 모드입니다. 학생과의 실시간 상호작용 없이 교사가 Lesson 콘텐츠를 화면에 표시하며 수업을 이끌어가는 발표 중심 모드입니다.",
       "bodies": [
         "Edit Lesson 화면 우측 상단의 **Start Teaching** 버튼 옆 **∨** 버튼을 클릭하면 수업 모드 드롭다운이 나타납니다. **Presentation**을 선택합니다.\n\n[[image:edit-lesson-presentation/01.png|Start Teaching 드롭다운의 Presentation 선택]]\n\n- **Interaction**: 학생의 응답을 실시간으로 받는 상호작용 중심 수업 모드입니다.\n- **Presentation**: 인터넷 연결 없이 Lesson을 발표 형식으로 진행하는 오프라인 수업 모드입니다.\n- **Battle Mode**: 온라인 환경에서만 실행 가능한 배틀 방식의 수업 모드입니다.\n\n**Presentation**을 선택하면 Access Type 설정이나 학생 참여 없이 바로 수업 화면으로 진입합니다.",
-        "Presentation 모드로 진입하면 **Lesson View** 화면이 표시됩니다.\n\n[[image:edit-lesson-presentation/02.png|Presentation Lesson View 화면]]\n\n- **상단 중앙 — Lesson View**: 현재 Presentation 모드로 수업 중임을 나타냅니다.\n- **상단 우측 — End Lesson**: 수업을 종료합니다.\n- **좌우 화살표 (◀ ▶)**: 슬라이드를 앞뒤로 이동합니다. 키보드 방향키로도 조작할 수 있습니다.\n- **하단 슬라이드 위치 (예: 1/5)**: 전체 슬라이드 중 현재 위치를 표시합니다.\n\n> **Interaction 모드와의 차이**: Presentation 모드에는 Access Code, Remote Control, 학생 수 표시가 없습니다. 교사 화면 단독으로 콘텐츠를 제시하는 방식으로 운영됩니다."
+        "Presentation 모드로 진입하면 **Lesson View** 화면이 표시됩니다.\n\n[[image:edit-lesson-presentation/02.png|Presentation Lesson View 화면]]\n\n- **상단 중앙 — Lesson View**: 현재 Presentation 모드로 수업 중임을 나타냅니다.\n- **상단 우측 — End Lesson**: 수업을 종료합니다.\n- **좌우 화살표 (◀ ▶)**: 슬라이드를 앞뒤로 이동합니다. 키보드 방향키로도 조작할 수 있습니다.\n- **하단 슬라이드 위치 (예: 1/5)**: 전체 슬라이드 중 현재 위치를 표시합니다.\n\n> **Interaction 모드와의 차이**: Presentation 모드에는 Access Code, Instructor View, 학생 수 표시가 없습니다. 교사 화면 단독으로 콘텐츠를 제시하는 방식으로 운영됩니다."
       ],
       "images": [
         "edit-lesson-presentation/01.png",
@@ -2612,7 +2612,7 @@
       "intro": "Preview는 실제 수업을 시작하기 전에 Lesson이 교사와 학생 화면에서 어떻게 보이는지 미리 확인할 수 있는 기능입니다. 응답 내용은 저장되지 않으므로 자유롭게 테스트할 수 있습니다.",
       "bodies": [
         "Edit Lesson 화면 상단 중앙의 **Preview 👁** 버튼을 클릭합니다. Undo/Redo 아이콘 오른쪽, Self Study 버튼 왼쪽에 위치해 있습니다.\n\n[[image:edit-lesson-preview/01.png|Edit Lesson 화면 상단의 Preview 버튼]]",
-        "Preview 화면 진입 시 상단에 다음 안내 문구가 표시됩니다.\n\n> **\"This is a preview screen. Your responses will not be saved.\"**\n> 미리보기 화면이므로 입력한 응답은 저장되지 않습니다.\n\n화면은 두 개의 영역으로 나뉩니다.\n\n[[image:edit-lesson-preview/02.png|Preview 화면의 Presentation Screen과 Audience Screen]]\n\n- **Presentation Screen** (좌측): 교사가 수업 중 보게 되는 화면입니다. Access Code, Remote Control, End Lesson 버튼, 슬라이드 이동 등 실제 수업 UI가 그대로 표시됩니다.\n- **Audience Screen** (우측): 학생 기기에서 보이는 화면입니다. 학생 입장에서 콘텐츠가 어떻게 표시되는지 확인할 수 있습니다.",
+        "Preview 화면 진입 시 상단에 다음 안내 문구가 표시됩니다.\n\n> **\"This is a preview screen. Your responses will not be saved.\"**\n> 미리보기 화면이므로 입력한 응답은 저장되지 않습니다.\n\n화면은 두 개의 영역으로 나뉩니다.\n\n[[image:edit-lesson-preview/02.png|Preview 화면의 Presentation Screen과 Audience Screen]]\n\n- **Presentation Screen** (좌측): 교사가 수업 중 보게 되는 화면입니다. Access Code, Instructor View, End Lesson 버튼, 슬라이드 이동 등 실제 수업 UI가 그대로 표시됩니다.\n- **Audience Screen** (우측): 학생 기기에서 보이는 화면입니다. 학생 입장에서 콘텐츠가 어떻게 표시되는지 확인할 수 있습니다.",
         "Preview 화면 우측 하단의 **View Mobile** 토글로 학생 화면을 모바일 기준으로 전환할 수 있습니다.\n\n[[image:edit-lesson-preview/03.png|View Mobile 토글로 모바일 화면 확인]]\n\n- **토글 OFF**: Audience Screen이 PC/태블릿 화면 비율로 표시됩니다.\n- **토글 ON**: Audience Screen이 모바일 세로 화면 비율로 전환됩니다. 스마트폰으로 참여하는 학생의 화면을 미리 확인할 때 유용합니다.\n\n우측 상단의 **X** 버튼을 클릭하면 Preview를 종료하고 Edit Lesson 화면으로 돌아옵니다."
       ],
       "images": [

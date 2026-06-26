@@ -14724,3 +14724,178 @@ Object.entries(articleHeaderCategoryTranslations).forEach(([language, config]) =
   });
 });
 // END ARTICLE HEADER CATEGORY TRANSLATION PATCH
+
+
+// BEGIN SETTING PAGE SECTION TRANSLATION PATCH
+const settingPageSectionTranslations = {
+  pt: {
+    'cat-start': ['Abrir Setting', 'Configurar Profile', 'Configurar Language', 'Verificar AI Credit'],
+    'group-start-setup': ['Abrir Setting', 'Configurar Profile', 'Configurar Language', 'Verificar AI Credit'],
+    'setting-open': ['Abrir o menu de perfil', 'Selecionar Setting'],
+    'setting-profile': ['Alterar imagem de perfil', 'Editar nome e Bio', 'Solicitar Institution', 'Verificar Account'],
+    'setting-language': ['Verificar a aba Language', 'Selecionar o idioma de exibição', 'Aplicar com Save'],
+    'setting-ai-credit': ['Verificar plano e créditos restantes', 'Verificar Usage History']
+  },
+  es: {
+    'cat-start': ['Abrir Setting', 'Configurar Profile', 'Configurar Language', 'Revisar AI Credit'],
+    'group-start-setup': ['Abrir Setting', 'Configurar Profile', 'Configurar Language', 'Revisar AI Credit'],
+    'setting-open': ['Abrir el menú de perfil', 'Seleccionar Setting'],
+    'setting-profile': ['Cambiar imagen de perfil', 'Editar nombre y Bio', 'Solicitar Institution', 'Revisar Account'],
+    'setting-language': ['Revisar la pestaña Language', 'Seleccionar idioma de visualización', 'Aplicar con Save'],
+    'setting-ai-credit': ['Revisar plan y créditos restantes', 'Revisar Usage History']
+  },
+  ja: {
+    'cat-start': ['Settingを開く', 'Profileを設定する', 'Languageを設定する', 'AI Creditを確認する'],
+    'group-start-setup': ['Settingを開く', 'Profileを設定する', 'Languageを設定する', 'AI Creditを確認する'],
+    'setting-open': ['プロフィールメニューを開く', 'Settingを選択する'],
+    'setting-profile': ['プロフィール画像を変更する', '名前とBioを編集する', 'Institutionをリクエストする', 'Accountを確認する'],
+    'setting-language': ['Languageタブを確認する', '表示言語を選択する', 'Saveで適用する'],
+    'setting-ai-credit': ['プランと残りクレジットを確認する', 'Usage Historyを確認する']
+  },
+  vi: {
+    'cat-start': ['Mở Setting', 'Cài đặt Profile', 'Cài đặt Language', 'Kiểm tra AI Credit'],
+    'group-start-setup': ['Mở Setting', 'Cài đặt Profile', 'Cài đặt Language', 'Kiểm tra AI Credit'],
+    'setting-open': ['Mở menu hồ sơ', 'Chọn Setting'],
+    'setting-profile': ['Thay đổi ảnh hồ sơ', 'Chỉnh sửa tên và Bio', 'Yêu cầu Institution', 'Kiểm tra Account'],
+    'setting-language': ['Kiểm tra tab Language', 'Chọn ngôn ngữ hiển thị', 'Áp dụng bằng Save'],
+    'setting-ai-credit': ['Kiểm tra gói và tín dụng còn lại', 'Kiểm tra Usage History']
+  }
+};
+
+Object.entries(settingPageSectionTranslations).forEach(([language, pages]) => {
+  Object.entries(pages).forEach(([key, sections]) => {
+    ensureTranslationArticle(language, key).sections = sections;
+  });
+});
+// END SETTING PAGE SECTION TRANSLATION PATCH
+
+
+// BEGIN LEGACY SETTING GROUP TITLE TRANSLATION PATCH
+const legacySettingGroupTitleTranslations = {
+  pt: {
+    'group-start-setup': {
+      title: 'Usar Setting',
+      desc: 'Gerencie o perfil, o idioma e as informações de AI Credit da sua conta LumiTeach em Setting.'
+    }
+  },
+  es: {
+    'group-start-setup': {
+      title: 'Usar Setting',
+      desc: 'Gestiona el perfil, el idioma y la información de AI Credit de tu cuenta LumiTeach en Setting.'
+    }
+  },
+  ja: {
+    'group-start-setup': {
+      title: 'Settingを使う',
+      desc: 'SettingでLumiTeachアカウントのプロフィール、言語、AI Credit情報を管理します。'
+    }
+  },
+  vi: {
+    'group-start-setup': {
+      title: 'Sử dụng Setting',
+      desc: 'Quản lý hồ sơ, ngôn ngữ và thông tin AI Credit của tài khoản LumiTeach trong Setting.'
+    }
+  }
+};
+
+Object.entries(legacySettingGroupTitleTranslations).forEach(([language, pages]) => {
+  Object.entries(pages).forEach(([key, values]) => {
+    Object.assign(ensureTranslationArticle(language, key), values);
+  });
+});
+// END LEGACY SETTING GROUP TITLE TRANSLATION PATCH
+
+
+// BEGIN SETTING PAGE BODY TRANSLATION PATCH
+const settingPageBodyTranslations = {
+  "pt": {
+    "setting-open": [
+      "[[image:setting-open/01.png|Item Setting no menu de perfil]]\n\nClique no ícone de perfil no canto superior direito da tela. Um menu suspenso será exibido. Selecione **Setting** no menu para abrir o modal de Setting.",
+      "O menu suspenso também inclui **Privacy Policy**, **Terms of Service**, **Service Manual**, **Help Center** e **Log out**. Para alterar configurações da conta, acesse por **Setting**."
+    ],
+    "setting-profile": [
+      "[[image:setting-profile/01.png|Aba Profile no modal Setting]]\n\nNa aba **Profile**, você pode verificar e editar as informações básicas da conta. São exibidos imagem de perfil, nome, Email, Bio, Institution e Account.\n\n- **Email**: mostra o endereço de email registrado na conta. O email não pode ser editado diretamente.\n- **Account**: use Delete account para prosseguir com a exclusão da conta.",
+      "[[image:setting-profile/02.png|Modal Crop da imagem de perfil]]\n\nClique no ícone de edição no canto inferior direito da imagem de perfil para abrir o modal **Crop**.\n\n- Clique em **Upload file** para enviar uma imagem.\n- Após o upload, ajuste a área de corte.\n- Clique em **Apply** para salvar a imagem de perfil ou em **Cancel** para descartar as alterações.\n- Para remover a imagem existente, clique em **Delete** abaixo da imagem.\n\n[[image:setting-profile/03.png|Estado de edição do nome do perfil]]\n\nClique no ícone de edição ao lado do nome do perfil para ativar o campo de entrada. Digite o nome desejado e clique em **Save**, ou clique em **Cancel** para descartar a alteração.\n\nO campo Bio funciona da mesma forma: clique no ícone de edição, insira a apresentação e salve.",
+      "[[image:setting-profile/04.png|Estado de entrada de Institution]]\n\nClique no ícone + em **Institution** para exibir o campo de entrada da instituição. Digite o nome da instituição e clique em **Request** para enviar a solicitação de vínculo institucional.",
+      "Na área **Account**, você pode prosseguir com a exclusão da conta. Como a exclusão pode ser difícil de desfazer, verifique os materiais necessários e o status da conta antes de usar essa ação em uma conta ativa."
+    ],
+    "setting-language": [
+      "[[image:setting-language/01.png|Aba Language]]\n\nNa aba **Language**, você pode definir o idioma de exibição da interface do LumiTeach. O texto de orientação no topo explica que essa configuração se aplica apenas à interface, enquanto o conteúdo de Curriculum segue o idioma regional.",
+      "[[image:setting-language/02.png|Menu suspenso de Language]]\n\nSelecione o idioma desejado no menu suspenso. Os idiomas compatíveis incluem:\n\n- **English**\n- **Japanese - 日本語**\n- **Spanish - Español**\n- **Vietnamese - Tiếng Việt**\n- **Portuguese - Português**",
+      "Depois de selecionar um idioma, clique em **Save** para aplicar a alteração. Essa configuração se aplica ao idioma de exibição da interface do LumiTeach, enquanto o conteúdo de Curriculum segue o padrão regional."
+    ],
+    "setting-ai-credit": [
+      "[[image:setting-ai-credit/01.png|Status de créditos e histórico de uso na aba AI Credit]]\n\nNa aba **AI Credit**, você pode verificar o status dos créditos usados pelos recursos de IA. O nome do plano atual e o período do ciclo são exibidos, e os créditos restantes e totais aparecem em uma barra de progresso.\n\n- **Next refill on**: mostra a próxima data programada de recarga de créditos.\n- No Free Plan, 1000 créditos são fornecidos mensalmente.",
+      "Em **Usage History**, você pode revisar o uso mensal de créditos. Clique nas setas para a esquerda e direita para ir ao mês anterior ou seguinte.\n\nA tabela de histórico de uso inclui:\n\n- **Type**: tipo de alteração de crédito, como Used, Monthly Credit Refill ou Expired\n- **Content**: nome do recurso utilizado\n- **Credit Change**: quantidade de créditos usados ou recarregados\n- **Date**: data em que a alteração de crédito ocorreu"
+    ]
+  },
+  "es": {
+    "setting-open": [
+      "[[image:setting-open/01.png|Elemento Setting en el menú de perfil]]\n\nHaz clic en el icono de perfil en la esquina superior derecha de la pantalla. Aparecerá un menú desplegable. Selecciona **Setting** en el menú para abrir el modal de Setting.",
+      "El menú desplegable también incluye **Privacy Policy**, **Terms of Service**, **Service Manual**, **Help Center** y **Log out**. Para cambiar la configuración de la cuenta, entra desde **Setting**."
+    ],
+    "setting-profile": [
+      "[[image:setting-profile/01.png|Pestaña Profile en el modal Setting]]\n\nEn la pestaña **Profile**, puedes revisar y editar la información básica de la cuenta. Se muestran la imagen de perfil, nombre, Email, Bio, Institution y Account.\n\n- **Email**: muestra la dirección de correo registrada en la cuenta. El correo no se puede editar directamente.\n- **Account**: usa Delete account para continuar con la eliminación de la cuenta.",
+      "[[image:setting-profile/02.png|Modal Crop de la imagen de perfil]]\n\nHaz clic en el icono de edición en la esquina inferior derecha de la imagen de perfil para abrir el modal **Crop**.\n\n- Haz clic en **Upload file** para subir una imagen.\n- Después de subirla, ajusta el área de recorte.\n- Haz clic en **Apply** para guardar la imagen de perfil o en **Cancel** para descartar los cambios.\n- Para eliminar la imagen existente, haz clic en **Delete** debajo de la imagen.\n\n[[image:setting-profile/03.png|Estado de edición del nombre de perfil]]\n\nHaz clic en el icono de edición junto al nombre de perfil para activar el campo de entrada. Escribe el nombre deseado y haz clic en **Save**, o haz clic en **Cancel** para descartar el cambio.\n\nBio funciona de la misma manera: haz clic en el icono de edición, escribe la presentación y guárdala.",
+      "[[image:setting-profile/04.png|Estado de entrada de Institution]]\n\nHaz clic en el icono + de **Institution** para mostrar el campo de entrada de la institución. Escribe el nombre de la institución y haz clic en **Request** para enviar la solicitud de afiliación institucional.",
+      "En el área **Account**, puedes continuar con la eliminación de la cuenta. Como la eliminación puede ser difícil de deshacer, revisa los materiales necesarios y el estado de la cuenta antes de usar esta acción en una cuenta activa."
+    ],
+    "setting-language": [
+      "[[image:setting-language/01.png|Pestaña Language]]\n\nEn la pestaña **Language**, puedes configurar el idioma de visualización de la interfaz de LumiTeach. El texto guía de la parte superior explica que esta configuración solo se aplica a la interfaz, mientras que el contenido de Curriculum sigue el idioma regional.",
+      "[[image:setting-language/02.png|Menú desplegable de Language]]\n\nSelecciona el idioma deseado en el menú desplegable. Los idiomas compatibles incluyen:\n\n- **English**\n- **Japanese - 日本語**\n- **Spanish - Español**\n- **Vietnamese - Tiếng Việt**\n- **Portuguese - Português**",
+      "Después de seleccionar un idioma, haz clic en **Save** para aplicar el cambio. Esta configuración se aplica al idioma de visualización de la interfaz de LumiTeach, mientras que el contenido de Curriculum sigue el estándar regional."
+    ],
+    "setting-ai-credit": [
+      "[[image:setting-ai-credit/01.png|Estado de créditos e historial de uso en la pestaña AI Credit]]\n\nEn la pestaña **AI Credit**, puedes revisar el estado de los créditos utilizados por las funciones de IA. Se muestran el nombre del plan actual y el período del ciclo, y los créditos restantes y totales aparecen en una barra de progreso.\n\n- **Next refill on**: muestra la próxima fecha programada de recarga de créditos.\n- En Free Plan, se proporcionan 1000 créditos mensualmente.",
+      "En **Usage History**, puedes revisar el uso mensual de créditos. Haz clic en las flechas izquierda y derecha para ir al mes anterior o siguiente.\n\nLa tabla de historial de uso incluye:\n\n- **Type**: tipo de cambio de crédito, como Used, Monthly Credit Refill o Expired\n- **Content**: nombre de la función utilizada\n- **Credit Change**: cantidad de créditos usados o recargados\n- **Date**: fecha en la que ocurrió el cambio de crédito"
+    ]
+  },
+  "ja": {
+    "setting-open": [
+      "[[image:setting-open/01.png|プロフィールメニューのSetting項目]]\n\n画面右上のプロフィールアイコンをクリックします。ドロップダウンメニューが表示されます。メニューから **Setting** を選択すると、Settingモーダルが開きます。",
+      "ドロップダウンには **Privacy Policy**、**Terms of Service**、**Service Manual**、**Help Center**、**Log out** も表示されます。アカウント設定を変更する場合は、**Setting** から入ります。"
+    ],
+    "setting-profile": [
+      "[[image:setting-profile/01.png|SettingモーダルのProfileタブ]]\n\n**Profile** タブでは、アカウントの基本情報を確認・編集できます。プロフィール画像、名前、Email、Bio、Institution、Accountが表示されます。\n\n- **Email**: アカウントに登録されたメールアドレスが表示されます。メールアドレスは直接編集できません。\n- **Account**: Delete accountからアカウント削除を進められます。",
+      "[[image:setting-profile/02.png|プロフィール画像のCropモーダル]]\n\nプロフィール画像右下の編集アイコンをクリックすると、**Crop** モーダルが開きます。\n\n- **Upload file** をクリックして画像をアップロードします。\n- アップロード後、切り抜き範囲を調整します。\n- **Apply** をクリックするとプロフィール画像が保存され、**Cancel** をクリックすると変更が破棄されます。\n- 既存の画像を削除する場合は、画像の下にある **Delete** をクリックします。\n\n[[image:setting-profile/03.png|プロフィール名の編集状態]]\n\nプロフィール名の横にある編集アイコンをクリックすると、名前の入力欄が有効になります。希望する名前を入力して **Save** をクリックするか、**Cancel** をクリックして変更を破棄します。\n\nBioも同じ手順で、編集アイコンをクリックして自己紹介を入力し、保存します。",
+      "[[image:setting-profile/04.png|Institutionの入力状態]]\n\n**Institution** の + アイコンをクリックすると、機関名の入力欄が表示されます。機関名を入力して **Request** をクリックすると、所属機関のリクエストが送信されます。",
+      "**Account** エリアでは、アカウント削除を進められます。削除は元に戻すことが難しい場合があるため、利用中のアカウントで実行する前に必要な資料とアカウント状態を確認してください。"
+    ],
+    "setting-language": [
+      "[[image:setting-language/01.png|Languageタブ]]\n\n**Language** タブでは、LumiTeachインターフェースの表示言語を設定できます。上部の案内文には、この設定がインターフェースにのみ適用され、Curriculumコンテンツは地域の言語に従うことが説明されています。",
+      "[[image:setting-language/02.png|Languageドロップダウン]]\n\nドロップダウンから希望する言語を選択します。対応言語は次のとおりです。\n\n- **English**\n- **Japanese - 日本語**\n- **Spanish - Español**\n- **Vietnamese - Tiếng Việt**\n- **Portuguese - Português**",
+      "言語を選択したら、**Save** をクリックして変更を適用します。この設定はLumiTeachインターフェースの表示言語に適用され、Curriculumコンテンツは地域の基準に従います。"
+    ],
+    "setting-ai-credit": [
+      "[[image:setting-ai-credit/01.png|AI Creditタブのクレジット状況と使用履歴]]\n\n**AI Credit** タブでは、AI機能で使用されるクレジット状況を確認できます。現在のプラン名とサイクル期間が表示され、残りクレジットと合計クレジットがプログレスバーで表示されます。\n\n- **Next refill on**: 次回のクレジット補充予定日が表示されます。\n- Free Planでは、毎月1000クレジットが提供されます。",
+      "**Usage History** では、月ごとのクレジット使用量を確認できます。左右の矢印をクリックすると、前月または翌月に移動できます。\n\n使用履歴テーブルには次の項目が含まれます。\n\n- **Type**: Used、Monthly Credit Refill、Expiredなどのクレジット変更種別\n- **Content**: 使用した機能名\n- **Credit Change**: 使用または補充されたクレジット数\n- **Date**: クレジット変更が発生した日付"
+    ]
+  },
+  "vi": {
+    "setting-open": [
+      "[[image:setting-open/01.png|Mục Setting trong menu hồ sơ]]\n\nNhấp vào biểu tượng hồ sơ ở góc trên bên phải màn hình. Một menu thả xuống sẽ xuất hiện. Chọn **Setting** trong menu để mở modal Setting.",
+      "Menu thả xuống cũng bao gồm **Privacy Policy**, **Terms of Service**, **Service Manual**, **Help Center** và **Log out**. Để thay đổi cài đặt tài khoản, hãy vào qua **Setting**."
+    ],
+    "setting-profile": [
+      "[[image:setting-profile/01.png|Tab Profile trong modal Setting]]\n\nTrong tab **Profile**, bạn có thể kiểm tra và chỉnh sửa thông tin cơ bản của tài khoản. Ảnh hồ sơ, tên, Email, Bio, Institution và Account được hiển thị.\n\n- **Email**: hiển thị địa chỉ email đã đăng ký với tài khoản. Không thể chỉnh sửa email trực tiếp.\n- **Account**: dùng Delete account để tiến hành xóa tài khoản.",
+      "[[image:setting-profile/02.png|Modal Crop ảnh hồ sơ]]\n\nNhấp vào biểu tượng chỉnh sửa ở góc dưới bên phải ảnh hồ sơ để mở modal **Crop**.\n\n- Nhấp **Upload file** để tải ảnh lên.\n- Sau khi tải lên, điều chỉnh vùng cắt.\n- Nhấp **Apply** để lưu ảnh hồ sơ hoặc **Cancel** để hủy thay đổi.\n- Để xóa ảnh hiện có, nhấp **Delete** bên dưới ảnh.\n\n[[image:setting-profile/03.png|Trạng thái chỉnh sửa tên hồ sơ]]\n\nNhấp vào biểu tượng chỉnh sửa bên cạnh tên hồ sơ để kích hoạt trường nhập tên. Nhập tên mong muốn rồi nhấp **Save**, hoặc nhấp **Cancel** để hủy thay đổi.\n\nBio cũng hoạt động tương tự: nhấp biểu tượng chỉnh sửa, nhập phần giới thiệu và lưu lại.",
+      "[[image:setting-profile/04.png|Trạng thái nhập Institution]]\n\nNhấp biểu tượng + trong **Institution** để hiển thị trường nhập tên tổ chức. Nhập tên tổ chức rồi nhấp **Request** để gửi yêu cầu liên kết tổ chức.",
+      "Trong khu vực **Account**, bạn có thể tiến hành xóa tài khoản. Vì việc xóa có thể khó hoàn tác, hãy kiểm tra tài liệu cần thiết và trạng thái tài khoản trước khi dùng thao tác này với tài khoản đang hoạt động."
+    ],
+    "setting-language": [
+      "[[image:setting-language/01.png|Tab Language]]\n\nTrong tab **Language**, bạn có thể đặt ngôn ngữ hiển thị cho giao diện LumiTeach. Dòng hướng dẫn ở phía trên giải thích rằng cài đặt này chỉ áp dụng cho giao diện, còn nội dung Curriculum tuân theo ngôn ngữ khu vực.",
+      "[[image:setting-language/02.png|Danh sách thả xuống Language]]\n\nChọn ngôn ngữ mong muốn trong danh sách thả xuống. Các ngôn ngữ được hỗ trợ gồm:\n\n- **English**\n- **Japanese - 日本語**\n- **Spanish - Español**\n- **Vietnamese - Tiếng Việt**\n- **Portuguese - Português**",
+      "Sau khi chọn ngôn ngữ, nhấp **Save** để áp dụng thay đổi. Cài đặt này áp dụng cho ngôn ngữ hiển thị của giao diện LumiTeach, còn nội dung Curriculum tuân theo tiêu chuẩn khu vực."
+    ],
+    "setting-ai-credit": [
+      "[[image:setting-ai-credit/01.png|Trạng thái tín dụng và lịch sử sử dụng trong tab AI Credit]]\n\nTrong tab **AI Credit**, bạn có thể kiểm tra trạng thái tín dụng dùng cho các tính năng AI. Tên gói hiện tại và chu kỳ được hiển thị, còn tín dụng còn lại và tổng tín dụng xuất hiện trên thanh tiến trình.\n\n- **Next refill on**: hiển thị ngày nạp tín dụng dự kiến tiếp theo.\n- Với Free Plan, mỗi tháng được cung cấp 1000 tín dụng.",
+      "**Usage History** cho phép bạn xem lại mức sử dụng tín dụng theo tháng. Nhấp mũi tên trái và phải để chuyển sang tháng trước hoặc tháng sau.\n\nBảng lịch sử sử dụng bao gồm:\n\n- **Type**: loại thay đổi tín dụng, chẳng hạn Used, Monthly Credit Refill hoặc Expired\n- **Content**: tên tính năng đã sử dụng\n- **Credit Change**: số tín dụng đã dùng hoặc được nạp\n- **Date**: ngày phát sinh thay đổi tín dụng"
+    ]
+  }
+};
+
+Object.entries(settingPageBodyTranslations).forEach(([language, bodies]) => {
+  translations[language].articleBodies = translations[language].articleBodies || {};
+  Object.assign(translations[language].articleBodies, bodies);
+});
+// END SETTING PAGE BODY TRANSLATION PATCH

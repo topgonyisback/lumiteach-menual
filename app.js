@@ -508,7 +508,12 @@ function getHubMark(title) {
 
 function getHubDescription(article) {
   const localized = localizeArticle(article);
-  return tHubDescription(article.key, hubDescriptions[article.key] || localized.desc);
+  const copyParts = [localized.desc, localized.note]
+    .filter(Boolean)
+    .filter((item) => !(currentLanguage !== defaultLanguage && hasKoreanText(item)));
+  const fallback = copyParts.join(' ') || hubDescriptions[article.key] || '';
+
+  return tHubDescription(article.key, fallback);
 }
 
 function getHubMenuMeta(article) {

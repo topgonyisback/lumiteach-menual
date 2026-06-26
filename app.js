@@ -312,6 +312,26 @@ function getLocalizedTitleCandidate(key, fallback) {
   return hasKoreanText(normalizedTitle) ? '' : normalizedTitle;
 }
 
+function stripLeadingRenderableTitleNumber(title) {
+  return String(title || '').replace(/^\s*\d{1,2}(?:[-.]\d+){0,4}\.?\s*/, '');
+}
+
+function getLeafArticleTitleNumber(number) {
+  const segments = String(number || '').replace(/\.$/, '').split('-');
+  if (segments.length < 3) return '';
+
+  const leafNumber = Number(segments[segments.length - 1]);
+  return Number.isFinite(leafNumber) ? `${leafNumber}.` : '';
+}
+
+function applyVisibleArticleTitleNumber(article, title) {
+  const titleNumber = getLeafArticleTitleNumber(article?.number);
+  if (!titleNumber) return title;
+
+  const strippedTitle = stripLeadingRenderableTitleNumber(title);
+  return strippedTitle ? `${titleNumber} ${strippedTitle}` : title;
+}
+
 const localizedToolkitTitleKeys = new Set(['toolkit-wheel', 'toolkit-dice', 'toolkit-bell', 'toolkit-sound-monitor', 'toolkit-clock', 'toolkit-annotate', 'toolkit-share-web-link', 'toolkit-quick-quiz', 'toolkit-quick-poll', 'toolkit-digital-timer', 'toolkit-hourglass', 'toolkit-pie-timer', 'toolkit-first-to-buzz', 'toolkit-presentation-lottery', 'toolkit-card-draw', 'toolkit-lucky-ladder', 'toolkit-group-maker', 'toolkit-ruler', 'toolkit-triangle', 'toolkit-protractor']);
 
 function shouldUseCanonicalToolkitTitle(key, field) {
@@ -400,10 +420,12 @@ function tArticleBody(key, index, fallback) {
 }
 
 function localizeArticle(article) {
+  const title = tArticleField(article.key, 'title', article.title);
+
   return {
     ...article,
     category: tArticleField(article.key, 'category', article.category),
-    title: tArticleField(article.key, 'title', article.title),
+    title: applyVisibleArticleTitleNumber(article, title),
     desc: tArticleField(article.key, 'desc', article.desc),
     note: tArticleField(article.key, 'note', article.note),
     sections: tArticleArray(article.key, 'sections', article.sections)
@@ -487,6 +509,13 @@ function getHubMark(title) {
 function getHubDescription(article) {
   const localized = localizeArticle(article);
   return tHubDescription(article.key, hubDescriptions[article.key] || localized.desc);
+}
+
+function getHubMenuMeta(article) {
+  const childPageCount = getChildPages(article.key).length;
+  if (childPageCount > 0) return `${childPageCount}${tFixed('pageCount')}`;
+
+  return tFixed('documentLabel');
 }
 
 function isCompactToolkitHub(key) {
@@ -714,9 +743,12 @@ function renderTree(activeKey) {
     const children = category.children.map((group) => {
       const groupOpen = openTreeKeys.has(group.key);
       const hasLinks = group.articles.length > 0;
-      const links = group.articles.map((article) => `
-        <button class="tree-link ${article.key === activeKey ? 'active' : ''}" onclick="showArticle('${article.key}')">${escapeHtml(tTree(article.key, 'title', article.title))}</button>
-      `).join('');
+      const links = group.articles.map((article) => {
+        const articleTitle = applyVisibleArticleTitleNumber(article, tTree(article.key, 'title', article.title));
+        return `
+        <button class="tree-link ${article.key === activeKey ? 'active' : ''}" onclick="showArticle('${article.key}')">${escapeHtml(articleTitle)}</button>
+      `;
+      }).join('');
       const groupTitle = tTree(group.key, 'title', group.title);
 
       return `
@@ -816,7 +848,7 @@ function renderArticle(key) {
               <span>
                 <h2>${escapeHtml(localizedChild.title)}</h2>
                 <p>${formatInline(getHubDescription(child))}</p>
-                <span class="hub-menu-count">${escapeHtml(localizedChild.number)} ${escapeHtml(tFixed('documentLabel'))}</span>
+                <span class="hub-menu-count">${escapeHtml(getHubMenuMeta(child))}</span>
               </span>
               ${renderHubVisual(child)}
             </button>
@@ -844,7 +876,7 @@ function renderArticle(key) {
     <header class="article-header">
       <div class="article-kicker">${escapeHtml(article.number)} ${escapeHtml(article.category)}</div>
       <h1 class="article-title">${escapeHtml(article.title)}</h1>
-      <p class="article-desc">${formatInline(article.desc)}</p>
+      <div class="article-desc">${renderRichText(article.desc)}</div>
       <div class="author-row">
         <div class="avatar" aria-hidden="true"></div>
         <div><strong>${escapeHtml(tFixed('authorName'))}</strong><br />${escapeHtml(tFixed('updatedAt'))}</div>

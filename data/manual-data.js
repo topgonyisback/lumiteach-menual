@@ -885,7 +885,7 @@ Object.assign(articleTemplates, {
             "7.",
             "Tool Kit 사용하기 / Normal",
             "7. Share Web Link",
-            "Share Web Link 는 수업 중 학생들의 화면으로 웹 링크를 전송하는 도구입니다. 참고 자료나 외부 사이트를 학생들에게 바로 공유할 수 있습니다.\n\n⚠️ 학생 화면에서 링크가 정상적으로 열리려면 팝업이 허용되어야 합니다. 최초 1회 \"Please allow pop-ups on the student page (one-time setup).\" 안내에 따라 팝업을 허용해 주세요.",
+            "Share Web Link 는 수업 중 학생들의 화면으로 웹 링크를 전송하는 도구입니다. 참고 자료나 외부 사이트를 학생들에게 바로 공유할 수 있습니다.\n\n> ⚠️ 학생 화면에서 링크가 정상적으로 열리려면 팝업이 허용되어야 합니다. 최초 1회 \"Please allow pop-ups on the student page (one-time setup).\" 안내에 따라 팝업을 허용해 주세요.",
             "수업 화면 하단의 Tool Kit에서 해당 도구 아이콘을 클릭해 실행합니다.",
             [
                   "실행 방법",
@@ -1160,6 +1160,7 @@ Object.assign(articleTemplates, {
 });
 
 const stripLeadingCategoryNumber = (title) => String(title || '').replace(/^\s*\d+\.\s*/, '');
+const stripLeadingArticleTitleNumber = (title) => String(title || '').replace(/^\s*\d{1,2}(?:[-.]\d+){0,4}\.?\s*/, '');
 const categoryNumberMap = new Map();
 function syncVisibleCategoryNumbers() {
   manualTree.forEach((category, index) => {
@@ -1207,6 +1208,32 @@ if (assignmentNumber) {
   });
 }
 // END ASSIGNMENT NUMBER PATCH
+
+function syncArticleNumbersFromVisibleTree() {
+  manualTree.forEach((category, categoryIndex) => {
+    const categoryNumber = String(categoryIndex + 1).padStart(2, '0');
+
+    if (articleTemplates[category.key]) {
+      articleTemplates[category.key][0] = categoryNumber + '.';
+    }
+
+    category.children.forEach((group, groupIndex) => {
+      const groupNumber = `${categoryNumber}-${groupIndex + 1}`;
+
+      if (articleTemplates[group.key]) {
+        articleTemplates[group.key][0] = groupNumber + '.';
+      }
+
+      group.articles.forEach((article, articleIndex) => {
+        if (articleTemplates[article.key]) {
+          articleTemplates[article.key][0] = `${groupNumber}-${articleIndex + 1}.`;
+          articleTemplates[article.key][2] = `${articleIndex + 1}. ${stripLeadingArticleTitleNumber(articleTemplates[article.key][2])}`;
+        }
+      });
+    });
+  });
+}
+syncArticleNumbersFromVisibleTree();
 
 const articleOrder = manualTree.flatMap((category) => [
   category.key,

@@ -8956,7 +8956,7 @@ Object.entries(translationFallbacks).forEach(([language, fallback]) => {
                 },
                 {
                           "title": "7. Share Web Link",
-                          "desc": "Share Web Link is a tool for sending a web link to students during class. You can share reference materials or external websites directly with students.\n\n⚠️ For the link to open correctly on student screens, pop-ups must be allowed. On the first use, ask students to allow pop-ups on the student page following the \"Please allow pop-ups on the student page (one-time setup).\" notice.",
+                          "desc": "Share Web Link is a tool for sending a web link to students during class. You can share reference materials or external websites directly with students.\n\n> ⚠️ For the link to open correctly on student screens, pop-ups must be allowed. On the first use, ask students to allow pop-ups on the student page following the \"Please allow pop-ups on the student page (one-time setup).\" notice.",
                           "note": "Click the tool icon in Tool Kit at the bottom of the class screen to run it.",
                           "sections": [
                                     "How to run",
@@ -8979,7 +8979,7 @@ Object.entries(translationFallbacks).forEach(([language, fallback]) => {
                 },
                 {
                           "title": "7. Compartilhar link da web",
-                          "desc": "Compartilhar link da web é uma ferramenta para enviar um link da web para a tela dos alunos durante a aula. Você pode compartilhar materiais de referência ou sites externos diretamente com os alunos.\n\n⚠️ Para que o link abra corretamente nas telas dos alunos, os pop-ups precisam estar permitidos. No primeiro uso, oriente os alunos a permitir pop-ups na página do aluno conforme o aviso \"Please allow pop-ups on the student page (one-time setup).\".",
+                          "desc": "Compartilhar link da web é uma ferramenta para enviar um link da web para a tela dos alunos durante a aula. Você pode compartilhar materiais de referência ou sites externos diretamente com os alunos.\n\n> ⚠️ Para que o link abra corretamente nas telas dos alunos, os pop-ups precisam estar permitidos. No primeiro uso, oriente os alunos a permitir pop-ups na página do aluno conforme o aviso \"Please allow pop-ups on the student page (one-time setup).\".",
                           "note": "Clique no ícone da ferramenta em Tool Kit, na parte inferior da tela da aula, para executá-la.",
                           "sections": [
                                     "Como executar",
@@ -9002,7 +9002,7 @@ Object.entries(translationFallbacks).forEach(([language, fallback]) => {
                 },
                 {
                           "title": "7. Compartir enlace web",
-                          "desc": "Compartir enlace web es una herramienta para enviar un enlace web a la pantalla de los estudiantes durante la clase. Puedes compartir materiales de referencia o sitios externos directamente con los estudiantes.\n\n⚠️ Para que el enlace se abra correctamente en las pantallas de los estudiantes, las ventanas emergentes deben estar permitidas. En el primer uso, indica a los estudiantes que permitan ventanas emergentes en la página del estudiante siguiendo el aviso \"Please allow pop-ups on the student page (one-time setup).\".",
+                          "desc": "Compartir enlace web es una herramienta para enviar un enlace web a la pantalla de los estudiantes durante la clase. Puedes compartir materiales de referencia o sitios externos directamente con los estudiantes.\n\n> ⚠️ Para que el enlace se abra correctamente en las pantallas de los estudiantes, las ventanas emergentes deben estar permitidas. En el primer uso, indica a los estudiantes que permitan ventanas emergentes en la página del estudiante siguiendo el aviso \"Please allow pop-ups on the student page (one-time setup).\".",
                           "note": "Haz clic en el ícono de la herramienta en Tool Kit, en la parte inferior de la pantalla de la clase, para ejecutarla.",
                           "sections": [
                                     "Cómo ejecutarlo",
@@ -9025,7 +9025,7 @@ Object.entries(translationFallbacks).forEach(([language, fallback]) => {
                 },
                 {
                           "title": "7. リンク共有",
-                          "desc": "リンク共有は、授業中にWebリンクを生徒の画面へ送信するためのツールです。参考資料や外部サイトを生徒へ直接共有できます。\n\n⚠️ 生徒の画面でリンクを正しく開くには、ポップアップの許可が必要です。初回利用時は、\"Please allow pop-ups on the student page (one-time setup).\" の案内に従って、生徒ページでポップアップを許可するよう案内してください。",
+                          "desc": "リンク共有は、授業中にWebリンクを生徒の画面へ送信するためのツールです。参考資料や外部サイトを生徒へ直接共有できます。\n\n> ⚠️ 生徒の画面でリンクを正しく開くには、ポップアップの許可が必要です。初回利用時は、\"Please allow pop-ups on the student page (one-time setup).\" の案内に従って、生徒ページでポップアップを許可するよう案内してください。",
                           "note": "授業画面下部のTool Kitで該当ツールのアイコンをクリックして実行します。",
                           "sections": [
                                     "実行方法",
@@ -9048,7 +9048,7 @@ Object.entries(translationFallbacks).forEach(([language, fallback]) => {
                 },
                 {
                           "title": "7. Chia sẻ liên kết",
-                          "desc": "Chia sẻ liên kết là công cụ để gửi liên kết web đến màn hình học sinh trong giờ học. Bạn có thể chia sẻ tài liệu tham khảo hoặc trang web bên ngoài trực tiếp với học sinh.\n\n⚠️ Để liên kết mở đúng trên màn hình học sinh, cần cho phép cửa sổ bật lên. Trong lần sử dụng đầu tiên, hãy hướng dẫn học sinh cho phép cửa sổ bật lên trên trang học sinh theo thông báo \"Please allow pop-ups on the student page (one-time setup).\".",
+                          "desc": "Chia sẻ liên kết là công cụ để gửi liên kết web đến màn hình học sinh trong giờ học. Bạn có thể chia sẻ tài liệu tham khảo hoặc trang web bên ngoài trực tiếp với học sinh.\n\n> ⚠️ Để liên kết mở đúng trên màn hình học sinh, cần cho phép cửa sổ bật lên. Trong lần sử dụng đầu tiên, hãy hướng dẫn học sinh cho phép cửa sổ bật lên trên trang học sinh theo thông báo \"Please allow pop-ups on the student page (one-time setup).\".",
                           "note": "Nhấp vào biểu tượng công cụ trong Tool Kit ở cuối màn hình lớp học để chạy công cụ này.",
                           "sections": [
                                     "Cách chạy",
@@ -14447,3 +14447,280 @@ Dùng bộ lọc Year và Grade để thu hẹp danh sách chỉ còn các Class
   ]
 });
 // END ASSESSMENT CLASS BODY TRANSLATION CORRECTION 4
+
+// BEGIN ARTICLE HEADER CATEGORY TRANSLATION PATCH
+const articleHeaderCategoryTranslations = {
+  en: {
+    labels: {
+      settings: 'Settings',
+      lesson: 'Create and manage Lessons',
+      editLesson: 'Create and manage Lessons / Use Edit Lesson',
+      material: 'Create and manage Lessons / Edit Lesson materials',
+      embed: 'Create and manage Lessons / Embed materials',
+      quiz: 'Create and manage Lessons / Use Quiz Activity',
+      discussion: 'Create and manage Lessons / Use Discussion Activity',
+      assignment: 'Export Assignments',
+      selfStudy: 'Export Assignments / Use Self Study mode',
+      toolkit: 'Use Tool Kit',
+      normal: 'Use Tool Kit / Normal',
+      timer: 'Use Tool Kit / Timer',
+      competition: 'Use Tool Kit / Competition',
+      draw: 'Use Tool Kit / Draw',
+      math: 'Use Tool Kit / Math Tools'
+    },
+    articles: {
+      'group-edit-lesson-self-study': {
+        title: 'Use Self Study mode',
+        desc: 'Learn how to use Individual, Challenge, and Flash Card modes so students can study a Lesson on their own.'
+      }
+    }
+  },
+  pt: {
+    labels: {
+      settings: 'Configurações',
+      lesson: 'Criar e gerenciar Lições',
+      editLesson: 'Criar e gerenciar Lições / Usar Edit Lesson',
+      material: 'Criar e gerenciar Lições / Editar materiais da Lição',
+      embed: 'Criar e gerenciar Lições / Inserir materiais com Embed',
+      quiz: 'Criar e gerenciar Lições / Usar Quiz Activity',
+      discussion: 'Criar e gerenciar Lições / Usar Discussion Activity',
+      assignment: 'Exportar Assignments',
+      selfStudy: 'Exportar Assignments / Usar modo Self Study',
+      toolkit: 'Usar Tool Kit',
+      normal: 'Usar Tool Kit / Normal',
+      timer: 'Usar Tool Kit / Timer',
+      competition: 'Usar Tool Kit / Competition',
+      draw: 'Usar Tool Kit / Draw',
+      math: 'Usar Tool Kit / Math Tools'
+    },
+    articles: {
+      'cat-start': {
+        title: 'Configurações',
+        desc: 'Veja como verificar e gerenciar o perfil, o idioma e as informações de AI Credit da sua conta LumiTeach.'
+      },
+      'setting-open': {
+        title: 'Abrir Setting',
+        desc: 'Veja como acessar o pop-up Setting pelo menu de perfil no canto superior direito da tela.'
+      },
+      'setting-profile': {
+        title: 'Configurar Profile',
+        desc: 'Na aba Profile, verifique e edite informações básicas da conta, como imagem de perfil, nome, Bio e Institution.'
+      },
+      'setting-language': {
+        title: 'Configurar Language',
+        desc: 'Na aba Language, selecione o idioma exibido na interface do LumiTeach.'
+      },
+      'setting-ai-credit': {
+        title: 'Verificar AI Credit',
+        desc: 'Na aba AI Credit, verifique o saldo e o histórico de uso dos créditos consumidos pelos recursos de IA.'
+      },
+      'cat-lesson': {
+        title: 'Criar e gerenciar Lições',
+        desc: 'Organize como compor Lessons, editar materiais e usar Activities na tela Edit Lesson.'
+      },
+      'cat-assignment': {
+        title: 'Exportar Assignments',
+        desc: 'Veja o fluxo para disponibilizar uma Lesson aos estudantes como Self Study ou Assessment.'
+      },
+      'group-edit-lesson-self-study': {
+        title: 'Usar modo Self Study',
+        desc: 'Aprenda a usar os modos Individual, Challenge e Flash Card para que os estudantes estudem uma Lesson por conta própria.'
+      }
+    }
+  },
+  es: {
+    labels: {
+      settings: 'Configuración',
+      lesson: 'Crear y gestionar lecciones',
+      editLesson: 'Crear y gestionar lecciones / Usar Edit Lesson',
+      material: 'Crear y gestionar lecciones / Editar materiales de la lección',
+      embed: 'Crear y gestionar lecciones / Insertar materiales con Embed',
+      quiz: 'Crear y gestionar lecciones / Usar Quiz Activity',
+      discussion: 'Crear y gestionar lecciones / Usar Discussion Activity',
+      assignment: 'Exportar Assignments',
+      selfStudy: 'Exportar Assignments / Usar modo Self Study',
+      toolkit: 'Usar Tool Kit',
+      normal: 'Usar Tool Kit / Normal',
+      timer: 'Usar Tool Kit / Timer',
+      competition: 'Usar Tool Kit / Competition',
+      draw: 'Usar Tool Kit / Draw',
+      math: 'Usar Tool Kit / Math Tools'
+    },
+    articles: {
+      'cat-start': {
+        title: 'Configuración',
+        desc: 'Aprende a revisar y gestionar el perfil, el idioma y la información de AI Credit de tu cuenta LumiTeach.'
+      },
+      'setting-open': {
+        title: 'Abrir Setting',
+        desc: 'Aprende a acceder al pop-up Setting desde el menú de perfil en la esquina superior derecha de la pantalla.'
+      },
+      'setting-profile': {
+        title: 'Configurar Profile',
+        desc: 'En la pestaña Profile, revisa y edita la información básica de la cuenta, como imagen de perfil, nombre, Bio e Institution.'
+      },
+      'setting-language': {
+        title: 'Configurar Language',
+        desc: 'En la pestaña Language, selecciona el idioma que se muestra en la interfaz de LumiTeach.'
+      },
+      'setting-ai-credit': {
+        title: 'Revisar AI Credit',
+        desc: 'En la pestaña AI Credit, revisa el saldo y el historial de uso de los créditos consumidos por las funciones de IA.'
+      },
+      'cat-lesson': {
+        title: 'Crear y gestionar lecciones',
+        desc: 'Organiza cómo componer Lessons, editar materiales y usar Activities en la pantalla Edit Lesson.'
+      },
+      'cat-assignment': {
+        title: 'Exportar Assignments',
+        desc: 'Consulta el flujo para ofrecer una Lesson a los estudiantes como Self Study o Assessment.'
+      },
+      'group-edit-lesson-self-study': {
+        title: 'Usar modo Self Study',
+        desc: 'Aprende a usar los modos Individual, Challenge y Flash Card para que los estudiantes estudien una Lesson por su cuenta.'
+      }
+    }
+  },
+  ja: {
+    labels: {
+      settings: '設定',
+      lesson: '授業を作成・管理する',
+      editLesson: '授業を作成・管理する / Edit Lessonを使う',
+      material: '授業を作成・管理する / 授業資料を編集する',
+      embed: '授業を作成・管理する / 資料をEmbedする',
+      quiz: '授業を作成・管理する / Quiz Activityを活用する',
+      discussion: '授業を作成・管理する / Discussion Activityを活用する',
+      assignment: 'Assignmentを書き出す',
+      selfStudy: 'Assignmentを書き出す / Self Studyモードを活用する',
+      toolkit: 'Tool Kitを使用する',
+      normal: 'Tool Kitを使用する / Normal',
+      timer: 'Tool Kitを使用する / Timer',
+      competition: 'Tool Kitを使用する / Competition',
+      draw: 'Tool Kitを使用する / Draw',
+      math: 'Tool Kitを使用する / Math Tools'
+    },
+    articles: {
+      'cat-start': {
+        title: '設定',
+        desc: 'LumiTeachアカウントのプロフィール、言語、AI Credit情報を確認・管理する方法を案内します。'
+      },
+      'setting-open': {
+        title: 'Settingを開く',
+        desc: '画面右上のプロフィールメニューからSettingポップアップへ移動する方法です。'
+      },
+      'setting-profile': {
+        title: 'Profileを設定する',
+        desc: 'Profileタブでプロフィール画像、名前、Bio、Institutionなどのアカウント基本情報を確認・編集します。'
+      },
+      'setting-language': {
+        title: 'Languageを設定する',
+        desc: 'LanguageタブでLumiTeachのインターフェースに表示する言語を選択します。'
+      },
+      'setting-ai-credit': {
+        title: 'AI Creditを確認する',
+        desc: 'AI CreditタブでAI機能の利用に使われるクレジット残高と使用履歴を確認します。'
+      },
+      'cat-lesson': {
+        title: '授業を作成・管理する',
+        desc: 'Edit Lesson画面でLessonを構成し、資料を編集し、Activityを活用する方法を整理します。'
+      },
+      'cat-assignment': {
+        title: 'Assignmentを書き出す',
+        desc: 'Lessonを学生にSelf StudyモードやAssessment形式で提供する流れを案内します。'
+      },
+      'group-edit-lesson-self-study': {
+        title: 'Self Studyモードを活用する',
+        desc: '学生がLessonを自分で学習できるように、Individual、Challenge、Flash Cardモードを活用する方法を案内します。'
+      }
+    }
+  },
+  vi: {
+    labels: {
+      settings: 'Cài đặt',
+      lesson: 'Tạo và quản lý bài học',
+      editLesson: 'Tạo và quản lý bài học / Sử dụng Edit Lesson',
+      material: 'Tạo và quản lý bài học / Chỉnh sửa tài liệu bài học',
+      embed: 'Tạo và quản lý bài học / Embed tài liệu',
+      quiz: 'Tạo và quản lý bài học / Sử dụng Quiz Activity',
+      discussion: 'Tạo và quản lý bài học / Sử dụng Discussion Activity',
+      assignment: 'Xuất Assignments',
+      selfStudy: 'Xuất Assignments / Sử dụng chế độ Self Study',
+      toolkit: 'Sử dụng Tool Kit',
+      normal: 'Sử dụng Tool Kit / Normal',
+      timer: 'Sử dụng Tool Kit / Timer',
+      competition: 'Sử dụng Tool Kit / Competition',
+      draw: 'Sử dụng Tool Kit / Draw',
+      math: 'Sử dụng Tool Kit / Math Tools'
+    },
+    articles: {
+      'cat-start': {
+        title: 'Cài đặt',
+        desc: 'Tìm hiểu cách kiểm tra và quản lý hồ sơ, ngôn ngữ và thông tin AI Credit của tài khoản LumiTeach.'
+      },
+      'setting-open': {
+        title: 'Mở Setting',
+        desc: 'Tìm hiểu cách mở pop-up Setting từ menu hồ sơ ở góc trên bên phải màn hình.'
+      },
+      'setting-profile': {
+        title: 'Cài đặt Profile',
+        desc: 'Trong tab Profile, kiểm tra và chỉnh sửa thông tin cơ bản của tài khoản như ảnh hồ sơ, tên, Bio và Institution.'
+      },
+      'setting-language': {
+        title: 'Cài đặt Language',
+        desc: 'Trong tab Language, chọn ngôn ngữ hiển thị trong giao diện LumiTeach.'
+      },
+      'setting-ai-credit': {
+        title: 'Kiểm tra AI Credit',
+        desc: 'Trong tab AI Credit, kiểm tra số dư và lịch sử sử dụng tín dụng tiêu thụ bởi các tính năng AI.'
+      },
+      'cat-lesson': {
+        title: 'Tạo và quản lý bài học',
+        desc: 'Tổng hợp cách cấu trúc Lessons, chỉnh sửa tài liệu và sử dụng Activities trong màn hình Edit Lesson.'
+      },
+      'cat-assignment': {
+        title: 'Xuất Assignments',
+        desc: 'Tìm hiểu quy trình cung cấp một Lesson cho học sinh dưới dạng Self Study hoặc Assessment.'
+      },
+      'group-edit-lesson-self-study': {
+        title: 'Sử dụng chế độ Self Study',
+        desc: 'Tìm hiểu cách dùng các chế độ Individual, Challenge và Flash Card để học sinh tự học một Lesson.'
+      }
+    }
+  }
+};
+
+const articleHeaderCategoryGroups = {
+  settings: ['setting-open', 'setting-profile', 'setting-language', 'setting-ai-credit'],
+  lesson: ['group-edit-lesson', 'group-lesson-material-edit', 'group-lesson-embed', 'group-lesson-quiz-activity', 'group-lesson-discussion-activity'],
+  editLesson: ['edit-lesson-create', 'edit-lesson-rename', 'edit-lesson-add-activity', 'edit-lesson-load-storage', 'edit-lesson-ai-make', 'edit-lesson-interaction', 'edit-lesson-presentation', 'edit-lesson-undo-redo', 'edit-lesson-preview', 'edit-lesson-background-color', 'edit-lesson-background-image', 'edit-lesson-activity-common-setting'],
+  material: ['edit-lesson-text-properties', 'edit-lesson-rewrite', 'edit-lesson-add-text-object', 'edit-lesson-add-shape', 'edit-lesson-upload-image', 'edit-lesson-image-properties'],
+  embed: ['edit-lesson-webviewer', 'edit-lesson-youtube', 'edit-lesson-document', 'edit-lesson-sound'],
+  quiz: ['edit-lesson-quiz-true-false', 'edit-lesson-quiz-multiple-choice', 'edit-lesson-quiz-short-answer', 'edit-lesson-quiz-fill-blank', 'edit-lesson-quiz-matching', 'edit-lesson-quiz-open-ended', 'edit-lesson-quiz-sequencing', 'edit-lesson-quiz-sorting'],
+  discussion: ['edit-lesson-discussion-agree-disagree', 'edit-lesson-discussion-opinion-scale', 'edit-lesson-discussion-traffic-light', 'edit-lesson-discussion-vote'],
+  assignment: ['group-edit-lesson-self-study'],
+  selfStudy: ['edit-lesson-self-study-individual', 'edit-lesson-self-study-challenge', 'edit-lesson-self-study-flash-card'],
+  toolkit: ['group-toolkit-normal', 'group-toolkit-timer', 'group-toolkit-competition', 'group-toolkit-draw', 'group-toolkit-math-tools'],
+  normal: ['toolkit-share-web-link', 'toolkit-quick-quiz', 'toolkit-quick-poll'],
+  timer: ['toolkit-digital-timer', 'toolkit-hourglass', 'toolkit-pie-timer'],
+  competition: ['toolkit-first-to-buzz'],
+  draw: ['toolkit-presentation-lottery', 'toolkit-card-draw', 'toolkit-lucky-ladder', 'toolkit-group-maker'],
+  math: ['toolkit-ruler', 'toolkit-triangle', 'toolkit-protractor']
+};
+
+function ensureTranslationArticle(language, key) {
+  translations[language].articles[key] = translations[language].articles[key] || {};
+  return translations[language].articles[key];
+}
+
+Object.entries(articleHeaderCategoryTranslations).forEach(([language, config]) => {
+  Object.entries(articleHeaderCategoryGroups).forEach(([groupKey, keys]) => {
+    keys.forEach((key) => {
+      ensureTranslationArticle(language, key).category = config.labels[groupKey];
+    });
+  });
+
+  Object.entries(config.articles || {}).forEach(([key, values]) => {
+    Object.assign(ensureTranslationArticle(language, key), values);
+  });
+});
+// END ARTICLE HEADER CATEGORY TRANSLATION PATCH

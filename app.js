@@ -830,6 +830,15 @@ function renderArticle(key) {
     return;
   }
 
+  const bottomNavItems = [
+    prev ? `<button onclick="showArticle('${prev.key}')">← ${escapeHtml(localizeArticle(prev).title)}</button>` : '',
+    next ? `<button onclick="showArticle('${next.key}')">${escapeHtml(localizeArticle(next).title)} →</button>` : ''
+  ].filter(Boolean);
+  const bottomNavClass = `bottom-nav${!prev ? ' only-next' : ''}${!next ? ' only-prev' : ''}`;
+  const bottomNavMarkup = bottomNavItems.length
+    ? `<nav class="${bottomNavClass}" aria-label="이전 및 다음 아티클">${bottomNavItems.join('')}</nav>`
+    : '';
+
   document.getElementById('articleContent').innerHTML = `
     ${hubCovers[article.key] && isTreeGroupPage(article.key) ? `<div class="hub-cover article-cover" aria-hidden="true">${renderHubCover(article)}</div>` : ''}
     <header class="article-header">
@@ -855,10 +864,7 @@ function renderArticle(key) {
         </section>
       `).join('')}
 
-      <nav class="bottom-nav" aria-label="이전 및 다음 아티클">
-        <button ${prev ? `onclick="showArticle('${prev.key}')"` : 'disabled'}>${prev ? `← ${escapeHtml(localizeArticle(prev).title)}` : escapeHtml(tFixed('firstArticle'))}</button>
-        <button ${next ? `onclick="showArticle('${next.key}')"` : 'disabled'}>${next ? `${escapeHtml(localizeArticle(next).title)} →` : escapeHtml(tFixed('lastArticle'))}</button>
-      </nav>
+      ${bottomNavMarkup}
     </div>
   `;
 

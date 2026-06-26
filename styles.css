@@ -786,6 +786,9 @@ body.mobile-nav-open .menu-toggle::after { transform: translateY(-6px) rotate(-4
   border-top: 1px solid var(--line);
 }
 
+.bottom-nav.only-next { justify-content: flex-end; }
+.bottom-nav.only-prev { justify-content: flex-start; }
+
 .bottom-nav button {
   border: 1px solid var(--line);
   background: #fff;

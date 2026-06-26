@@ -113,6 +113,27 @@ function renderRichText(value) {
       return;
     }
 
+    if (trimmed.startsWith('[[callout:') && trimmed.endsWith(']]')) {
+      flushParagraph();
+      flushList();
+      flushQuote();
+
+      const calloutValue = trimmed.slice(10, -2);
+      const [icon = 'i', title = '', ...bodyParts] = calloutValue.split('|');
+      const body = bodyParts.join('|').replace(/\\n/g, '\n\n');
+
+      html.push(`
+        <aside class="section-callout">
+          <span class="section-callout-icon" aria-hidden="true">${escapeHtml(icon || 'i')}</span>
+          <div class="section-callout-content">
+            ${title ? `<strong>${formatInline(title)}</strong>` : ''}
+            <div class="section-callout-body">${renderRichText(body)}</div>
+          </div>
+        </aside>
+      `);
+      return;
+    }
+
     if (trimmed.startsWith('>')) {
       flushParagraph();
       flushList();
@@ -148,6 +169,86 @@ function renderRichText(value) {
 
 function activeTranslations() {
   return translations[currentLanguage] || translations[defaultLanguage];
+}
+
+function normalizeLanguageKey(language) {
+  const normalized = String(language || '').trim().toLowerCase();
+  return translations[normalized] ? normalized : null;
+}
+
+function getUrlLanguage() {
+  const params = new URLSearchParams(location.search);
+  return normalizeLanguageKey(params.get('lang') || params.get('language') || params.get('locale'));
+}
+
+function getStoredLanguage() {
+  return normalizeLanguageKey(localStorage.getItem('lumiteach-language'));
+}
+
+function getInitialLanguage() {
+  return getUrlLanguage() || getStoredLanguage() || defaultLanguage;
+}
+
+function updateDocumentLanguage() {
+  document.documentElement.lang = currentLanguage;
+}
+
+function syncLanguageSelect() {
+  const languageSelect = document.getElementById('languageSelect');
+  if (languageSelect) languageSelect.value = currentLanguage;
+}
+
+function routeUrlFor(hash = '', language = currentLanguage) {
+  const params = new URLSearchParams(location.search);
+  params.delete('language');
+  params.delete('locale');
+  params.set('lang', normalizeLanguageKey(language) || defaultLanguage);
+
+  const query = params.toString();
+  return `${location.pathname}${query ? `?${query}` : ''}${hash || ''}`;
+}
+
+function replaceCurrentUrlWithLanguage(hash = location.hash) {
+  const nextUrl = routeUrlFor(hash);
+  const currentUrl = `${location.pathname}${location.search}${hash || ''}`;
+  if (nextUrl !== currentUrl) {
+    const key = hash ? decodeURIComponent(hash.replace('#', '')) : null;
+    history.replaceState({ key, language: currentLanguage }, '', nextUrl);
+  }
+}
+
+function persistCurrentLanguage() {
+  localStorage.setItem('lumiteach-language', currentLanguage);
+}
+
+function refreshForLanguage() {
+  updateDocumentLanguage();
+  syncLanguageSelect();
+  applyStaticTranslations();
+  renderCategories();
+  renderTree(currentArticleKey);
+  if (document.getElementById('articleView').classList.contains('active')) {
+    renderArticle(currentArticleKey);
+  }
+  renderSearchResults(document.getElementById('searchInput')?.value || '');
+}
+
+function setLanguage(language, options = {}) {
+  const { updateUrl = false, rerender = false } = options;
+  currentLanguage = normalizeLanguageKey(language) || defaultLanguage;
+  persistCurrentLanguage();
+  updateDocumentLanguage();
+  syncLanguageSelect();
+  if (updateUrl) replaceCurrentUrlWithLanguage();
+  if (rerender) refreshForLanguage();
+}
+
+function syncLanguageFromUrl(options = {}) {
+  const { rerender = false } = options;
+  const urlLanguage = getUrlLanguage();
+  if (!urlLanguage || urlLanguage === currentLanguage) return false;
+  setLanguage(urlLanguage, { rerender });
+  return true;
 }
 
 function tUI(key) {
@@ -660,6 +761,32 @@ function getRenderableSections(article) {
   }));
 }
 
+function getHeadingTocTarget(heading, index) {
+  if (heading.matches('h2')) {
+    const section = heading.closest('.article-section');
+    if (section?.id) return section.id;
+  }
+
+  if (!heading.id) heading.id = `toc-heading-${index + 1}`;
+  return heading.id;
+}
+
+function renderRightToc() {
+  const rightToc = document.getElementById('rightToc');
+  const articleContent = document.getElementById('articleContent');
+  const headings = Array.from(articleContent.querySelectorAll('.article-title, .article-section > h2, .section-copy h3'))
+    .filter((heading) => heading.textContent.trim());
+
+  rightToc.innerHTML = headings.length ? `
+    <div class="toc-title">${escapeHtml(tFixed('onThisPage'))}</div>
+    ${headings.map((heading, index) => {
+      const level = Number(heading.tagName.slice(1));
+      const targetId = getHeadingTocTarget(heading, index);
+      return `<a class="toc-link toc-link-level-${level}" href="#${targetId}">${escapeHtml(heading.textContent.trim())}</a>`;
+    }).join('')}
+  ` : '';
+}
+
 function renderArticle(key) {
   const sourceArticle = findArticle(key);
   const article = localizeArticle(sourceArticle);
@@ -735,15 +862,7 @@ function renderArticle(key) {
     </div>
   `;
 
-  const tocLinks = renderableSections.filter((section) => section.showTitle && section.title.trim());
-  document.getElementById('rightToc').innerHTML = tocLinks.length ? `
-    <div class="toc-title">${escapeHtml(tFixed('onThisPage'))}</div>
-    ${tocLinks.map((section) => `<a class="toc-link" href="#section-${section.index + 1}">${escapeHtml(section.title)}</a>`).join('')}
-  ` : '';
-}
-
-function routeUrlFor(hash = '') {
-  return `${location.pathname}${location.search}${hash}`;
+  renderRightToc();
 }
 
 function showHome(options = {}) {
@@ -853,7 +972,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const hashKey = decodeURIComponent(location.hash.replace('#', ''));
   const initialKey = hashKey && isVisibleArticleKey(hashKey) ? hashKey : currentArticleKey;
   currentArticleKey = initialKey;
-  currentLanguage = localStorage.getItem('lumiteach-language') || defaultLanguage;
+  currentLanguage = getInitialLanguage();
+  persistCurrentLanguage();
+  updateDocumentLanguage();
   openTreePath(initialKey);
 
   applyStaticTranslations();
@@ -873,15 +994,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const languageSelect = document.getElementById('languageSelect');
   languageSelect.value = currentLanguage;
   languageSelect.addEventListener('change', (event) => {
-    currentLanguage = event.target.value;
-    localStorage.setItem('lumiteach-language', currentLanguage);
-    applyStaticTranslations();
-    renderCategories();
-    renderTree(currentArticleKey);
-    if (document.getElementById('articleView').classList.contains('active')) {
-      renderArticle(currentArticleKey);
-    }
-    renderSearchResults(document.getElementById('searchInput').value);
+    setLanguage(event.target.value, { updateUrl: true, rerender: true });
   });
 
   document.addEventListener('click', (event) => {
@@ -902,6 +1015,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   window.addEventListener('popstate', () => {
+    syncLanguageFromUrl({ rerender: true });
     const nextKey = decodeURIComponent(location.hash.replace('#', ''));
     if (nextKey && isVisibleArticleKey(nextKey)) {
       showArticle(nextKey, { updateHistory: false });
@@ -911,6 +1025,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   window.addEventListener('hashchange', () => {
+    syncLanguageFromUrl({ rerender: true });
     const nextKey = decodeURIComponent(location.hash.replace('#', ''));
     if (nextKey && isVisibleArticleKey(nextKey) && nextKey !== currentArticleKey) {
       showArticle(nextKey, { updateHistory: false });
@@ -921,7 +1036,11 @@ document.addEventListener('DOMContentLoaded', function () {
     if (window.innerWidth > 960) closeMobileMenu();
   });
 
-  history.replaceState({ key: hashKey && isVisibleArticleKey(hashKey) ? hashKey : null }, '', location.href);
+  history.replaceState(
+    { key: hashKey && isVisibleArticleKey(hashKey) ? hashKey : null, language: currentLanguage },
+    '',
+    routeUrlFor(location.hash)
+  );
 
   if (hashKey && isVisibleArticleKey(hashKey)) showArticle(hashKey, { updateHistory: false });
 });

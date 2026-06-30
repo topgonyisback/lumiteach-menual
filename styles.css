@@ -900,6 +900,7 @@ body.mobile-nav-open .menu-toggle::after { transform: translateY(-6px) rotate(-4
   place-items: center;
   min-height: 260px;
   margin-bottom: 28px;
+  overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 10px;
   background:
@@ -945,14 +946,15 @@ body.mobile-nav-open .menu-toggle::after { transform: translateY(-6px) rotate(-4
 
 .hub-cover-cluster {
   position: relative;
-  width: min(340px, 78%);
+  width: min(640px, 88%);
   height: 190px;
+  overflow: visible;
 }
 
 .cover-tile {
   position: absolute;
-  left: var(--tile-left, 50%);
-  top: var(--tile-top, 50%);
+  left: 50%;
+  top: 50%;
   z-index: var(--tile-z, 1);
   display: grid;
   place-items: center;
@@ -968,7 +970,7 @@ body.mobile-nav-open .menu-toggle::after { transform: translateY(-6px) rotate(-4
   line-height: 1;
   letter-spacing: 0;
   text-align: center;
-  transform: translate(-50%, -50%) rotate(var(--tile-rotate, 0deg)) scale(var(--tile-scale, 1));
+  transform: translate(calc(-50% + var(--tile-x, 0px)), calc(-50% + var(--tile-y, 0px))) rotate(var(--tile-rotate, 0deg)) scale(var(--tile-scale, 1));
 }
 
 .hub-kicker {
@@ -1077,6 +1079,12 @@ body.mobile-nav-open .menu-toggle::after { transform: translateY(-6px) rotate(-4
   line-height: 1;
   letter-spacing: 0;
   text-align: center;
+}
+
+.hub-svg-icon {
+  display: block;
+  width: 56px;
+  height: 56px;
 }
 
 @media (max-width: 1300px) {

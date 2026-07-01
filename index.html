@@ -37,7 +37,12 @@
       <h1>무엇을 도와드릴까요?</h1>
       <p>LumiTeach를 시작하고 수업을 운영하는 데 필요한 모든 가이드를 확인해보세요.</p>
       <div class="search-wrap">
-        <span class="search-icon">⌕</span>
+        <span class="search-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false">
+            <circle cx="11" cy="11" r="6.5"></circle>
+            <path d="M16 16l4 4"></path>
+          </svg>
+        </span>
         <input class="search-input" id="searchInput" placeholder="아티클 제목, 기능명, 오류 상황을 검색해보세요" />
         <div class="search-results" id="searchResults"></div>
       </div>

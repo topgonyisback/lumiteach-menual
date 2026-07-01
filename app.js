@@ -1019,6 +1019,32 @@ function renderArticle(key) {
   renderRightToc();
 }
 
+function scrollHomeToTop(behavior = 'smooth') {
+  const homeView = document.getElementById('homeView');
+  if (!homeView) return;
+  homeView.scrollTo({ top: 0, behavior });
+}
+
+function scrollArticleMainToTop(behavior = 'smooth') {
+  const articleMain = document.querySelector('.article-main');
+  if (!articleMain) return;
+  articleMain.scrollTo({ top: 0, behavior });
+}
+
+function scrollArticleMainToTarget(target, behavior = 'smooth') {
+  const articleMain = document.querySelector('.article-main');
+  if (!articleMain) {
+    target.scrollIntoView({ behavior, block: 'start' });
+    return;
+  }
+
+  const containerRect = articleMain.getBoundingClientRect();
+  const targetRect = target.getBoundingClientRect();
+  const scrollMarginTop = parseFloat(getComputedStyle(target).scrollMarginTop) || 0;
+  const top = articleMain.scrollTop + targetRect.top - containerRect.top - scrollMarginTop;
+  articleMain.scrollTo({ top, behavior });
+}
+
 function showHome(options = {}) {
   const { updateHistory = true } = options;
   closeMobileMenu();
@@ -1031,7 +1057,7 @@ function showHome(options = {}) {
     history.pushState({ key: null }, '', routeUrlFor());
   }
 
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  scrollHomeToTop('auto');
 }
 
 function showArticle(key, options = {}) {
@@ -1051,7 +1077,7 @@ function showArticle(key, options = {}) {
     history.pushState({ key }, '', routeUrlFor(nextHash));
   }
 
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  scrollArticleMainToTop('auto');
 }
 
 function setMobileMenu(open) {
@@ -1165,7 +1191,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!target) return;
 
     event.preventDefault();
-    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    scrollArticleMainToTarget(target, 'smooth');
   });
 
   window.addEventListener('popstate', () => {

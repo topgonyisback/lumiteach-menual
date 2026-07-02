@@ -14,6 +14,16 @@
   <header class="global-header">
     <div class="logo" onclick="showHome()">LumiTeach 서비스 가이드</div>
     <div class="header-actions">
+      <div class="search-wrap header-search-wrap" id="headerSearchWrap">
+        <span class="search-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false">
+            <circle cx="11" cy="11" r="6.5"></circle>
+            <path d="M16 16l4 4"></path>
+          </svg>
+        </span>
+        <input class="search-input" id="headerSearchInput" placeholder="아티클 제목, 기능명, 오류 상황을 검색해보세요" autocomplete="off" aria-label="검색" />
+        <div class="search-results" id="headerSearchResults"></div>
+      </div>
       <label class="visually-hidden" for="languageSelect">언어 선택</label>
       <span class="language-wrap">
         <select class="language-select" id="languageSelect" aria-label="언어 선택">
